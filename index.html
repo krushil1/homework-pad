@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-151655176-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-151655176-1");
+    </script>
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>SMSTimer</title>
+    <link
+      rel="icon"
+      type="image/ico"
+      href="https://cdn.glitch.com/d81d26fa-c668-478e-8946-16a17248aeb3%2Fclock-image-transparent-background-24.png?v=1572824151441"
+    />
+    
+    <link rel="stylesheet" href="style.css">
+
+    <body onload="myFunction()"></body>
+    <body id="body1" class="container">
+      <div id="loading">
+        <p id="names"><font size="4"><b>Made by Krushil Amrutiya & Luke Gutman</b></font></p>
+        <p id="name1"><font size="7"><b>Springhouse middle school period countdown</b></font></p>
+        <p id="name2"><font size="3"><b>Loading....</b></font></p>
+      <body style="background-color:#181515;">
+        
+        </body>
+      </div>
+
+    </body>
+ 
+    
+  </head>
+
+
+  
+   
+  
+  <style>
+    h1 {
+      font-family: 'Roboto Slab', serif;
+      margin: 0px;
+      padding: 0px;
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 10px;
+    }
+  </style>
+
+
+  
+  
+  <h1>
+    <font color="#FF2E00" and font size="10" id="output">Springhouse middle school period countdown</font>
+  </h1>
+
+  <style>
+    h2 {
+      font-family: 'Roboto Slab', serif;
+      margin: 0;
+      padding: 0;
+      font-size: 17px;
+      line-height: 18px;
+    }
+  </style>
+
+  <style>
+    h4 {
+      font-family: 'Roboto Slab', serif;
+      margin: 0;
+      padding: 10;
+      font-size: 17px;
+      line-height: 25px;
+    }
+  </style>
+
+  <style>
+    li {
+      font-family: 'Roboto Slab', serif;
+      color: #ADFF2F;
+    }
+  </style> 
+  
+  
+ 
+
+
+
+  
+  
+  <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        font-family: 'Roboto Slab', serif;
+        float: right;
+        width: 17%;
+        padding: 10px;
+        height: 500px; /* Should be removed. Only for demonstration */
+        margin: 0px;
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+    }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+    ul {
+      list-style-type: none; 
+    }
+    </style>
+  
+  <div class="row"></div>
+  <div class="column" style="background-color:#201D1D;" id="column1">
+      <div>
+        <p><b><center><font color="#23A75B" and size="5" id="date"></font></center></b></p>
+      <script type="text/javascript">
+      n =  new Date();
+      y = n.getFullYear();
+      m = n.getMonth() + 1;
+      d = n.getDate();
+      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+      </script> 
+      </div>      
+    
+    <h2><font color="#FFFAFA" and size="5" id="upcoming">Upcoming events: </font></h2>
+    <ul>
+      <li id="events2"><h4><p id="winter"></p></h4></li>
+      <br>
+      <li id="events"><h4><p id="long"></p></h4></li>
+      <br>
+      <li id="events1"><h4><p id="dismissal"></p></h4></li>
+      <br>
+      <li id="events4"><h4><p id="MP3"></p></h4></li>
+      <br>
+      <li id="events3"><h4><p id="EndSchool"></p></h4></li>
+    </ul>
+  </div>
+
+ 
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  <!--Font and line gap-->
+  <style>
+    p {
+      font-family: 'Roboto Condensed', sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 42px;
+      line-height: 46px;
+    }
+  </style> 
+  
+  
+   <style>
+    span {
+      font-family: 'Roboto Condensed', sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 40.1px;
+      line-height: 46px;
+    }
+  </style>  
+  
+  
+  
+  <style>
+    h9 {
+      font-family: 'Roboto Condensed', sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 37px;
+      line-height: 46px;
+    }
+  </style> 
+  
+  
+  <style>
+    h13 {
+      font-family: 'Roboto Condensed', sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 42px;
+      line-height: 46px;
+    }
+  </style> 
+  
+  
+  
+
+
+  <!-- 379683 -->
+
+  <!--id for each period to work-->
+  <font color="#48929B" id="timecolor">
+    <p id="one"><b>Period 1 Ends In:</b></p>
+    <p id="two"><b>Period 2 Ends In:</b></p>
+    <p id="THREE"><b>Period 3 Ends In:</b></p>
+    <p id="x"><b>Period x Ends In:</b></p>
+    <span id="fourA"><b>Lunch 4A Ends In: &nbsp</b></span>
+    <br>
+    <span id="fourB"><b>Lunch 4B Ends In:</b></span>
+    <br>
+    <span id="fourC"><b>Lunch 4C Ends In:</b></span>
+   <br>
+    <p id="five"><b>Period 5 Ends In:</b></p>
+    <p id="six"><b>Period 6 Ends In:</b></p>
+    
+    
+    
+  
+  </font>
+
+  <!--Seperate period 7 id so when period seven is over, it switch to different id-->
+  <font color="FFA500" id="7period">
+    <h13 id="seven"><b>Period 7 Ends In:</b></h13>
+    <br>
+    <br>
+  </font>
+
+  <style>
+    h2 {
+      font-family: 'Roboto Condensed', sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 37px;
+      line-height: 46px;
+    }
+  </style>
+
+  <!--My name and the verison# -->
+  <font color="grey" and font size="3" id="created">
+    <h2><b>Made by Krushil Amrutiya and Luke Gutman</b></h2>
+    <h2><b>Version 6.1</b></h2>
+  </font>
+
+  <style>
+    .pointer {cursor: pointer;}
+  </style>
+  
+  
+  <style>
+    .button {
+      font-family: 'Roboto Condensed', sans-serif;
+      background-color: #4CAF50;
+      border: none;
+      color: blue;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+    }
+  </style>
+
+  <div class="btn-group">
+    <button onclick="window.location.href = 'https://www.emailmeform.com/builder/form/Uds7p7w9u5eKCHPRXQ2F89';" class="pointer">Request box / bug reports</button>
+    <button onclick="window.location.href = 'https://cdn.glitch.com/d81d26fa-c668-478e-8946-16a17248aeb3%2FIMG_0299%20(1).PNG?v=1573530015781';" class="pointer">full schedule</button>
+    <button id="darkmode" class="pointer">Dark Mode</button>
+    <button id="lightmode" class="pointer">Light Mode</button>
+    <p>
+    <span id="output1"></span>
+    </p>
+
+  </div>
+<script src="script.js"></script>
+</html>
+
+
+
