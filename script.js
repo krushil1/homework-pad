@@ -233,7 +233,7 @@ document.getElementById("lightmode").onclick = function(){
 
 //first period
     // Set the date we're counting down to
-    var countDownDatefirst = new Date("Dec 20, 2019 8:37:00").getTime();
+    var countDownDatefirst = new Date("Mar 20, 2020 8:37:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -270,7 +270,7 @@ document.getElementById("lightmode").onclick = function(){
 
   //second period
     // Set the date we're counting down to
-    var countdowntwo = new Date("Dec 20, 2019 9:24:00").getTime();
+    var countdowntwo = new Date("Mar 20, 2020 9:24:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -307,7 +307,7 @@ document.getElementById("lightmode").onclick = function(){
 
   //third period
     // Set the date we're counting down to
-    var countDownTHREE = new Date("Dec 20, 2019 10:11:00").getTime();
+    var countDownTHREE = new Date("Mar 20, 2020 10:11:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -326,7 +326,7 @@ document.getElementById("lightmode").onclick = function(){
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Output the result in an element with id="demo"
-      document.getElementById("THREE").innerHTML =
+      document.getElementById("three").innerHTML =
         "<b>Period 3 ends in: " +
         hours +
         "h" +
@@ -338,7 +338,7 @@ document.getElementById("lightmode").onclick = function(){
       // If the count down is over, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("THREE").innerHTML = "<b>Period 3 is over!</b>";
+        document.getElementById("three").innerHTML = "<b>Period 3 is over!</b>";
       }
     }, 1000);
 
@@ -346,7 +346,7 @@ document.getElementById("lightmode").onclick = function(){
 
  //x period
     // Set the date we're counting down to
-    var countDownx = new Date("Dec 20, 2019 10:44:00").getTime();
+    var countDownx = new Date("Mar 20, 2020 10:44:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -388,7 +388,7 @@ document.getElementById("lightmode").onclick = function(){
 
   //lunch four A
     // Set the date we're counting down to
-    var countDownfourA = new Date("Dec 20, 2019 11:16:00").getTime();
+    var countDownfourA = new Date("Mar 20, 2020 11:16:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -407,7 +407,7 @@ document.getElementById("lightmode").onclick = function(){
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Output the result in an element with id="demo"
-      document.getElementById("fourA").innerHTML =
+      document.getElementById("4a").innerHTML =
         "<b>Lunch 4a ends in: " +
         hours +
         "h" +
@@ -419,14 +419,14 @@ document.getElementById("lightmode").onclick = function(){
       // If the count down is over, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("fourA").innerHTML = "<b>Lunch 4a is over!</b>";
+        document.getElementById("4a").innerHTML = "<b>Lunch 4a is over!</b>";
       }
     }, 1000);
 
 
 //lunch four B
 // Set the date we're counting down to
-    var countDownfourB = new Date("Dec 20, 2019 11:46:00").getTime();
+    var countDownfourB = new Date("Mar 20, 2020 11:46:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -445,7 +445,7 @@ document.getElementById("lightmode").onclick = function(){
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Output the result in an element with id="demo"
-      document.getElementById("fourB").innerHTML =
+      document.getElementById("4b").innerHTML =
         "<b>Lunch 4b ends in: " +
         hours +
         "h" +
@@ -457,14 +457,14 @@ document.getElementById("lightmode").onclick = function(){
       // If the count down is over, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("fourB").innerHTML = "<b>Lunch 4b is over!</b>";
+        document.getElementById("4b").innerHTML = "<b>Lunch 4b is over!</b>";
       }
     }, 1000);
 
 
 //lunch four C
     // Set the date we're counting down to
-    var countDownfourC = new Date("Dec 20, 2019 12:16:00").getTime();
+    var countDownfourC = new Date("Mar 20, 2020 12:16:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -483,7 +483,7 @@ document.getElementById("lightmode").onclick = function(){
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Output the result in an element with id="demo"
-      document.getElementById("fourC").innerHTML =
+      document.getElementById("4c").innerHTML =
         "<b>Lunch 4c ends in: " +
         hours +
         "h" +
@@ -495,7 +495,7 @@ document.getElementById("lightmode").onclick = function(){
       // If the count down is over, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("fourC").innerHTML = "<b>Lunch 4c is over!</b>";
+        document.getElementById("4c").innerHTML = "<b>Lunch 4c is over!</b>";
       }
     }, 1000);
 
@@ -503,7 +503,7 @@ document.getElementById("lightmode").onclick = function(){
 
   //period 5
     // Set the date we're counting down to
-    var countDownFive = new Date("Dec 20, 2019 13:3:00").getTime();
+    var countDownFive = new Date("Mar 20, 2020 13:3:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -542,7 +542,7 @@ document.getElementById("lightmode").onclick = function(){
 
     //period six
     // Set the date we're counting down to
-    var countsix = new Date("Dec 20, 2019 13:50:00").getTime();
+    var countsix = new Date("Mar 20, 2020 13:50:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -581,7 +581,7 @@ document.getElementById("lightmode").onclick = function(){
 
   //period 7
     // Set the date we're counting down to
-    var countseven = new Date("Dec 20, 2019 14:37:00").getTime();
+    var countseven = new Date("Mar 20, 2020 14:37:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {

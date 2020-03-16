@@ -1,22 +1,22 @@
 p {  /* for all the period except 4 a, b, and c */
-  margin: 0;
-  padding: 0;
+  margin-bottom: 50px;
+  padding: 0px;
   font-size: 42px;
-  line-height: 46px;
+  font-family: 'Roboto Mono', monospace;
 } 
 
 
 
 p { /* for periods 4 a, b, and c */
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-size: 40.1px;
-  line-height: 46px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 p { /* for period 7/time to go home */
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 0px;
   font-size: 42px;
-  line-height: 46px;
+  font-family: 'Roboto Mono', monospace;
 }
