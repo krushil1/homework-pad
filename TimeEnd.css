@@ -1,0 +1,25 @@
+p {  /* for all the period except 4 a, b, and c */
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 42px;
+  line-height: 46px;
+} 
+
+
+
+span { /* for periods 4 a, b, and c */
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 40.1px;
+  line-height: 46px;
+}
+
+h13 { /* 
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 42px;
+  line-height: 46px;
+}
