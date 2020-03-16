@@ -10,7 +10,6 @@ function myFunction(){
 
 //dark mode button
 document.getElementById("darkmode").onclick = function(){
-  document.getElementById("timecolor").style.color = "#48929B";
   document.getElementById("7period").style.color = "#FFA500";
 
 
@@ -19,8 +18,18 @@ document.getElementById("darkmode").onclick = function(){
 
 //light mode button
 document.getElementById("lightmode").onclick = function(){
-  document.getElementById("timecolor").style.color = "#008F95";
   document.getElementById("7period").style.color = "#FF3B3F";
+  document.getElementById("one").style.color = "white";
+  document.getElementById("two").style.color = "white";
+  document.getElementById("three").style.color = "white";
+  document.getElementById("x").style.color = "white";
+  document.getElementById("4a").style.color = "white";
+  document.getElementById("4b").style.color = "white";
+  document.getElementById("4c").style.color = "white";
+  document.getElementById("five").style.color = "white";
+  document.getElementById("six").style.color = "white";
+
+
   
 
 
