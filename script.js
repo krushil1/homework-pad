@@ -10,21 +10,8 @@ function myFunction(){
 
 //dark mode button
 document.getElementById("darkmode").onclick = function(){
-	document.getElementById("output").style.color = '#FF2E00';
-  document.getElementById("output1").style.color = 'white';
-  document.getElementById("body1").style.backgroundColor = "#181515";
   document.getElementById("timecolor").style.color = "#48929B";
   document.getElementById("7period").style.color = "#FFA500";
-  document.getElementById("created").style.color = "grey";
-  //document.getElementById("column1").style.backgroundColor = "#292525";
-  document.getElementById("column1").style.backgroundColor = "#201D1D";
-  document.getElementById("upcoming").style.color = "white";
-  document.getElementById("events").style.color = "#ADFF2F";
-  document.getElementById("events1").style.color = "#ADFF2F";
-  document.getElementById("events2").style.color = "#ADFF2F";
-  document.getElementById("events3").style.color = "#ADFF2F";
-  document.getElementById("events4").style.color = "#ADFF2F";
-  document.getElementById("date").style.color = "#23A75B";
 
 
 
@@ -32,21 +19,9 @@ document.getElementById("darkmode").onclick = function(){
 
 //light mode button
 document.getElementById("lightmode").onclick = function(){
-	document.getElementById("output").style.color = '#94618E';
- 	document.getElementById("output1").style.color = 'black'; 
-  document.getElementById("body1").style.backgroundColor = "#C0C0C0";
   document.getElementById("timecolor").style.color = "#008F95";
   document.getElementById("7period").style.color = "#FF3B3F";
-  document.getElementById("created").style.color = "#3CC47C";
-  document.getElementById("column1").style.backgroundColor = "#C8C8C8";
-  document.getElementById("upcoming").style.color = "#E37222";
-  document.getElementById("events").style.color = "#00cc00";
-  document.getElementById("events1").style.color = "#00cc00";
-  document.getElementById("events2").style.color = "#00cc00";
-  document.getElementById("events3").style.color = "#00cc00";
-  document.getElementById("events4").style.color = "#00cc00";
-  document.getElementById("date").style.color = "#4C88C4";
-
+  
 
 
 } 
