@@ -243,7 +243,7 @@ document.getElementById("lightmode").onclick = function(){
 
 
 //first period
-    var countDownDatefirst = new Date("Mar 17, 2020 21:00:00").getTime();
+    var countDownDatefirst = new Date("Mar 20, 2020 8:29:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -263,12 +263,7 @@ document.getElementById("lightmode").onclick = function(){
 
       // Output the result in an element with id="demo"
       
-      function prependZero(hours) {
-        if (hours < 2)
-          return "0" + hours;
-        else
-          return;
-      }
+    
       document.getElementById("one").innerHTML = "<b>Period 1 ends in: " + hours + "h" + minutes + "m" + seconds + "s</b>";
 
       
