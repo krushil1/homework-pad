@@ -232,19 +232,6 @@ document.getElementById("lightmode").onclick = function(){
 
 
 
-function prependZero(number) {
-            if (number < 9)
-                return "0" + number;
-            else
-                return number;
-        }
-
-
-
-
-
-
-
 
 
 
@@ -256,7 +243,7 @@ function prependZero(number) {
 
 
 //first period
-    var countDownDatefirst = new Date("Mar 20, 2020 8:37:00").getTime();
+    var countDownDatefirst = new Date("Mar 17, 2020 21:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -275,15 +262,16 @@ function prependZero(number) {
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Output the result in an element with id="demo"
-      document.getElementById("one").innerHTML =
-        "<b>Period 1 ends in: " +
-        hours +
-        "h" +
-        minutes +
-        "m" +
-        seconds +
-        "s</b>";
+      
+      function prependZero(hours) {
+        if (hours < 2)
+          return "0" + hours;
+        else
+          return;
+      }
+      document.getElementById("one").innerHTML = "<b>Period 1 ends in: " + hours + "h" + minutes + "m" + seconds + "s</b>";
 
+      
       // If the count down is over, write some text
       if (distance < 0) {
         clearInterval(x);
