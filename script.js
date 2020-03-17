@@ -221,7 +221,6 @@ document.getElementById("lightmode").onclick = function(){
       }
     }, 1000);
 
-  
 
 
 
@@ -230,10 +229,19 @@ document.getElementById("lightmode").onclick = function(){
 
 
 
-function repeat_all_periods() {
-    period1(); 
 
-//period2(); period3(); periodx(); period4a(); period4b(); period4c(); period5(); period6(); period7();
+
+
+function prependZero(number) {
+            if (number < 9)
+                return "0" + number;
+            else
+                return number;
+        }
+
+
+
+
 
 
 
