@@ -1,5 +1,10 @@
-p {  /* for all the period except 4 a, b, and c */
-  margin-bottom: 50px;
+#one,
+#two,
+#three,
+#x,
+#five,
+#six{  /* for all the period except 4 a, b, and c */
+  margin: 5px;
   padding: 0px;
   font-size: 42px;
   font-family: 'Roboto Mono', monospace;
@@ -7,14 +12,16 @@ p {  /* for all the period except 4 a, b, and c */
 
 
 
-p { /* for periods 4 a, b, and c */
-  margin: 0px;
+#a, 
+#b, 
+#c { /* for periods 4 a, b, and c */
+  margin: 5px;
   padding: 0px;
   font-size: 40.1px;
   font-family: 'Roboto Mono', monospace;
 }
 
-p { /* for period 7/time to go home */
+#seven { /* for period 7/time to go home */
   margin: 5px;
   padding: 0px;
   font-size: 42px;
