@@ -222,9 +222,6 @@ document.getElementById("lightmode").onclick = function(){
     }, 1000);
 
   
-  
-  
-  
 
 
 
@@ -233,9 +230,10 @@ document.getElementById("lightmode").onclick = function(){
 
 
 
+function repeat_all_periods() {
+    period1(); 
 
-
-
+//period2(); period3(); periodx(); period4a(); period4b(); period4c(); period5(); period6(); period7();
 
 
 
@@ -250,7 +248,6 @@ document.getElementById("lightmode").onclick = function(){
 
 
 //first period
-    // Set the date we're counting down to
     var countDownDatefirst = new Date("Mar 20, 2020 8:37:00").getTime();
 
     // Update the count down every 1 second
@@ -285,6 +282,7 @@ document.getElementById("lightmode").onclick = function(){
         document.getElementById("one").innerHTML = "<b>Period 1 is over!</b>";
       }
     }, 1000);
+  
 
   //second period
     // Set the date we're counting down to
