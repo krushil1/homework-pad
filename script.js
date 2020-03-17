@@ -425,7 +425,7 @@ document.getElementById("lightmode").onclick = function(){
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Output the result in an element with id="demo"
-      document.getElementById("4a").innerHTML =
+      document.getElementById("a").innerHTML =
         "<b>Lunch 4a ends in: " +
         hours +
         "h" +
@@ -437,7 +437,7 @@ document.getElementById("lightmode").onclick = function(){
       // If the count down is over, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("4a").innerHTML = "<b>Lunch 4a is over!</b>";
+        document.getElementById("a").innerHTML = "<b>Lunch 4a is over!</b>";
       }
     }, 1000);
 
@@ -463,7 +463,7 @@ document.getElementById("lightmode").onclick = function(){
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Output the result in an element with id="demo"
-      document.getElementById("4b").innerHTML =
+      document.getElementById("b").innerHTML =
         "<b>Lunch 4b ends in: " +
         hours +
         "h" +
@@ -475,7 +475,7 @@ document.getElementById("lightmode").onclick = function(){
       // If the count down is over, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("4b").innerHTML = "<b>Lunch 4b is over!</b>";
+        document.getElementById("b").innerHTML = "<b>Lunch 4b is over!</b>";
       }
     }, 1000);
 
@@ -501,7 +501,7 @@ document.getElementById("lightmode").onclick = function(){
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Output the result in an element with id="demo"
-      document.getElementById("4c").innerHTML =
+      document.getElementById("c").innerHTML =
         "<b>Lunch 4c ends in: " +
         hours +
         "h" +
@@ -513,7 +513,7 @@ document.getElementById("lightmode").onclick = function(){
       // If the count down is over, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("4c").innerHTML = "<b>Lunch 4c is over!</b>";
+        document.getElementById("c").innerHTML = "<b>Lunch 4c is over!</b>";
       }
     }, 1000);
 
