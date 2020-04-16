@@ -224,435 +224,325 @@ document.getElementById("lightmode").onclick = function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//first period
-    var countDownDatefirst = new Date("April 20, 2020 8:29:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownDatefirst - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      
-    
-      document.getElementById("one").innerHTML = "<b>Period 1 ends in: " + hours + "h" + minutes + "m" + seconds + "s</b>";
-
-      
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("one").innerHTML = "<b>Period 1 is over!</b>";
-      }
-    }, 1000);
+  var schedule = 'A';
   
+  function Apressed() {
+    schedule = 'A';
+    document.getElementById("Abutton").style.backgroundColor = "db3d3d";
+    document.getElementById("Bbutton").style.backgroundColor = "white";
+    document.getElementById("Cbutton").style.backgroundColor = "white";
+    document.getElementById("Dbutton").style.backgroundColor = "white";
+    defineTiming();
+  }
+   function Bpressed() {
+    schedule = 'B';
+     document.getElementById("Abutton").style.backgroundColor = "white";
+     document.getElementById("Bbutton").style.backgroundColor = "db3d3d";
+     document.getElementById("Cbutton").style.backgroundColor = "white";
+     document.getElementById("Dbutton").style.backgroundColor = "white";
+    defineTiming();
+  }
+   function Cpressed() {
+    schedule = 'C';
+      document.getElementById("Abutton").style.backgroundColor = "white";
+     document.getElementById("Bbutton").style.backgroundColor = "white";
+     document.getElementById("Cbutton").style.backgroundColor = "db3d3d";
+     document.getElementById("Dbutton").style.backgroundColor = "white";
+    defineTiming();
+  }
+   function Dpressed() {
+    schedule = 'D';
+    document.getElementById("Abutton").style.backgroundColor = "white";
+     document.getElementById("Bbutton").style.backgroundColor = "white";
+     document.getElementById("Cbutton").style.backgroundColor = "white";
+     document.getElementById("Dbutton").style.backgroundColor = "db3d3d";
+    defineTiming();
+  }
 
-  //second period
-    // Set the date we're counting down to
-    var countdowntwo = new Date("April 20, 2020 9:24:00").getTime();
+var h1; var m1;
+var h2; var m2;
+var h3; var m3;
+var h4; var m4;
+var h5; var m5;
+var h6; var m6;
+var h7; var m7;
+var h8; var m8;
+var h9; var m9;
 
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
+var displayPeriod1;
+var displayPeriod2;
+var displayPeriod3;
+var displayPeriod4;
+var displayPeriod5;
+var displayPeriod6;
+var displayPeriod7;
+var displayPeriod8;
+var displayPeriod9;
 
-      // Find the distance between now and the count down date
-      var distance = countdowntwo - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("two").innerHTML =
-        "<b>Period 2 ends in: " +
-        hours +
-        "h" +
-        minutes +
-        "m" +
-        seconds +
-        "s</b>";
-
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("two").innerHTML = "<b>Period 2 is over!</b>";
+function defineTiming() {   //sets the variables of each period end time based on the schedule
+  
+  if (schedule == 'A') {
+    h1 = 22;  m1 = 29;
+    h2 = 22;  m2 = 17;
+    h3 = 22; m3 = 5;
+    h4 = 22; m4 = 53;
+    h5 = 22; m5 = 41;
+    h6 = 22; m6 = 29;
+    h7 = 22; m7 = 17;
+    h8 = 22; m8 = 5;
+    h9 = 22; m9 = 53;
+  } else {
+    if (schedule == 'B') {
+      h1 = 8;  m1 = 37;
+      h2 = 9;  m2 = 24;
+      h3 = 10; m3 = 11;
+      h4 = 10; m4 = 58;
+      h5 = 11; m5 = 45;
+      h6 = 12; m6 = 32;
+      h7 = 13; m7 = 19;
+      h8 = 14; m8 = 6;
+      h9 = 14; m9 = 53;
+      
+        
+    } else {
+      if (schedule == 'C') {
+        h1 = 8;  m1 = 22;
+        h2 = 9;  m2 = 4;
+        h3 = 9;  m3 = 46;
+        h4 = 10; m4 = 20;
+        h5 = 10; m5 = 54;
+        h6 = 11; m6 = 28;
+        h7 = 12; m7 = 2;
+        h8 = 12; m8 = 31;
+        h9 = 13; m9 = 0;
+      } else {
+        if (schedule == 'D') {
+          h1 = 10; m1 = 9;
+          h2 = 10; m2 = 39;
+          h3 = 11; m3 = 9;
+          h4 = 11; m4 = 43;
+          h5 = 12; m5 = 17;
+          h6 = 12; m6 = 51;
+          h7 = 13; m7 = 25;
+          h8 = 14; m8 = 9;
+          h9 = 14; m9 = 53;
+        }
       }
-    }, 1000);
+    }
+  }
+}
+
+function displayPeriods() {
+  setTimeout(function () {
+    
+    document.getElementById("time1").innerHTML = displayPeriod1;
+    document.getElementById("time2").innerHTML = displayPeriod2;
+    document.getElementById("time3").innerHTML = displayPeriod3;
+    document.getElementById("time4").innerHTML = displayPeriod4;
+    document.getElementById("time5").innerHTML = displayPeriod5;
+    document.getElementById("time6").innerHTML = displayPeriod6;
+    document.getElementById("time7").innerHTML = displayPeriod7;
+    document.getElementById("time8").innerHTML = displayPeriod8;
+    document.getElementById("time9").innerHTML = displayPeriod9;
+    
+    displayPeriods();
+  }, 0)
+}
+
+var realSeconds;
+
+(function() {
+
+  function pad(num) {
+    return ("0" + parseInt(num)).substr(-2);
+  }
+  
+  function getRealSeconds() {
+    var start = new Date;
+    start.setHours(21, 0, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var ss = pad(remain % 60);
+    realSeconds = ss;
+    setTimeout(getRealSeconds, 1000);
+  }
+  
+  function period1() {
+    var start = new Date;
+    start.setHours(h1, m1, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+      displayPeriod1 = "Over"; 
+    } else {
+    displayPeriod1 = hh + ":" + mm + ":" + realSeconds;
+    }
+    setTimeout(period1, 100);
+  }
+ function period2() {
+    var start = new Date;
+    start.setHours(h2, m2, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+     displayPeriod2 = "Over";
+    } else {
+    displayPeriod2 = hh + ":" + mm + ":" + realSeconds;
+    }
+    setTimeout(period2, 100);
+  }
+ function period3() {
+    var start = new Date;
+    start.setHours(h3, m3, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+      displayPeriod3 = "Over";
+    } else {
+    displayPeriod3 = hh + ":" + mm + ":" + realSeconds;
+    }
+    setTimeout(period3, 100);
+  }
+ function period4() {
+    var start = new Date;
+    start.setHours(h4, m4, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+      displayPeriod4 = "Over";
+    } else {
+    displayPeriod4 = hh + ":" + mm + ":" + realSeconds;
+    }
+    setTimeout(period4, 100);
+  }
+ function period5() {
+    var start = new Date;
+    start.setHours(h5, m5, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+      displayPeriod5 = "Over";
+    } else {
+    displayPeriod5 = hh + ":" + mm + ":" + realSeconds;
+    }
+    setTimeout(period5, 100);
+  }
+ function period6() {
+    var start = new Date;
+    start.setHours(h6, m6, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+      displayPeriod6 = "Over";
+    } else {
+    displayPeriod6 = hh + ":" + mm + ":" + realSeconds;
+    }
+    setTimeout(period6, 100);
+  }
+ function period7() {
+    var start = new Date;
+    start.setHours(h7, m7, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+      displayPeriod7 = "Over";
+    } else {
+    displayPeriod7 = hh + ":" + mm + ":" + realSeconds;
+    }
+    setTimeout(period7, 100);
+  }
+ function period8() {
+    var start = new Date;
+    start.setHours(h8, m8, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+      displayPeriod8 = "Over";
+    } else {
+    displayPeriod8 = hh + ":" + mm + ":" + realSeconds;
+    }
+    setTimeout(period8, 100);
+  }
+function period9() {
+    var start = new Date;
+    start.setHours(h9, m9, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+      displayPeriod9 = "Over";
+    } else {
+    displayPeriod9 = hh + ":" + mm + ":" + realSeconds;
+    }
+    setTimeout(period9, 100);
+  }
+  
+  displayPeriods();
+  document.addEventListener('DOMContentLoaded', getRealSeconds);
+  document.addEventListener('DOMContentLoaded', period1);
+  document.addEventListener('DOMContentLoaded', period2);
+  document.addEventListener('DOMContentLoaded', period3);
+  document.addEventListener('DOMContentLoaded', period4);
+  document.addEventListener('DOMContentLoaded', period5);
+  document.addEventListener('DOMContentLoaded', period6);
+  document.addEventListener('DOMContentLoaded', period7);
+  document.addEventListener('DOMContentLoaded', period8);
+  document.addEventListener('DOMContentLoaded', period9);
+})();
 
-  //third period
-    // Set the date we're counting down to
-    var countDownTHREE = new Date("April 20, 2020 10:11:00").getTime();
 
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
 
-      // Find the distance between now and the count down date
-      var distance = countDownTHREE - now;
 
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Output the result in an element with id="demo"
-      document.getElementById("three").innerHTML =
-        "<b>Period 3 ends in: " +
-        hours +
-        "h" +
-        minutes +
-        "m" +
-        seconds +
-        "s</b>";
 
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("three").innerHTML = "<b>Period 3 is over!</b>";
-      }
-    }, 1000);
 
 
 
- //x period
-    // Set the date we're counting down to
-    var countDownx = new Date("April 20, 2020 10:44:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownx - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("x").innerHTML =
-        "<b>Period x ends in: " +
-        hours +
-        "h" +
-        minutes +
-        "m" +
-        seconds +
-        "s</b>";
-
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("x").innerHTML = "<b>Period x is over!</b>";
-      }
-    }, 1000);
-
-
-
-
-
-
-  //lunch four A
-    // Set the date we're counting down to
-    var countDownfourA = new Date("April 20, 2020 11:16:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownfourA - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("a").innerHTML =
-        "<b>Lunch 4a ends in: " +
-        hours +
-        "h" +
-        minutes +
-        "m" +
-        seconds +
-        "s</b>";
-
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("a").innerHTML = "<b>Lunch 4a is over!</b>";
-      }
-    }, 1000);
-
-
-//lunch four B
-// Set the date we're counting down to
-    var countDownfourB = new Date("April 20, 2020 11:46:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownfourB - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("b").innerHTML =
-        "<b>Lunch 4b ends in: " +
-        hours +
-        "h" +
-        minutes +
-        "m" +
-        seconds +
-        "s</b>";
-
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("b").innerHTML = "<b>Lunch 4b is over!</b>";
-      }
-    }, 1000);
-
-
-//lunch four C
-    // Set the date we're counting down to
-    var countDownfourC = new Date("April 20, 2020 12:16:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownfourC - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("c").innerHTML =
-        "<b>Lunch 4c ends in: " +
-        hours +
-        "h" +
-        minutes +
-        "m" +
-        seconds +
-        "s</b>";
-
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("c").innerHTML = "<b>Lunch 4c is over!</b>";
-      }
-    }, 1000);
-
-
-
-  //period 5
-    // Set the date we're counting down to
-    var countDownFive = new Date("April 20, 2020 13:3:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownFive - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("five").innerHTML =
-        "<b>Period 5 ends in: " +
-        hours +
-        "h" +
-        minutes +
-        "m" +
-        seconds +
-        "s</b>";
-
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("five").innerHTML = "<b>Period 5 is over!</b>";
-      }
-    }, 1000);
-
-
-
-    //period six
-    // Set the date we're counting down to
-    var countsix = new Date("April 20, 2020 13:50:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countsix - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("six").innerHTML =
-        "<b>Period 6 ends in: " +
-        hours +
-        "h" +
-        minutes +
-        "m" +
-        seconds +
-        "s</b>";
-
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("six").innerHTML = "<b>Period 6 is over!</b>";
-      }
-    }, 1000);
-
-
-
-  //period 7
-    // Set the date we're counting down to
-    var countseven = new Date("April 20, 2020 14:37:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countseven - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("seven").innerHTML =
-        "<b>Period 7 ends in: " +
-        hours +
-        "h" +
-        minutes +
-        "m" +
-        seconds +
-        "s</b>";
-
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("seven").innerHTML = "<b>Time to go home!</b>";
-      }
-    }, 1000);
-
-
-
-
-//non working code for period 7    // Set the date we're counting down to
-    var countend = new Date("Nov 1, 2019 1:53:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countend - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("nine").innerHTML =
-        "<b>School ends in: " + hours + "h" + minutes + "m" + seconds + "s</b>";
-
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("nine").innerHTML = "<b>Period 9 is over!</b>";
-      }
-    }, 1000);
 

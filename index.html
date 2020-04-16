@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="timenumber.css">
     <link rel="stylesheet" href="buttons.css">
     <link rel="stylesheet" href="sidecolumn.css">
+    <link rel="stylesheet" href="timing.css">
   </head>
 
 
@@ -84,6 +85,10 @@
       </div>      
     
     <h3 class="selector">Schedule Selector</h3>
+     <button class="checkButton Abutton" id="Abutton" onclick="Apressed();">A</button>
+     <button class="checkButton Bbutton" id="Bbutton" onclick="Bpressed();">B</button>
+     <button class="checkButton Cbutton" id="Cbutton" onclick="Cpressed();">C</button>
+     <button class="checkButton Dbutton" id="Dbutton" onclick="Dpressed();">D</button>
     
     
     
@@ -102,24 +107,15 @@
   </div>
 
   
-  <!--id for each period to work-->
-  <font color="#48929B">
-    <p id="one"><b><big>Period 1 Ends In:</big></b></p>
-    <p id="two"><b><big>Period 2 Ends In:</big></b></p>
-    <p id="three"><b><big>Period 3 Ends In:</big></b></p>
-    <p id="x"><b><big>Period x Ends In:</big></b></p>
-    <p id="a"><b><big>Lunch 4A Ends In: </big></b></p>
-    <p id="b"><b><big>Lunch 4B Ends In:</big></b></p>
-    <p id="c"><b><big>Lunch 4C Ends In:</big></b></p>
-    <p id="five"><b><big>Period 5 Ends In:</big></b></p>
-    <p id="six"><b><big>Period 6 Ends In:</big></b></p>
-  </font>
-  <!--Seperate period 7 id so when period seven is over, it switch to different id-->
-  <font color="FFA500" id="7period">
-    <p3 id="seven"><b>Period 7 Ends In:</b></p3>
-    <br>
-    <br>
-  </font>
+   <p class="periods" id="period1">1|</p> <p class="time" id="time1"></p> <br>
+    <p class="periods" id="period2">2|</p> <p class="time" id="time2"></p> <br>
+    <p class="periods" id="period3">3|</p> <p class="time" id="time3"></p> <br>
+    <p class="periods" id="period4">4|</p> <p class="time" id="time4"></p> <br>
+    <p class="periods" id="period5">5|</p> <p class="time" id="time5"></p> <br>
+    <p class="periods" id="period6">6|</p> <p class="time" id="time6"></p> <br>
+    <p class="periods" id="period7">7|</p> <p class="time" id="time7"></p> <br>
+    <p class="periods" id="period8">8|</p> <p class="time" id="time8"></p> <br>
+    <p class="periods" id="period9">9|</p> <p class="time" id="time9"></p> <br>
 
  
 <style>
