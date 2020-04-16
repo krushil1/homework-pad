@@ -223,7 +223,6 @@ document.getElementById("lightmode").onclick = function(){
 
 
 
-
   var schedule = 'A';
   
   function Apressed() {
@@ -282,15 +281,15 @@ var displayPeriod9;
 function defineTiming() {   //sets the variables of each period end time based on the schedule
   
   if (schedule == 'A') {
-    h1 = 22;  m1 = 29;
-    h2 = 22;  m2 = 17;
-    h3 = 22; m3 = 5;
-    h4 = 22; m4 = 53;
-    h5 = 22; m5 = 41;
-    h6 = 22; m6 = 29;
-    h7 = 22; m7 = 17;
-    h8 = 22; m8 = 5;
-    h9 = 22; m9 = 53;
+    h1 = 1;  m1 = 29;
+    h2 = 1;  m2 = 17;
+    h3 = 1; m3 = 5;
+    h4 = 1; m4 = 53;
+    h5 = 1; m5 = 41;
+    h6 = 1; m6 = 29;
+    h7 = 1; m7 = 17;
+    h8 = 1; m8 = 5;
+    h9 = 12;m9 = 53;
   } else {
     if (schedule == 'B') {
       h1 = 8;  m1 = 37;
