@@ -1,7 +1,9 @@
 .pointer {cursor: pointer;}
 
 
-.btn-group{
+.button16,
+.button17,
+.button18{
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -11,3 +13,4 @@
   display: inline-block;
   font-size: 16px;
 }
+

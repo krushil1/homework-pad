@@ -7,7 +7,7 @@
   float: right;
   width: 17%;
   padding: 10px;
-  height: 500px; /* Should be removed. Only for demonstration */
+  height: 100%; /* Should be removed. Only for demonstration */
   margin: 0px;
   position: absolute;
   top: 0px;
