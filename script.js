@@ -243,7 +243,7 @@ document.getElementById("lightmode").onclick = function(){
 
 
 //first period
-    var countDownDatefirst = new Date("Mar 20, 2020 8:29:00").getTime();
+    var countDownDatefirst = new Date("April 20, 2020 8:29:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -277,7 +277,7 @@ document.getElementById("lightmode").onclick = function(){
 
   //second period
     // Set the date we're counting down to
-    var countdowntwo = new Date("Mar 20, 2020 9:24:00").getTime();
+    var countdowntwo = new Date("April 20, 2020 9:24:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -314,7 +314,7 @@ document.getElementById("lightmode").onclick = function(){
 
   //third period
     // Set the date we're counting down to
-    var countDownTHREE = new Date("Mar 20, 2020 10:11:00").getTime();
+    var countDownTHREE = new Date("April 20, 2020 10:11:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -353,7 +353,7 @@ document.getElementById("lightmode").onclick = function(){
 
  //x period
     // Set the date we're counting down to
-    var countDownx = new Date("Mar 20, 2020 10:44:00").getTime();
+    var countDownx = new Date("April 20, 2020 10:44:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -395,7 +395,7 @@ document.getElementById("lightmode").onclick = function(){
 
   //lunch four A
     // Set the date we're counting down to
-    var countDownfourA = new Date("Mar 20, 2020 11:16:00").getTime();
+    var countDownfourA = new Date("April 20, 2020 11:16:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -433,7 +433,7 @@ document.getElementById("lightmode").onclick = function(){
 
 //lunch four B
 // Set the date we're counting down to
-    var countDownfourB = new Date("Mar 20, 2020 11:46:00").getTime();
+    var countDownfourB = new Date("April 20, 2020 11:46:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -471,7 +471,7 @@ document.getElementById("lightmode").onclick = function(){
 
 //lunch four C
     // Set the date we're counting down to
-    var countDownfourC = new Date("Mar 20, 2020 12:16:00").getTime();
+    var countDownfourC = new Date("April 20, 2020 12:16:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -510,7 +510,7 @@ document.getElementById("lightmode").onclick = function(){
 
   //period 5
     // Set the date we're counting down to
-    var countDownFive = new Date("Mar 20, 2020 13:3:00").getTime();
+    var countDownFive = new Date("April 20, 2020 13:3:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -549,7 +549,7 @@ document.getElementById("lightmode").onclick = function(){
 
     //period six
     // Set the date we're counting down to
-    var countsix = new Date("Mar 20, 2020 13:50:00").getTime();
+    var countsix = new Date("April 20, 2020 13:50:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -588,7 +588,7 @@ document.getElementById("lightmode").onclick = function(){
 
   //period 7
     // Set the date we're counting down to
-    var countseven = new Date("Mar 20, 2020 14:37:00").getTime();
+    var countseven = new Date("April 20, 2020 14:37:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
