@@ -4,8 +4,9 @@
   display: flex;
   align-items: center;
   
+  
   em {
-    float: right;
+    margin: 10 auto;
     font-size: 1rem;
   }
 }
