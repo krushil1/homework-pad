@@ -241,15 +241,15 @@ var displayPeriod9;
 function defineTiming() {   //sets the variables of each period end time based on the schedule
   
   if (schedule == 'A') {
-    h1 = 1;  m1 = 29;
-    h2 = 1;  m2 = 17;
-    h3 = 1; m3 = 5;
-    h4 = 1; m4 = 53;
-    h5 = 1; m5 = 41;
-    h6 = 1; m6 = 29;
-    h7 = 1; m7 = 17;
-    h8 = 1; m8 = 5;
-    h9 = 1;m9 = 53;
+    h1 = 8;  m1 = 37;
+    h2 = 9;  m2 = 24;
+    h3 = 10; m3 = 11;
+    h4 = 11; m4 = 16; //4a
+    h5 = 11; m5 = 46; //4b
+    h6 = 12; m6 = 12; //4c
+    h7 = 13; m7 = 3;
+    h8 = 13; m8 = 50;
+    h9 = 14;m9 = 37;
   } else {
     if (schedule == 'B') {
       h1 = 8;  m1 = 37;
