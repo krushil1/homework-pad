@@ -1,9 +1,7 @@
 .pointer {cursor: pointer;}
 
 
-.button16,
-.button17,
-.button18{
+.button16{
   background-color: #4CAF50; /* Green */
   border: none;
   outline: none;
