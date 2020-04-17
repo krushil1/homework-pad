@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="sidecolumn.css">
     <link rel="stylesheet" href="timing.css">
     <link rel="stylesheet" href="modeslider.css">
+    <link rel="stylesheet" href="tooltip.css">
   </head>
 
   <body onload="defineTiming(); Apressed();"></body>
@@ -100,8 +101,13 @@
     </div>
     
     <br>
-    <center><button class="details pointer tooltip">More Details</button></center>
-    <span class="tooltiptext">Tooltip TEXT</span>
+    <center><button class="details pointer">More Details</button></center>
+    
+    
+    <div class="container">
+      <button tooltip="Left Tooltip ^_^" tooltip-position="left"> Click Here!! </button>
+    </div>
+
     <br> 
     <br>
     <center><button class="settings pointer">Settings</button></center>
