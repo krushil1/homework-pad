@@ -336,10 +336,10 @@ var End = endtext.fontcolor("white"); //controls the "is Over!" text color
 
 
 var endtext9 = "is Over!";
-var End9 = endtext9.fontcolor("#f2eaec"); //controls the "is Over!" text color
+var End9 = endtext9.fontcolor("#00BD56"); //controls the "is Over!" text color
 
 var text9 = "Ends In:&nbsp"; 
-var Text9 = text9.fontcolor("#ff0340"); //controls the "Ends In:" text color
+var Text9 = text9.fontcolor("#00BD56"); //controls the "Ends In:" text color
 
 var realSeconds;
 
@@ -385,8 +385,6 @@ var realSeconds;
   
  function period2() {
     var start = new Date;
-    var Str = "Ends In:&nbsp"
-    var EndStr = "is Over!"
     start.setHours(h2, m2, 0);
     var now = new Date;
     if (now > start) {
@@ -506,6 +504,7 @@ var realSeconds;
     setTimeout(period8, 100);
   }
 function period9() {
+    
     var start = new Date;
     start.setHours(h9, m9, 0);
     var now = new Date;
@@ -515,10 +514,12 @@ function period9() {
     var remain = ((start - now) / 1000);
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
+    var endtxt1 = hh + ":" + mm + ":" + realSeconds; 
+    var EndTxt = endtxt1.fontcolor("#00BD56"); //controls the "Ends In:" text color
      if (hh > 8) {
       displayPeriod9 = End9;
     } else {
-    displayPeriod9 = Text9 + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod9 = Text9 + EndTxt;
     }
     setTimeout(period9, 100);
   }

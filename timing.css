@@ -23,7 +23,7 @@
 }
   
   .periods {
-    color: ;
+    color:#f2eaec;
     font-weight:bold;
     font-family:Arial;
     font-size: 5em;
@@ -68,5 +68,5 @@
   
   #period9 {
   /*  color:db3d3d; */
-    color: #ff0340;
+    color: #00BD56;
   }
