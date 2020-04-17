@@ -3,10 +3,12 @@
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
+  float: right;
+  position: relative;
+  left: -40%;
   
   
   em {
-    margin: 10 auto;
     font-size: 1rem;
   }
 }
@@ -44,7 +46,7 @@
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+  background-color: #0E2431;
 }
 
 input:checked + .slider:before {
