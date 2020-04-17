@@ -6,6 +6,7 @@
 .button18{
   background-color: #4CAF50; /* Green */
   border: none;
+  outline: none;
   color: white;
   padding: 1px 1px;
   text-align: center;
@@ -14,3 +15,28 @@
   font-size: 16px;
 }
 
+.details {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 30px;
+}
+
+.settings {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 30px;
+}

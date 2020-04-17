@@ -4,6 +4,7 @@
 
 /* Create two equal columns that floats next to each other */
 .column {
+  background-color: #00818a;
   float: right;
   width: 17%;
   padding: 10px;
