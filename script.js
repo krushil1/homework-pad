@@ -393,10 +393,15 @@ var realSeconds;
   }
   
   
-  function periodx() { //Period X
+  
+  
+  
+  
+  
+   function periodx() { //Period X
     var start = new Date;
     var Str = 
-    start.setHours(hx, mx, 0);
+    start.setHours(h3, m3, 0);
     var now = new Date;
     if (now > start) {
       start.setDate(start.getDate() + 1);
@@ -404,17 +409,23 @@ var realSeconds;
     var remain = ((start - now) / 1000);
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
-     if (hh > 8) {
-      displayPeriodx = End;
-    } if (schedule == "A"){
-      displayPeriodx = Text + hh + ":" + mm + ":" + realSeconds;
-    } seTimeout(periodx, 100);
-  }
-    else if (schedule == "B" || schedule == "C"){
-      displayPeriodx = "No period X";
-    } 
-    setTimeout(periodx, 100);
-  }
+     if (hh > 8){
+       displayPeriodx = End;
+     }
+     if (schedule == "A"){
+       displayPeriodx = Text + hh + ":" + mm + ":" + realSeconds;
+     }
+     if (schedule == "B" || schedule == "C"){
+       displayPeriodx = "No Period X"
+     }
+     setTimeout(periodx, 100);
+   }
+     
+     
+     
+     
+ 
+  
   
   
   
