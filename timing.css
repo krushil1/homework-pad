@@ -23,7 +23,7 @@
 }
   
   .periods {
-    color:white;
+    color: ;
     font-weight:bold;
     font-family:Arial;
     font-size: 5em;
@@ -34,7 +34,7 @@
   
 
 .periods4{
-  color:white;
+  color:#f2eaec;
   font-weight:bold;
   font-family:Arial;
   font-size: 4.5em;
@@ -46,7 +46,7 @@
 
 
  .time {
-    color:orange;
+    color:#f2eaec;
     font-weight:bold;
     font-family:Arial;
     font-size: 5em;
@@ -68,5 +68,5 @@
   
   #period9 {
   /*  color:db3d3d; */
-    color: white;
+    color: #ff0340;
   }

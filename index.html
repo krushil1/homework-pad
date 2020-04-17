@@ -76,7 +76,13 @@
       <div>
         <p><b><center><font color="#23A75B" and size="5" id="date" class="date"></font></center></b></p>
         <br>
-      
+      <script>
+      n =  new Date();
+      y = n.getFullYear();
+      m = n.getMonth() + 1;
+      d = n.getDate();
+      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+      </script> 
       </div>      
     
     <div>
@@ -93,7 +99,7 @@
     
     
     
-    <h2><font color="#FFFAFA" and size="5" id="upcoming">Upcoming events: </font></h2>
+<!--    <h2><font color="#FFFAFA" and size="5" id="upcoming">Upcoming events: </font></h2>
     <ul>
       <li id="events2"><h4><p id="winter"></p></h4></li>
       <br>
@@ -104,7 +110,11 @@
       <li id="events4"><h4><p id="MP3"></p></h4></li>
       <br>
       <li id="events3"><h4><p id="EndSchool"></p></h4></li>
-    </ul>
+    </ul> -->
+    
+    
+    
+    
   </div>
 
   
@@ -145,7 +155,6 @@
 
   </div>
 <script src="script.js"></script>
-<script src="date.js"></script>
 </html>
 
 

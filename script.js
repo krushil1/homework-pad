@@ -333,7 +333,13 @@ var Text = text1.fontcolor("white"); //controls the "Ends In:" text color
  
 var endtext = "is Over!";
 var End = endtext.fontcolor("white"); //controls the "is Over!" text color
-  
+
+
+var endtext9 = "is Over!";
+var End9 = endtext9.fontcolor("#f2eaec"); //controls the "is Over!" text color
+
+var text9 = "Ends In:&nbsp"; 
+var Text9 = text9.fontcolor("#ff0340"); //controls the "Ends In:" text color
 
 var realSeconds;
 
@@ -510,9 +516,9 @@ function period9() {
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod9 = End;
+      displayPeriod9 = End9;
     } else {
-    displayPeriod9 = Text + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod9 = Text9 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period9, 100);
   }
