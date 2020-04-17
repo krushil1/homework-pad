@@ -6,7 +6,7 @@
 .column {
   background-color: #00838F;
   float: right;
-  width: 17%;
+  width: 20%;
   padding: 10px;
   height: 100%; /* Should be removed. Only for demonstration */
   margin: 0px;
@@ -33,5 +33,5 @@ ul {
 
 .selector{
   color: #00E5FF;
-  font-size: 4v
+  font-size: 4vh;
 }
