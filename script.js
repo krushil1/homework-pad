@@ -178,7 +178,7 @@ var endx = "No Period X";
 var Endx = endx.fontcolor("white");
 
 var txtx = "Period X is Over!";
-
+var Txtx = txtx.fontcolor("white");
 
 var realSeconds;
 
@@ -268,7 +268,7 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8){
-       displayPeriodx = End;
+       displayPeriodx = Txtx;
      }else{
        displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
      }
