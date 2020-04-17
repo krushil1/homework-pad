@@ -408,26 +408,10 @@ var realSeconds;
       displayPeriodx = End;
     } if (schedule == "A"){
       displayPeriodx = Text + hh + ":" + mm + ":" + realSeconds;
-    } else if (schedule == "B"){
+    } else if (schedule == "B" || schedule == "C"){
       displayPeriodx = "No period X";
-    }
-    
-    
-    else {
-    displayPeriodx = Text + hh + ":" + mm + ":" + realSeconds;
     } 
     setTimeout(periodx, 100);
-    
-    
-    if (schedule == "B"){
-      displayPeriodx = "No Period X";
-    } else if (schedule == "C"){
-      displayPeriodx = "No Period X";
-    } else{
-      displayPeriodx = Text + hh + ":" + mm + ":" + realSeconds;
-    }
-
-  
   }
   
   
