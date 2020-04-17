@@ -409,7 +409,7 @@ var realSeconds;
     } if (schedule == "A"){
       displayPeriodx = Text + hh + ":" + mm + ":" + realSeconds;
     } seTimeout(periodx, 100);
-    
+  }
     else if (schedule == "B" || schedule == "C"){
       displayPeriodx = "No period X";
     } 
