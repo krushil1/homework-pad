@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- title for the tab -->
-    <title>SMSTimer</title>
+    <title>Project</title>
     <!-- link for the clock icon for the tab -->
     <link rel="icon" type="image/ico" href="https://cdn.glitch.com/d81d26fa-c668-478e-8946-16a17248aeb3%2Fclock-image-transparent-background-24.png?v=1572824151441"/>
     <!-- css links -->
@@ -74,7 +74,8 @@
   <div class="row"></div>
   <div class="column" style="background-color:#201D1D;" id="column1">
       <div>
-        <p><b><center><font color="#23A75B" and size="5" id="date"></font></center></b></p>
+        <p><b><center><font color="#23A75B" and size="5" id="date" class="date"></font></center></b></p>
+        <br>
       <script type="text/javascript">
       n =  new Date();
       y = n.getFullYear();
@@ -83,11 +84,16 @@
       document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
       </script> 
       </div>      
+    
     <div>
       <p><b><font size="6" class="selector"><center>Schedule Selector</center></font></b></p>
+      <br>
       <button class="checkButton Abutton" id="Abutton" onclick="Apressed();">A</button>
+      <br>
       <button class="checkButton Bbutton" id="Bbutton" onclick="Bpressed();">B</button>
+      <br>
       <button class="checkButton Cbutton" id="Cbutton" onclick="Cpressed();">C</button>
+      <br>
     </div>
     
     
