@@ -222,10 +222,6 @@ document.getElementById("lightmode").onclick = function(){
     }, 1000);
 
 
-function myFunction2() {
-  document.getElementById("time1").style.color = "magenta";
-}
-
 
 
   var schedule = 'A';
@@ -376,6 +372,7 @@ var realSeconds;
   
   function period1() {
     var start = new Date;
+    var Str = "Ends In:&nbsp"
     start.setHours(h1, m1, 0);
     var now = new Date;
     if (now > start) {
@@ -387,12 +384,16 @@ var realSeconds;
      if (hh > 8) {
       displayPeriod1 = "is Over!"; 
     } else {
-    displayPeriod1 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod1 = Str.fontcolor("red") + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period1, 100);
   }
+  
+  
+  
  function period2() {
     var start = new Date;
+    var Str = ""
     start.setHours(h2, m2, 0);
     var now = new Date;
     if (now > start) {
