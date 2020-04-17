@@ -408,7 +408,9 @@ var realSeconds;
       displayPeriodx = End;
     } if (schedule == "A"){
       displayPeriodx = Text + hh + ":" + mm + ":" + realSeconds;
-    } else if (schedule == "B" || schedule == "C"){
+    } seTimeout(periodx, 100);
+    
+    else if (schedule == "B" || schedule == "C"){
       displayPeriodx = "No period X";
     } 
     setTimeout(periodx, 100);
@@ -437,10 +439,6 @@ var realSeconds;
     }else {
     displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
     }
-   if (schedule == "C"){
-     displayPeriod4 = "Period 6 Ends In:"
-   }
-   
     setTimeout(period4, 100);
   }
   
