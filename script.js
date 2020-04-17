@@ -221,6 +221,7 @@ function myFunction(){
 var h1; var m1;
 var h2; var m2;
 var h3; var m3;
+var hx; var mx;
 var h4; var m4;
 var h5; var m5;
 var h6; var m6;
@@ -231,6 +232,7 @@ var h9; var m9;
 var displayPeriod1;
 var displayPeriod2;
 var displayPeriod3;
+var displayPeriodx;
 var displayPeriod4;
 var displayPeriod5;
 var displayPeriod6;
@@ -244,6 +246,7 @@ function defineTiming() {   //sets the variables of each period end time based o
     h1 = 8;  m1 = 37;
     h2 = 9;  m2 = 24;
     h3 = 10; m3 = 11;
+    hx = 10; mx = 44; //period X
     h4 = 11; m4 = 16; //4a
     h5 = 11; m5 = 46; //4b
     h6 = 12; m6 = 12; //4c
@@ -285,6 +288,7 @@ function displayPeriods() {
     document.getElementById("time1").innerHTML = displayPeriod1;
     document.getElementById("time2").innerHTML = displayPeriod2;
     document.getElementById("time3").innerHTML = displayPeriod3;
+    document.getElementById("timex").innerHTML = displayPeriodx;
     document.getElementById("time4").innerHTML = displayPeriod4;
     document.getElementById("time5").innerHTML = displayPeriod5;
     document.getElementById("time6").innerHTML = displayPeriod6;
@@ -387,6 +391,43 @@ var realSeconds;
     }
     setTimeout(period3, 100);
   }
+  
+  
+  function periodx() { //Period X
+    var start = new Date;
+    var Str = 
+    start.setHours(hx, mx, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+      displayPeriodx = End;
+    } else {
+    displayPeriodx = Text + hh + ":" + mm + ":" + realSeconds;
+    } 
+    setTimeout(periodx, 100);
+      if (schedule == "B"){
+        displayPeriodx = "No Period X";
+      } else if (schedule == "C"){
+        displayPeriodx = "No Period X";
+      } else{
+        displayPeriodx = Text + hh + ":" + mm + ":" + realSeconds;
+      }
+    setTimeout(periodx, 100);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
  function period4() { //4a
     var start = new Date;
     start.setHours(h4, m4, 0);
@@ -505,6 +546,7 @@ function period9() {
   document.addEventListener('DOMContentLoaded', period1);
   document.addEventListener('DOMContentLoaded', period2);
   document.addEventListener('DOMContentLoaded', period3);
+  document.addEventListener('DOMContentLoaded', periodx);  
   document.addEventListener('DOMContentLoaded', period4);
   document.addEventListener('DOMContentLoaded', period5);
   document.addEventListener('DOMContentLoaded', period6);
