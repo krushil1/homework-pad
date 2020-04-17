@@ -1,28 +1,26 @@
 #Abutton {
-    background-color:db3d3d;
-    width:50px;
-    height: 50px;
-    border-radius: 50%;
-    border:none;
-    margin-right:5%;
-    outline:none;
-    color:black;
-     font-size: 2em;
-     font-weight:bold;
-  }
+  background-color:db3d3d;
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  border:none;
+  outline:none;
+  color:black;
+  font-size: 2em;
+  font-weight:bold;
+}
   
-   #Bbutton, #Cbutton{
-    background-color:white;
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-    border:none;
-    margin-right:5%;
-     outline:none;
-     color:black;
-     font-size: 2em;
-     font-weight:bold;
-  }
+#Bbutton, #Cbutton{
+  background-color:white;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  border:none;
+  outline:none;
+  color:black;
+  font-size: 2em;
+  font-weight:bold;
+}
   
   .periods {
     color:white;
