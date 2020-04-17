@@ -289,7 +289,7 @@ function defineTiming() {   //sets the variables of each period end time based o
     h6 = 1; m6 = 29;
     h7 = 1; m7 = 17;
     h8 = 1; m8 = 5;
-    h9 = 12;m9 = 53;
+    h9 = 1;m9 = 53;
   } else {
     if (schedule == 'B') {
       h1 = 8;  m1 = 37;
@@ -516,9 +516,9 @@ function period9() {
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod9 = "Over";
+      displayPeriod9 = "is Over!";
     } else {
-    displayPeriod9 = hh + ":" + mm + ":" + realSeconds;
+    displayPeriod9 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period9, 100);
   }
