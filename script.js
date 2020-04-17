@@ -387,7 +387,7 @@ var realSeconds;
     }
     setTimeout(period3, 100);
   }
- function period4() {
+ function period4() { //4a
     var start = new Date;
     start.setHours(h4, m4, 0);
     var now = new Date;
@@ -404,7 +404,7 @@ var realSeconds;
     }
     setTimeout(period4, 100);
   }
- function period5() {
+ function period5() { //4b
     var start = new Date;
     start.setHours(h5, m5, 0);
     var now = new Date;
@@ -421,7 +421,7 @@ var realSeconds;
     }
     setTimeout(period5, 100);
   }
- function period6() {
+ function period6() { //4c
     var start = new Date;
     start.setHours(h6, m6, 0);
     var now = new Date;
