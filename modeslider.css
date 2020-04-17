@@ -1,10 +1,11 @@
-/*Simple css to style it like a toggle switch*/
+
+/*slider switch css */
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-
+  
   em {
-    margin-left: 10px;
+    float: right;
     font-size: 1rem;
   }
 }
@@ -56,3 +57,5 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+
