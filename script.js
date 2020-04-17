@@ -387,8 +387,6 @@ var realSeconds;
     }
     setTimeout(period3, 100);
   }
-  
-  
  function period4() { //4a
     var start = new Date;
     start.setHours(h4, m4, 0);
@@ -399,101 +397,17 @@ var realSeconds;
     var remain = ((start - now) / 1000);
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
-    
-    if(hh > 8){
-      if (schedule == 'A'){
-        h4 = 11; m4 = 16;
-      }
-      else if (schedule == 'B'){
-        h4 = 10; m4 = 55;
-      }
-      else if (schedule == 'C'){
-        h4 = 10; m4 = 17;
-      }
-   if (schedule == 'A'){
-     displayPeriod4 = Text + hh + ":" + mm + ":" + realseconds;
-   } 
-      
-      
-      
-      
-    }
-   
-   
-   
-   
-   
      if (hh > 8) {
       displayPeriod4 = End;
     }else {
     displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
     }
+   if (schedule == "C"){
+     displayPeriod4 = "Period 6 Ends In:"
+   }
+   
     setTimeout(period4, 100);
   }
-  
-  
-  
-  
-   if (schedule == 'B') {
-        h4 = 10; m4 = 55;
-    }
-    if (schedule == 'C') {
-        h4 = 10; m4 = 17;
-    }
-    if (schedule == 'D') {
-        h4 = 11; m4 = 40;
-    }
-	} else {
-    setTheSchedule();
-  }
-  if (lunchMode == 'on') {
-   document.getElementById("fourthEndText").innerHTML = "Period 4 Lunch Ends In:" + "&nbsp"; 
- } else {
-   if (schedule == 'A'){
-    document.getElementById("fourthEndText").innerHTML = "Period X Ends In:" + "&nbsp";
-   } else {
-     if (schedule == 'B') {
-       document.getElementById("fourthEndText").innerHTML = "No Period X";
-     } else {
-        document.getElementById("fourthEndText").innerHTML = "No Period X";
-     }
-   }
-  }
-  if (hh <= 10) { //10
-    if (schedule == 'A'){
-    document.getElementById('fourthEnd').innerHTML = hh + ":" + mm + ":" + seconds;
-    } else {
-      document.getElementById('fourthEnd').innerHTML = "";
-    }
-    timeDetect4 = 1;
-    if (tabControl == 'on' && timeDetect3 == 0) {
-     document.title = hh + ":" + mm + ":" + seconds; 
-    }
-  } else {
-    document.getElementById('fourthEnd').innerHTML = ' ';
-    if (lunchMode == 'off') {
-      if (schedule == 'A'){
-    document.getElementById("fourthEndText").innerHTML = "Period X Is Over!"; 
-      } else if (schedule == 'B' || schedule == 'C') {
-         document.getElementById("fourthEndText").innerHTML = "No Period X"; 
-      }
-    } else {
-        document.getElementById("fourthEndText").innerHTML = "Period 4 Lunch Is Over!"; 
-    }
-    timeDetect4 = 0;
-  }
-
-} //period 4
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
