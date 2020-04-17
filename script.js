@@ -246,7 +246,7 @@ function defineTiming() {   //sets the variables of each period end time based o
     h1 = 8;  m1 = 37;
     h2 = 9;  m2 = 24;
     h3 = 10; m3 = 11;
-    hx = 10; mx = 44; //period X
+    hx = 19; mx = 0; //period X
     h4 = 11; m4 = 16; //4a
     h5 = 11; m5 = 46; //4b
     h6 = 12; m6 = 12; //4c
@@ -375,7 +375,6 @@ var realSeconds;
   }
  function period3() {
     var start = new Date;
-    var Str = 
     start.setHours(h3, m3, 0);
     var now = new Date;
     if (now > start) {
@@ -392,16 +391,9 @@ var realSeconds;
     setTimeout(period3, 100);
   }
   
-  
-  
-  
-  
-  
-  
    function periodx() { //Period X
     var start = new Date;
-    var Str = 
-    start.setHours(h3, m3, 0);
+    start.setHours(hx, mx, 0);
     var now = new Date;
     if (now > start) {
       start.setDate(start.getDate() + 1);
@@ -414,9 +406,6 @@ var realSeconds;
      }
      if (schedule == "A"){
        displayPeriodx = Text + hh + ":" + mm + ":" + realSeconds;
-     }
-     if (schedule == "B" || schedule == "C"){
-       displayPeriodx = "No Period X"
      }
      setTimeout(periodx, 100);
    }
