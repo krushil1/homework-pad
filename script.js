@@ -231,7 +231,6 @@ document.getElementById("lightmode").onclick = function(){
     document.getElementById("Abutton").style.backgroundColor = "db3d3d";
     document.getElementById("Bbutton").style.backgroundColor = "white";
     document.getElementById("Cbutton").style.backgroundColor = "white";
-    document.getElementById("Dbutton").style.backgroundColor = "white";
     defineTiming();
   }
    function Bpressed() {
@@ -239,7 +238,6 @@ document.getElementById("lightmode").onclick = function(){
      document.getElementById("Abutton").style.backgroundColor = "white";
      document.getElementById("Bbutton").style.backgroundColor = "db3d3d";
      document.getElementById("Cbutton").style.backgroundColor = "white";
-     document.getElementById("Dbutton").style.backgroundColor = "white";
     defineTiming();
   }
    function Cpressed() {
@@ -247,17 +245,9 @@ document.getElementById("lightmode").onclick = function(){
       document.getElementById("Abutton").style.backgroundColor = "white";
      document.getElementById("Bbutton").style.backgroundColor = "white";
      document.getElementById("Cbutton").style.backgroundColor = "db3d3d";
-     document.getElementById("Dbutton").style.backgroundColor = "white";
     defineTiming();
   }
-   function Dpressed() {
-    schedule = 'D';
-    document.getElementById("Abutton").style.backgroundColor = "white";
-     document.getElementById("Bbutton").style.backgroundColor = "white";
-     document.getElementById("Cbutton").style.backgroundColor = "white";
-     document.getElementById("Dbutton").style.backgroundColor = "db3d3d";
-    defineTiming();
-  }
+   
 
 var h1; var m1;
 var h2; var m2;
@@ -315,19 +305,7 @@ function defineTiming() {   //sets the variables of each period end time based o
         h7 = 12; m7 = 2;
         h8 = 12; m8 = 31;
         h9 = 13; m9 = 0;
-      } else {
-        if (schedule == 'D') {
-          h1 = 10; m1 = 9;
-          h2 = 10; m2 = 39;
-          h3 = 11; m3 = 9;
-          h4 = 11; m4 = 43;
-          h5 = 12; m5 = 17;
-          h6 = 12; m6 = 51;
-          h7 = 13; m7 = 25;
-          h8 = 14; m8 = 9;
-          h9 = 14; m9 = 53;
-        }
-      }
+      } 
     }
   }
 }
@@ -430,9 +408,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod3 = "is Over!";
+      displayPeriod3 = End;
     } else {
-    displayPeriod3 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod3 = Text + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period3, 100);
   }
@@ -447,9 +425,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod4 = "is Over!";
+      displayPeriod4 = End;
     } else {
-    displayPeriod4 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period4, 100);
   }
@@ -464,9 +442,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod5 = "is Over!";
+      displayPeriod5 = End;
     } else {
-    displayPeriod5 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod5 = Text + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period5, 100);
   }
@@ -481,9 +459,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod6 = "is Over!";
+      displayPeriod6 = End;
     } else {
-    displayPeriod6 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod6 = Text + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period6, 100);
   }
@@ -498,9 +476,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod7 = "is Over!";
+      displayPeriod7 = End;
     } else {
-    displayPeriod7 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod7 = Text + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period7, 100);
   }
@@ -515,9 +493,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod8 = "is Over!";
+      displayPeriod8 = End;
     } else {
-    displayPeriod8 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod8 = Text + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period8, 100);
   }
@@ -532,9 +510,9 @@ function period9() {
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod9 = "is Over!";
+      displayPeriod9 = End;
     } else {
-    displayPeriod9 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod9 = Text + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period9, 100);
   }

@@ -11,7 +11,7 @@
      font-weight:bold;
   }
   
-   #Bbutton, #Cbutton, #Dbutton {
+   #Bbutton, #Cbutton{
     background-color:white;
     width:125px;
     height: 125px;
@@ -69,5 +69,6 @@
   }
   
   #period9 {
-    color:db3d3d;
+  /*  color:db3d3d; */
+    color: white;
   }
