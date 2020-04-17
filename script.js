@@ -380,9 +380,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod1 = "Over"; 
+      displayPeriod1 = "is Over!"; 
     } else {
-    displayPeriod1 = hh + ":" + mm + ":" + realSeconds;
+    displayPeriod1 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period1, 100);
   }
@@ -397,9 +397,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-     displayPeriod2 = "Over";
+     displayPeriod2 = "is Over!";
     } else {
-    displayPeriod2 = hh + ":" + mm + ":" + realSeconds;
+    displayPeriod2 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period2, 100);
   }
@@ -414,9 +414,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod3 = "Over";
+      displayPeriod3 = "is Over!";
     } else {
-    displayPeriod3 = hh + ":" + mm + ":" + realSeconds;
+    displayPeriod3 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period3, 100);
   }
@@ -431,9 +431,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod4 = "Over";
+      displayPeriod4 = "is Over!";
     } else {
-    displayPeriod4 = hh + ":" + mm + ":" + realSeconds;
+    displayPeriod4 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period4, 100);
   }
@@ -448,9 +448,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod5 = "Over";
+      displayPeriod5 = "is Over!";
     } else {
-    displayPeriod5 = hh + ":" + mm + ":" + realSeconds;
+    displayPeriod5 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period5, 100);
   }
@@ -465,9 +465,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod6 = "Over";
+      displayPeriod6 = "is Over!";
     } else {
-    displayPeriod6 = hh + ":" + mm + ":" + realSeconds;
+    displayPeriod6 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period6, 100);
   }
@@ -482,9 +482,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod7 = "Over";
+      displayPeriod7 = "is Over!";
     } else {
-    displayPeriod7 = hh + ":" + mm + ":" + realSeconds;
+    displayPeriod7 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period7, 100);
   }
@@ -499,9 +499,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod8 = "Over";
+      displayPeriod8 = "is Over!";
     } else {
-    displayPeriod8 = hh + ":" + mm + ":" + realSeconds;
+    displayPeriod8 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period8, 100);
   }
