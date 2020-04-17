@@ -8,41 +8,10 @@ function myFunction(){
 //}
 
 
-//dark mode button
-document.getElementById("darkmode").onclick = function(){
-  document.getElementById("7period").style.color = "orange";
-  document.getElementById("one").style.color = "green";
-  document.getElementById("two").style.color = "green";
-  document.getElementById("three").style.color = "green";
-  document.getElementById("x").style.color = "green";
-  document.getElementById("4a").style.color = "green";
-  document.getElementById("4b").style.color = "green";
-  document.getElementById("4c").style.color = "green";
-  document.getElementById("five").style.color = "green";
-  document.getElementById("six").style.color = "green";
-
-
-
-}
-
-//light mode button
-document.getElementById("lightmode").onclick = function(){
-  document.getElementById("7period").style.color = "purple";
-  document.getElementById("one").style.color = "black";
-  document.getElementById("two").style.color = "black";
-  document.getElementById("three").style.color = "black";
-  document.getElementById("x").style.color = "black";
-  document.getElementById("4a").style.color = "black";
-  document.getElementById("4b").style.color = "black";
-  document.getElementById("4c").style.color = "black";
-  document.getElementById("five").style.color = "black";
-  document.getElementById("six").style.color = "black";
-
 
   
 
 
-} 
 
 
 

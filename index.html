@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="buttons.css">
     <link rel="stylesheet" href="sidecolumn.css">
     <link rel="stylesheet" href="timing.css">
+    <link rel="stylesheet" href="modeslider.css">
   </head>
 
   <body onload="defineTiming(); Apressed();"></body>
@@ -74,7 +75,8 @@
   <div class="row"></div>
   <div class="column" id="column1">
       <div>
-        <p><b><i><center><font size="8" id="date" class="date"></font></center></i></b></p>
+        <p><b><i><center><font size="6" id="date" class="date"></font></center></i></b></p>
+        <br>
         <br>
       <script>
       n =  new Date();
@@ -93,6 +95,7 @@
       <center><button class="checkButton Bbutton pointer" id="Bbutton" onclick="Bpressed();">B</button></center>
       <br>
       <center><button class="checkButton Cbutton pointer" id="Cbutton" onclick="Cpressed();">C</button></center>
+      <br>
       <br>
     </div>
     
@@ -155,13 +158,24 @@
   <br>
   <div class="btn-group">
     <button onclick="window.location.href = 'https://cdn.glitch.com/d81d26fa-c668-478e-8946-16a17248aeb3%2FIMG_0299%20(1).PNG?v=1573530015781';" class="pointer button16">full schedule</button>
-    <button id="darkmode" class="pointer button17">Dark Mode</button>
-    <button id="lightmode" class="pointer button18">Light Mode</button>
+    
+    <div>
+    <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+  </label>
+  <em>Enable Dark Mode!</em>
+</div>
+  </div>
     <p>
     <span id="output1"></span>
     </p>
 
   </div>
+  
+  
+  
 <script src="script.js"></script>
 </html>
 
