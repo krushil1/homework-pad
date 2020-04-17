@@ -50,149 +50,6 @@ function myFunction(){
 
 
 
-    // Marking period 2 countdown
-    var countDownDatelong = new Date("Jan 20, 2020 5:37:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownDatelong - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("long").innerHTML =
-        "<h4><b>Long weekend starts in " + days + " days!</b></h4>";
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("long").innerHTML =
-          "<h4><b>Long weekend starts today!</b></h4>";
-      }
-    }, 1000);
-
-
-
-
-
-
-// Winter break count down
-    var countDownDatewinter = new Date("Dec 19, 2019 5:37:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownDatewinter - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-      days = days - 1;
-
-
-      // Output the result in an element with id="demo"
-      document.getElementById("winter").innerHTML =
-        "<h4><b>Winter break starts in " + days + " day!</b></h4>";
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("winter").innerHTML =
-          "<h4><b>Winter break has started!</b></h4>";
-      }
-    }, 1000); 
-
-
-
-
-
-
-
-
-
-
-    // Thanks giving break count down
-    var countDownDatedismissal = new Date("Jan 24, 2020 5:37:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownDatedismissal - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("dismissal").innerHTML =
-        "<h4><b>Early dismissal in " + days + " days!</b><h4>";
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("dismissal").innerHTML =
-          "<h4><b>Today is a early dismissal day!</b></h4>";
-      }
-    }, 1000);
-
-  
-
-
-   // Thanks giving break count down
-    var countDownDateMP3 = new Date("Jan 24, 2020 5:37:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownDateMP3 - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("MP3").innerHTML =
-        "<h4><b>Marking period 3 ends in " + days + " days!</b><h4>";
-      // If the count down is over, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("MP3").innerHTML =
-          "<h4><b>Marking period 3 ends today!</b></h4>";
-      }
-    }, 1000);
-
-
-
-
   var schedule = 'A';
   
   function Apressed() {
@@ -246,7 +103,7 @@ function defineTiming() {   //sets the variables of each period end time based o
     h1 = 8;  m1 = 37;
     h2 = 9;  m2 = 24;
     h3 = 10; m3 = 11;
-    hx = 19; mx = 0; //period X
+    hx = 19; mx = 6; //period X
     h4 = 11; m4 = 16; //4a
     h5 = 11; m5 = 46; //4b
     h6 = 12; m6 = 12; //4c
@@ -313,6 +170,15 @@ var End9 = endtext9.fontcolor("#00BD56"); //controls the "is Over!" text color
 
 var text9 = "Ends In:&nbsp"; 
 var Text9 = text9.fontcolor("#00BD56"); //controls the "Ends In:" text color
+
+var textx = "Period X Ends In:&nbsp";
+var Textx = textx.fontcolor("white"); //controls the text color for Period X
+
+var endx = "No Period X";
+var Endx = endx.fontcolor("white");
+
+var txtx = "Period X is Over!";
+
 
 var realSeconds;
 
@@ -403,11 +269,14 @@ var realSeconds;
     var mm = pad((remain / 60) % 60);
      if (hh > 8){
        displayPeriodx = End;
+     }else{
+       displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
      }
-     if (schedule == "A"){
-       displayPeriodx = Text + hh + ":" + mm + ":" + realSeconds;
-     }
+     
      setTimeout(periodx, 100);
+     if (schedule == "B" || schedule == "C"){
+       displayPeriodx = Endx; /////////////////////////////
+     }
    }
      
      
