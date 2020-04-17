@@ -416,7 +416,7 @@ var realSeconds;
      if (hh > 8) {
       displayPeriod3 = "is Over!";
     } else {
-    displayPeriod3 = "Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod3 = "<color="#00000">Ends In:&nbsp</color>" + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period3, 100);
   }

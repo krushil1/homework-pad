@@ -34,8 +34,21 @@
     margin: 0px 0px 0px 0px;
   }
   
+
+.periods4{
+  color:gray;
+  font-weight:bold;
+  font-family:Arial;
+  font-size: 4.5em;
+  display:inline-block;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+
+
  .time {
-    color:white;
+    color:orange;
     font-weight:bold;
     font-family:Arial;
     font-size: 5em;
