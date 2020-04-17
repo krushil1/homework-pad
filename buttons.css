@@ -24,6 +24,12 @@
   display: inline-block;
   font-size: 25px;
   border-radius: 30px;
+  
+  align-items: center;
+  float: right;
+  position: relative;
+  left: -40%;
+  
 }
 
 .settings {
@@ -37,6 +43,12 @@
   display: inline-block;
   font-size: 30px;
   border-radius: 30px;
+  
+  align-items: center;
+  float: right;
+  position: relative;
+  left: -42%;
+  
 }
 
 
