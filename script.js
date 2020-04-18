@@ -103,7 +103,7 @@ function defineTiming() {   //sets the variables of each period end time based o
     h1 = 8;  m1 = 37;
     h2 = 9;  m2 = 24;
     h3 = 10; m3 = 11;
-    hx = 19; mx = 6; //period X
+    hx = 10; mx = 44; //period X
     h4 = 11; m4 = 16; //4a
     h5 = 11; m5 = 46; //4b
     h6 = 12; m6 = 12; //4c
@@ -128,12 +128,12 @@ function defineTiming() {   //sets the variables of each period end time based o
         h1 = 8;  m1 = 22;
         h2 = 9;  m2 = 4;
         h3 = 9;  m3 = 46;
-        h4 = 10; m4 = 20;
-        h5 = 10; m5 = 54;
-        h6 = 11; m6 = 28;
-        h7 = 12; m7 = 2;
-        h8 = 12; m8 = 31;
-        h9 = 13; m9 = 0;
+        h4 = 10; m4 = 20; // 5th Period
+        h5 = 10; m5 = 54; // 6th Period
+        h6 = 11; m6 = 28; // lunch 4a
+        h7 = 12; m7 = 2; // lunch 4b
+        h8 = 12; m8 = 31; // lunch 4c
+        h9 = 13; m9 = 0; // Period 7
       } 
     }
   }
@@ -275,7 +275,7 @@ var realSeconds;
      
      setTimeout(periodx, 100);
      if (schedule == "B" || schedule == "C"){
-       displayPeriodx = Endx; /////////////////////////////
+       displayPeriodx = Endx; 
      }
    }
      
@@ -309,6 +309,13 @@ var realSeconds;
     displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period4, 100);
+    if (schedule == "C"){
+      h4 = 10; m4 = 20;
+    }
+    if (schedule == "C"){
+      displayPeriod4 = 
+    }
+    
   }
   
   
