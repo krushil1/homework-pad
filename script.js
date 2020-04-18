@@ -365,7 +365,7 @@ var realSeconds;
     } else if (schedule == "B"){
       h4 = 12; m4 = 5;
     } else if (schedule == "C"){
-      h4 = 16; m4 = 52; //Period 5 if the schedule equal C
+      h4 = 12; m4 = 52; //Period 5 if the schedule equal C
     }
     if (schedule == "A"){
       if (hh > 8){
@@ -594,7 +594,7 @@ function period9() {
      if (hh > 8) {
       displayPeriod9 = End7;
     } else {
-    displayPeriod9 = Text7;
+    displayPeriod9 = Text7 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period9, 100);
   }
