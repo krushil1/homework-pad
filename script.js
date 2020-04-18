@@ -309,13 +309,20 @@ var realSeconds;
     displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period4, 100);
-    if (schedule == "C"){
-      h4 = 10; m4 = 20;
+    if (schedule == "A"){
+      h4 = 11; m4 = 16;
+    } else if (schedule == "B"){
+      h4 = 12; m4 = 5;
+    } else if (schedule == "C"){
+      h4 = 10; m4 = 12; //Period 5 if the schedule equal C
     }
-    if (schedule == "C"){
-      displayPeriod4 = 
+    if (schedule == "A"){
+      displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
+    }else if (schedule == "B"){
+      displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
+    }else if (schedule == "C"){
+      displayPeriod4 = "Period 5 Ends In:&nbsp"
     }
-    
   }
   
   
