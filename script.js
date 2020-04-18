@@ -189,9 +189,7 @@ var endx = "No Period X";
 var Endx = endx.fontcolor("white");
 
 var txtx = "Period X is Over!";
-var Txtx1 = txtx.fontcolor("white");
-var Txtx = Txtx.fontsize(17);
-
+var Txtx = txtx.fontcolor("white");
 
 
 var foura = "Lunch 4a Ends In: &nbsp";
@@ -374,6 +372,58 @@ var realSeconds;
     }
      
   }
+  
+  
+   function period5() { //4b
+    var start = new Date;
+    start.setHours(h5, m5, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+      displayPeriod5 = End4b;
+    }else {
+    displayPeriod5 = Text4b + hh + ":" + mm + ":" + realSeconds;
+    }
+    setTimeout(period5, 100);
+    if (schedule == "A"){
+      h5 = 11; m5 = 16;
+    } else if (schedule == "B"){
+      h5 = 12; m5 = 5;
+    } else if (schedule == "C"){
+      h5 = 16; m5 = 52; //Period 5 if the schedule equal C
+    }
+    if (schedule == "A"){
+      if (hh > 8){
+        displayPeriod5 = End4b;
+      }else{
+        displayPeriod5 = Text4b + hh + ":" + mm + ":" + realSeconds;
+      }
+    }else if (schedule == "B"){
+      if (hh > 8){
+        displayPeriod5 = End4b;
+      }else{
+        displayPeriod5 = Text4b + hh + ":" + mm + ":" + realSeconds;
+      }
+    }else if (schedule == "C"){
+      if (hh > 8){
+        displayPeriod5 = End5
+      }else{
+        displayPeriod5 = Text5 + hh + ":" + mm + ":" + realSeconds;
+      }
+    }
+     
+  }
+  
+  
+  
+  
+  
+  
   
   
   
