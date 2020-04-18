@@ -222,7 +222,11 @@ var Text6 = text6.fontcolor("white");
 var end6 = "Period 6 is Over!"
 var End6 = end6.fontcolor("white");
 
+var text7 = "Period 7 Ends In:&nbsp"
+var Text7 = text7.fontcolor("white");
 
+var end7 = "Period 7 is Over!"
+var End7 = end7.fontcolor("white");
 
 
 
@@ -503,15 +507,15 @@ var realSeconds;
     }
     if (schedule == "A"){
       if (hh > 8){
-        displayPeriod7 = End4c;
+        displayPeriod7 = End5;
       }else{
-        displayPeriod7 = Text4c + hh + ":" + mm + ":" + realSeconds;
+        displayPeriod7 = Text5 + hh + ":" + mm + ":" + realSeconds;
       }
     }else if (schedule == "B"){
       if (hh > 8){
-        displayPeriod7 = End4c;
+        displayPeriod7 = End5;
       }else{
-        displayPeriod7 = Text4c + hh + ":" + mm + ":" + realSeconds;
+        displayPeriod7 = Text5 + hh + ":" + mm + ":" + realSeconds;
       }
     }else if (schedule == "C"){
       if (hh > 8){
@@ -524,12 +528,9 @@ var realSeconds;
   }
   
   
-  
-  
-  
- function period8() {
+     function period8() { //Period 6
     var start = new Date;
-    start.setHours(h8, m8, 0);
+    start.setHours(h6, m6, 0);
     var now = new Date;
     if (now > start) {
       start.setDate(start.getDate() + 1);
@@ -538,12 +539,45 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod8 = End;
-    } else {
-    displayPeriod8 = Text + hh + ":" + mm + ":" + realSeconds;
+      displayPeriod8 = End6;
+    }else {
+    displayPeriod8 = Text6 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period8, 100);
+    if (schedule == "A"){
+      h8 = 13; m8 = 3;
+    } else if (schedule == "B"){
+      h8 = 13; m8 = 19;
+    } else if (schedule == "C"){
+      h8 = 12; m8 = 2; //Period 5 if the schedule equal C
+    }
+    if (schedule == "A"){
+      if (hh > 8){
+        displayPeriod8 = End6;
+      }else{
+        displayPeriod8 = Text6 + hh + ":" + mm + ":" + realSeconds;
+      }
+    }else if (schedule == "B"){
+      if (hh > 8){
+        displayPeriod8 = End6;
+      }else{
+        displayPeriod8 = Text6 + hh + ":" + mm + ":" + realSeconds;
+      }
+    }else if (schedule == "C"){
+      if (hh > 8){
+        displayPeriod8 = End4c;
+      }else{
+        displayPeriod8 = Text4c + hh + ":" + mm + ":" + realSeconds;
+      }
+    }
+     
   }
+  
+  
+  
+  
+  
+  
 function period9() {
     
     var start = new Date;
@@ -558,9 +592,9 @@ function period9() {
     var endtxt1 = hh + ":" + mm + ":" + realSeconds; 
     var EndTxt = endtxt1.fontcolor("#00BD56"); //controls the "Ends In:" text color
      if (hh > 8) {
-      displayPeriod9 = End9;
+      displayPeriod9 = End7;
     } else {
-    displayPeriod9 = Text9 + EndTxt;
+    displayPeriod9 = Text7;
     }
     setTimeout(period9, 100);
   }
