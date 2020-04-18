@@ -314,15 +314,31 @@ var realSeconds;
     } else if (schedule == "B"){
       h4 = 12; m4 = 5;
     } else if (schedule == "C"){
-      h4 = 10; m4 = 12; //Period 5 if the schedule equal C
+      h4 = 16; m4 = 46; //Period 5 if the schedule equal C
     }
+    if (schedule == "A"){
+      if (hh > 8){
+        displayPeriod4 = End;
+      }else{
+        displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
+      }
+    }else if (schedule == "B"){
+      if (hh > 8){
+        displayPeriod4 = End;
+      }else{
+        displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
+      }
+    }
+      
+      
     if (schedule == "A"){
       displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
     }else if (schedule == "B"){
       displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
     }else if (schedule == "C"){
-      displayPeriod4 = "Period 5 Ends In:&nbsp"
+      displayPeriod4 = "Period 5 Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
     }
+     
   }
   
   
