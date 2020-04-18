@@ -189,8 +189,8 @@ var End4a = end4a.fontcolor("white");
 var text5 = "Period 5 Ends In:&nbsp"
 var Text5 = text5.fontcolor("white");
 
-var End5 = "Period 5 is Over!"
-var 
+var end5 = "Period 5 is Over!"
+var End5 = end5.fontcolor("white");
 
 
 
@@ -347,9 +347,9 @@ var realSeconds;
       }
     }else if (schedule == "C"){
       if (hh > 8){
-        displayPeriod4 = "PERIOD 5 IS OVER!"
+        displayPeriod4 = End5
       }else{
-        displayPeriod4 = "PERIOD 5 ENDS IN:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+        displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
       }
     }
      
