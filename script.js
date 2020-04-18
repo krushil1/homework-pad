@@ -478,13 +478,9 @@ var realSeconds;
   
   
   
-  
-  
-  
-  
- function period7() {
+   function period7() { //Period 5
     var start = new Date;
-    start.setHours(h7, m7, 0);
+    start.setHours(h6, m6, 0);
     var now = new Date;
     if (now > start) {
       start.setDate(start.getDate() + 1);
@@ -493,12 +489,44 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod7 = End;
-    } else {
-    displayPeriod7 = Text + hh + ":" + mm + ":" + realSeconds;
+      displayPeriod7 = End5;
+    }else {
+    displayPeriod7 = Text5 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period7, 100);
+    if (schedule == "A"){
+      h7 = 13; m7 = 3;
+    } else if (schedule == "B"){
+      h7 = 13; m7 = 19;
+    } else if (schedule == "C"){
+      h7 = 12; m7 = 2; //Period 5 if the schedule equal C
+    }
+    if (schedule == "A"){
+      if (hh > 8){
+        displayPeriod7 = End4c;
+      }else{
+        displayPeriod7 = Text4c + hh + ":" + mm + ":" + realSeconds;
+      }
+    }else if (schedule == "B"){
+      if (hh > 8){
+        displayPeriod7 = End4c;
+      }else{
+        displayPeriod7 = Text4c + hh + ":" + mm + ":" + realSeconds;
+      }
+    }else if (schedule == "C"){
+      if (hh > 8){
+        displayPeriod7 = End4b;
+      }else{
+        displayPeriod7 = Text4b + hh + ":" + mm + ":" + realSeconds;
+      }
+    }
+     
   }
+  
+  
+  
+  
+  
  function period8() {
     var start = new Date;
     start.setHours(h8, m8, 0);
