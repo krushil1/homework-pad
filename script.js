@@ -204,11 +204,23 @@ var Text4b = text4b.fontcolor("white"); //controls the "Ends In:" text color
 var end4b = "Lunch 4b is Over!";
 var End4b = end4b.fontcolor("white");
 
+var text4c = "Lunch 4c Ends In:&nbsp"
+var Text4c = text4c.fontcolor("white");
+
+var end4c = "Lunch 4c is Over!"
+var End4c = end4c.fontcolor("white");
+
 var text5 = "Period 5 Ends In:&nbsp"
 var Text5 = text5.fontcolor("white");
 
 var end5 = "Period 5 is Over!"
 var End5 = end5.fontcolor("white");
+
+var text6 = "Period 6 Ends In:&nbsp"
+var Text6 = text6.fontcolor("white");
+
+var end6 = "Period 6 is Over!"
+var End6 = end6.fontcolor("white");
 
 
 
@@ -391,11 +403,11 @@ var realSeconds;
     }
     setTimeout(period5, 100);
     if (schedule == "A"){
-      h5 = 11; m5 = 16;
+      h5 = 11; m5 = 46;
     } else if (schedule == "B"){
-      h5 = 12; m5 = 5;
+      h5 = 11; m5 = 45;
     } else if (schedule == "C"){
-      h5 = 16; m5 = 52; //Period 5 if the schedule equal C
+      h5 = 10; m5 = 54; //Period 6 if the schedule equal C
     }
     if (schedule == "A"){
       if (hh > 8){
@@ -411,9 +423,54 @@ var realSeconds;
       }
     }else if (schedule == "C"){
       if (hh > 8){
-        displayPeriod5 = End5
+        displayPeriod5 = End6;
       }else{
-        displayPeriod5 = Text5 + hh + ":" + mm + ":" + realSeconds;
+        displayPeriod5 = Text6 + hh + ":" + mm + ":" + realSeconds;
+      }
+    }
+     
+  }
+  
+   function period6() { //4c
+    var start = new Date;
+    start.setHours(h6, m6, 0);
+    var now = new Date;
+    if (now > start) {
+      start.setDate(start.getDate() + 1);
+    }
+    var remain = ((start - now) / 1000);
+    var hh = pad((remain / 60 / 60) % 60);
+    var mm = pad((remain / 60) % 60);
+     if (hh > 8) {
+      displayPeriod6 = End4c;
+    }else {
+    displayPeriod6 = Text4c + hh + ":" + mm + ":" + realSeconds;
+    }
+    setTimeout(period6, 100);
+    if (schedule == "A"){
+      h6 = 12; m6 = 12;
+    } else if (schedule == "B"){
+      h6 = 12; m6 = 32;
+    } else if (schedule == "C"){
+      h6 = 11; m6 = 28; //lunch 4c if the schedule equal C
+    }
+    if (schedule == "A"){
+      if (hh > 8){
+        displayPeriod6 = End4c;
+      }else{
+        displayPeriod6 = Text4c + hh + ":" + mm + ":" + realSeconds;
+      }
+    }else if (schedule == "B"){
+      if (hh > 8){
+        displayPeriod6 = End4c;
+      }else{
+        displayPeriod6 = Text4c + hh + ":" + mm + ":" + realSeconds;
+      }
+    }else if (schedule == "C"){
+      if (hh > 8){
+        displayPeriod5 = End6;
+      }else{
+        displayPeriod5 = Text6 + hh + ":" + mm + ":" + realSeconds;
       }
     }
      
@@ -425,25 +482,7 @@ var realSeconds;
   
   
   
-  
-  
- function period5() { //4b
-    var start = new Date;
-    start.setHours(h5, m5, 0);
-    var now = new Date;
-    if (now > start) {
-      start.setDate(start.getDate() + 1);
-    }
-    var remain = ((start - now) / 1000);
-    var hh = pad((remain / 60 / 60) % 60);
-    var mm = pad((remain / 60) % 60);
-     if (hh > 8) {
-      displayPeriod5 = End4b;
-    } else {
-    displayPeriod5 = Text4b + hh + ":" + mm + ":" + realSeconds;
-    }
-    setTimeout(period5, 100);
-  }
+ 
  function period6() { //4c
     var start = new Date;
     start.setHours(h6, m6, 0);
