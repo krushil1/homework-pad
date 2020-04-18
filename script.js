@@ -180,6 +180,23 @@ var Endx = endx.fontcolor("white");
 var txtx = "Period X is Over!";
 var Txtx = txtx.fontcolor("white");
 
+var foura = "Lunch 4a Ends In: &nbsp";
+var fourA = foura.fontcolor("white");
+
+var end4a = "Lunch 4a is Over!";
+var End4a = end4a.fontcolor("white");
+
+var text5 = "Period 5 Ends In:&nbsp"
+var Text5 = text5.fontcolor("white");
+
+var End5 = "Period 5 is Over!"
+var 
+
+
+
+
+
+
 var realSeconds;
 
 (function() {
@@ -304,9 +321,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod4 = End;
+      displayPeriod4 = End4a;
     }else {
-    displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period4, 100);
     if (schedule == "A"){
@@ -314,29 +331,26 @@ var realSeconds;
     } else if (schedule == "B"){
       h4 = 12; m4 = 5;
     } else if (schedule == "C"){
-      h4 = 16; m4 = 46; //Period 5 if the schedule equal C
+      h4 = 16; m4 = 52; //Period 5 if the schedule equal C
     }
     if (schedule == "A"){
       if (hh > 8){
-        displayPeriod4 = End;
+        displayPeriod4 = End4a;
       }else{
-        displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
+        displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
       }
     }else if (schedule == "B"){
       if (hh > 8){
-        displayPeriod4 = End;
+        displayPeriod4 = End4a;
       }else{
-        displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
+        displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
       }
-    }
-      
-      
-    if (schedule == "A"){
-      displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
-    }else if (schedule == "B"){
-      displayPeriod4 = Text + hh + ":" + mm + ":" + realSeconds;
     }else if (schedule == "C"){
-      displayPeriod4 = "Period 5 Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+      if (hh > 8){
+        displayPeriod4 = "PERIOD 5 IS OVER!"
+      }else{
+        displayPeriod4 = "PERIOD 5 ENDS IN:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+      }
     }
      
   }
