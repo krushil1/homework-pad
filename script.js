@@ -158,12 +158,23 @@ function displayPeriods() {
 }
 
   
-var text1 = "Ends In:&nbsp"; 
-var Text = text1.fontcolor("white"); //controls the "Ends In:" text color
+var text1 = "Period 1 Ends In:&nbsp"; 
+var Text1 = text1.fontcolor("white"); //controls the "Ends In:" text color
  
-var endtext = "is Over!";
-var End = endtext.fontcolor("white"); //controls the "is Over!" text color
+var end1 = "Period 1 is Over!";
+var End1 = end1.fontcolor("white"); //controls the "is Over!" text color
 
+var text2 = "Period 2 Ends In:&nbsp"; 
+var Text2 = text2.fontcolor("white"); //controls the "Ends In:" text color
+ 
+var end2 = "Period 2 is Over!";
+var End2 = end2.fontcolor("white");
+
+var text3 = "Period 3 Ends In:&nbsp"; 
+var Text3 = text3.fontcolor("white"); //controls the "Ends In:" text color
+ 
+var end3 = "Period 3 is Over!";
+var End3 = end3.fontcolor("white");
 
 var endtext9 = "is Over!";
 var End9 = endtext9.fontcolor("#00BD56"); //controls the "is Over!" text color
@@ -185,6 +196,12 @@ var fourA = foura.fontcolor("white");
 
 var end4a = "Lunch 4a is Over!";
 var End4a = end4a.fontcolor("white");
+
+var text4b = "Lunch 4b Ends In:&nbsp"; 
+var Text4b = text4b.fontcolor("white"); //controls the "Ends In:" text color
+ 
+var end4b = "Lunch 4b is Over!";
+var End4b = end4b.fontcolor("white");
 
 var text5 = "Period 5 Ends In:&nbsp"
 var Text5 = text5.fontcolor("white");
@@ -230,9 +247,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-       displayPeriod1 = End; 
+       displayPeriod1 = End1; 
     } else {
-    displayPeriod1 = Text + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod1 = Text1 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period1, 100);
   }
@@ -250,9 +267,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-     displayPeriod2 = End;
+     displayPeriod2 = End2;
     } else {
-    displayPeriod2 = Text + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod2 = Text2 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period2, 100);
   }
@@ -267,9 +284,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod3 = End;
+      displayPeriod3 = End3;
     } else {
-    displayPeriod3 = Text + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod3 = Text3 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period3, 100);
   }
@@ -368,9 +385,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod5 = End;
+      displayPeriod5 = End4b;
     } else {
-    displayPeriod5 = Text + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod5 = Text4b + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period5, 100);
   }
