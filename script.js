@@ -189,10 +189,13 @@ var endx = "No Period X";
 var Endx = endx.fontcolor("white");
 
 var txtx = "Period X is Over!";
-var Txtx = txtx.fontcolor("white");
+var Txtx1 = txtx.fontcolor("white");
+var Txtx = Txtx.fontsize(17);
+
+
 
 var foura = "Lunch 4a Ends In: &nbsp";
-var fourA = foura.fontcolor("white");
+var fourA = foura.fontsize("white");
 
 var end4a = "Lunch 4a is Over!";
 var End4a = end4a.fontcolor("white");
