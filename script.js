@@ -468,9 +468,9 @@ var realSeconds;
       }
     }else if (schedule == "C"){
       if (hh > 8){
-        displayPeriod5 = End6;
+        displayPeriod6 = End4a;
       }else{
-        displayPeriod5 = Text6 + hh + ":" + mm + ":" + realSeconds;
+        displayPeriod6 = fourA + hh + ":" + mm + ":" + realSeconds;
       }
     }
      
@@ -482,24 +482,6 @@ var realSeconds;
   
   
   
- 
- function period6() { //4c
-    var start = new Date;
-    start.setHours(h6, m6, 0);
-    var now = new Date;
-    if (now > start) {
-      start.setDate(start.getDate() + 1);
-    }
-    var remain = ((start - now) / 1000);
-    var hh = pad((remain / 60 / 60) % 60);
-    var mm = pad((remain / 60) % 60);
-     if (hh > 8) {
-      displayPeriod6 = End;
-    } else {
-    displayPeriod6 = Text + hh + ":" + mm + ":" + realSeconds;
-    }
-    setTimeout(period6, 100);
-  }
  function period7() {
     var start = new Date;
     start.setHours(h7, m7, 0);
