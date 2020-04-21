@@ -31,18 +31,6 @@
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
   }
-  
-
-.periods4{
-  color:#f2eaec;
-  font-weight:bold;
-  font-family:Arial;
-  font-size: 6vh;
-  display:inline-block;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
-}
-
 
 
  .time {
@@ -54,6 +42,27 @@
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
   }
+
+.time4 {
+    color:#f2eaec;
+    font-weight:bold;
+    font-family:Arial;
+    font-size: 8vh;
+    display:inline-block;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+.timex {
+    color:#f2eaec;
+    font-weight:bold;
+    font-family:Arial;
+    font-size: 7.89vh;
+    display:inline-block;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
   
   .label {
     color:white;

@@ -551,6 +551,9 @@ var realSeconds;
     } else if (schedule == "C"){
       h8 = 12; m8 = 2; //Period 5 if the schedule equal C
     }
+    if (schedule == "C"){
+      document.getElementById("myP").style.fontSize = "7vh";
+    }
     if (schedule == "A"){
       if (hh > 8){
         displayPeriod8 = End6;
