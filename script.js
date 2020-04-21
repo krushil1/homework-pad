@@ -208,7 +208,9 @@ var text4c = "Lunch 4c Ends In:&nbsp"
 var Text4c = text4c.fontcolor("white");
 
 var end4c = "Lunch 4c is Over!"
-var End4c = end4c.fontcolor("white");
+var End4c1 = end4c.fontcolor("white");
+var End4c = End4c1.style.fontSize = ("25px";
+
 
 var text5 = "Period 5 Ends In:&nbsp"
 var Text5 = text5.fontcolor("white");
@@ -227,6 +229,9 @@ var Text7 = text7.fontcolor("white");
 
 var end7 = "Period 7 is Over!"
 var End7 = end7.fontcolor("white");
+
+
+
 
 
 
@@ -551,9 +556,7 @@ var realSeconds;
     } else if (schedule == "C"){
       h8 = 12; m8 = 2; //Period 5 if the schedule equal C
     }
-    if (schedule == "C"){
-      document.getElementById("myP").style.fontSize = "7vh";
-    }
+       
     if (schedule == "A"){
       if (hh > 8){
         displayPeriod8 = End6;
@@ -573,7 +576,6 @@ var realSeconds;
         displayPeriod8 = Text4c + hh + ":" + mm + ":" + realSeconds;
       }
     }
-     
   }
   
   
