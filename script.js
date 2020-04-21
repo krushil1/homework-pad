@@ -99,6 +99,7 @@ var displayPeriod9;
 
 function defineTiming() {   //sets the variables of each period end time based on the schedule
   
+  
   if (schedule == 'A') {
     h1 = 8;  m1 = 37;
     h2 = 9;  m2 = 24;
@@ -211,17 +212,6 @@ var end4c = "Lunch 4c is Over!"
 var End4c = end4c.fontcolor("white");
 
 //var End4c = document.write('<span style="font-size: 10px">Lunch 4c is Over!</span>');
-function adjustFontSize() {
-  if (schedule == 'A'){
-     document.getElementById("End4c").style.fontSize = "7.75vh";
-  } else if (schedule == 'B') {
-    document.getElementById("End4c").style.fontSize = "7.75vh";
-  } else if (schedule == 'C'){
-    document.getElementById("End4c").style.fontSize = "7.75vh";
-  }
-  
-  
-}
 
 
 
@@ -573,6 +563,9 @@ var realSeconds;
       h8 = 12; m8 = 2; //Period 5 if the schedule equal C
     }
        
+       
+   
+       
     if (schedule == "A"){
       if (hh > 8){
         displayPeriod8 = End6;
@@ -587,6 +580,7 @@ var realSeconds;
       }
     }else if (schedule == "C"){
       if (hh > 8){
+        document.getElementBy("End4c").style.fontSize = "7.75vh";
         displayPeriod8 = End4c;
       }else{
         displayPeriod8 = Text4c + hh + ":" + mm + ":" + realSeconds;
