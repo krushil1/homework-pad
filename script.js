@@ -71,6 +71,7 @@ function myFunction(){
       document.getElementById("Abutton").style.backgroundColor = "white";
      document.getElementById("Bbutton").style.backgroundColor = "white";
      document.getElementById("Cbutton").style.backgroundColor = "db3d3d";
+
     defineTiming();
   }
    
@@ -157,7 +158,7 @@ function displayPeriods() {
     displayPeriods();
   }, 0)
 }
-
+adjustFontSize();
   
 var text1 = "Period 1 Ends In:&nbsp"; 
 var Text1 = text1.fontcolor("white"); //controls the "Ends In:" text color
@@ -580,7 +581,6 @@ var realSeconds;
       }
     }else if (schedule == "C"){
       if (hh > 8){
-        document.getElementBy("End4c").style.fontSize = "7.75vh";
         displayPeriod8 = End4c;
       }else{
         displayPeriod8 = Text4c + hh + ":" + mm + ":" + realSeconds;
