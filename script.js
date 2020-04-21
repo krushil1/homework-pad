@@ -210,7 +210,18 @@ var Text4c = text4c.fontcolor("white");
 var end4c = "Lunch 4c is Over!"
 var End4c = end4c.fontcolor("white");
 
-
+//var End4c = document.write('<span style="font-size: 10px">Lunch 4c is Over!</span>');
+function adjustFontSize() {
+  if (schedule == 'A'){
+     document.getElementById("End4c").style.fontSize = "7.75vh";
+  } else if (schedule == 'B') {
+    document.getElementById("End4c").style.fontSize = "7.75vh";
+  } else if (schedule == 'C'){
+    document.getElementById("End4c").style.fontSize = "7.75vh";
+  }
+  
+  
+}
 
 
 
