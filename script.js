@@ -209,7 +209,13 @@ var Text4c = text4c.fontcolor("white");
 
 var end4c = "Lunch 4c is Over!"
 var End4c1 = end4c.fontcolor("white");
-var End4c = End4c1.style.fontSize = ("25px";
+var End4c = End4c.style.fontSize = "150%" ;
+
+
+
+
+
+
 
 
 var text5 = "Period 5 Ends In:&nbsp"
