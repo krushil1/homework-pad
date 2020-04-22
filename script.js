@@ -70,6 +70,8 @@ function myFunction(){
       document.getElementById("Abutton").style.backgroundColor = "white";
      document.getElementById("Bbutton").style.backgroundColor = "white";
      document.getElementById("Cbutton").style.backgroundColor = "db3d3d";
+     document.getElementById("End4c").style.backgroundColor = "db3d3d";
+
 
     defineTiming();
   }
@@ -204,10 +206,10 @@ var Text4b = text4b.fontcolor("white"); //controls the "Ends In:" text color
 var end4b = "Lunch 4b is Over!";
 var End4b = end4b.fontcolor("white");
 
-//var text4c = "Lunch 4c Ends In:&nbsp"
-//var Text4c = text4c.fontcolor("white");
+var text4c = "Lunch 4c Ends In:&nbsp";
+var Text4c = text4c.fontcolor("white");
 
-var end4c = "Lunch 4c is Over!".style.fontSize("17px");
+var end4c = "<font-size:18px>Lunch 4c is Over!</font>";
 //var End4c = end4c.fontcolor("white");
 var End4c = end4c.fontcolor("white");
 
