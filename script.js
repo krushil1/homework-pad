@@ -51,7 +51,6 @@ function myFunction(){
 
 
   var schedule = 'A';
-  
   function Apressed() {
     schedule = 'A';
     document.getElementById("Abutton").style.backgroundColor = "db3d3d";
@@ -99,7 +98,6 @@ var displayPeriod8;
 var displayPeriod9;
 
 function defineTiming() {   //sets the variables of each period end time based on the schedule
-  
   
   if (schedule == 'A') {
     h1 = 8;  m1 = 37;
@@ -158,7 +156,7 @@ function displayPeriods() {
     displayPeriods();
   }, 0)
 }
-adjustFontSize();
+
   
 var text1 = "Period 1 Ends In:&nbsp"; 
 var Text1 = text1.fontcolor("white"); //controls the "Ends In:" text color
@@ -210,8 +208,8 @@ var text4c = "Lunch 4c Ends In:&nbsp"
 var Text4c = text4c.fontcolor("white");
 
 var end4c = "Lunch 4c is Over!"
+//var End4c = end4c.fontcolor("white");
 var End4c = end4c.fontcolor("white");
-
 //var End4c = document.write('<span style="font-size: 10px">Lunch 4c is Over!</span>');
 
 
@@ -613,6 +611,10 @@ function period9() {
     }
     setTimeout(period9, 100);
   }
+  
+  
+
+
   
   displayPeriods();
   document.addEventListener('DOMContentLoaded', getRealSeconds);
