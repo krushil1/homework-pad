@@ -204,13 +204,13 @@ var Text4b = text4b.fontcolor("white"); //controls the "Ends In:" text color
 var end4b = "Lunch 4b is Over!";
 var End4b = end4b.fontcolor("white");
 
-var text4c = "Lunch 4c Ends In:&nbsp"
-var Text4c = text4c.fontcolor("white");
+//var text4c = "Lunch 4c Ends In:&nbsp"
+//var Text4c = text4c.fontcolor("white");
 
-var end4c = "Lunch 4c is Over!"
+var end4c = "Lunch 4c is Over!".style.fontSize("17px");
 //var End4c = end4c.fontcolor("white");
 var End4c = end4c.fontcolor("white");
-//var End4c = document.write('<span style="font-size: 10px">Lunch 4c is Over!</span>');
+
 
 
 
@@ -579,7 +579,7 @@ var realSeconds;
       }
     }else if (schedule == "C"){
       if (hh > 8){
-        displayPeriod8 = End4c;
+        displayPeriod8 = end4c;
       }else{
         displayPeriod8 = Text4c + hh + ":" + mm + ":" + realSeconds;
       }
