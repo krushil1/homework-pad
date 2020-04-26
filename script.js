@@ -157,15 +157,6 @@ function displayPeriods() {
   }, 0)
 }
 
-function adjustFontSize() {
-  if (schedule == "A"){
-    document.getElementById("End4c").style.fontSize = "7.75vh";
-  } else if (schedule == "B"){
-    document.getElementById("End4c").style.fontSize = "7.75vh";
-  } else if (shcedule == "C"){
-    document.getElementById("End4c").style.fontSize = "7.75vh";
-  }
-
 
 
 var text1 = "Period 1 Ends In:&nbsp"; 
@@ -217,10 +208,10 @@ var End4b = end4b.fontcolor("white");
 var text4c = "Lunch 4c Ends In:&nbsp";
 var Text4c = text4c.fontcolor("white");
 
-var end4c = "Lunch 4c is Over!";
+//var end4c = "<h1>Lunch 4c is Over!</h1>";
+var end4c = "<h1 style=font-size:7.75vh>Lunch 4c is OVER!</h1>"
 var End4c = end4c.fontcolor("white");
 //var End4c = end4c.fontsize("95px");
-
 
 
 
@@ -451,6 +442,8 @@ var realSeconds;
     }
      
   }
+ 
+  
   
    function period6() { //4c
     var start = new Date;
