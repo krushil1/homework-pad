@@ -190,7 +190,7 @@ var Textx = textx.fontcolor("white"); //controls the text color for Period X
 var endx = "<p style=font-size:7.1vh>No Period X</p>";
 var Endx = endx.fontcolor("white");
 
-var txtx = "<p style=font-size:7.36vh>Period x is Over!</p>";
+var txtx = "<p style=font-size:7.55vh>Period x is Over!</p>";
 var Txtx = txtx.fontcolor("white");
 
 
@@ -201,7 +201,7 @@ var fourA = foura.fontsize("white");
 
 
 //var end4a = "Lunch 4a is Over!";
-var end4a = "<p style=font-size:7.29vh>Lunch 4a is Over!</p>";
+var end4a = "<p style=font-size:7.18vh>Lunch 4a is Over!</p>";
 var End4a = end4a.fontcolor("white");
 
 
@@ -220,10 +220,7 @@ var Text4c = text4c.fontcolor("white");
 
 
 //var end4c = "<h1>Lunch 4c is Over!</h1>";
-var end4c1 = "<p style=float: left>Lunch &nbsp</p>";
-var end4c2 = "<p style=float:left>4c *nbsp</p>";
-var end4c3 = "<p style=float: left>is Over!</p>";
-var end4c = end4c1 + end4c2 + end4c3;
+var end4c = "<p style=font-size:7.15vh>Lunch 4c is Over!</p>";
 var End4c = end4c.fontcolor("white");
 //var End4c = end4c.fontsize("95px");
 
