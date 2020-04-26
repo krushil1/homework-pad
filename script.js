@@ -70,9 +70,6 @@ function myFunction(){
       document.getElementById("Abutton").style.backgroundColor = "white";
      document.getElementById("Bbutton").style.backgroundColor = "white";
      document.getElementById("Cbutton").style.backgroundColor = "db3d3d";
-     document.getElementById("End4c").style.backgroundColor = "db3d3d";
-
-
     defineTiming();
   }
 
@@ -155,9 +152,21 @@ function displayPeriods() {
     document.getElementById("time8").innerHTML = displayPeriod8;
     document.getElementById("time9").innerHTML = displayPeriod9;
     
+    
     displayPeriods();
   }, 0)
 }
+
+function adjustFontSize() {
+  if (schedule == "A"){
+    document.getElementById("End4c").style.fontSize = "7.75vh";
+  } else if (schedule == "B"){
+    document.getElementById("End4c").style.fontSize = "7.75vh";
+  } else if (shcedule == "C"){
+    document.getElementById("End4c").style.fontSize = "7.75vh";
+  }
+
+
 
 var text1 = "Period 1 Ends In:&nbsp"; 
 var Text1 = text1.fontcolor("white"); //controls the "Ends In:" text color
@@ -466,14 +475,7 @@ var realSeconds;
     } else if (schedule == "C"){
       h6 = 11; m6 = 28; //lunch 4c if the schedule equal C
     }
-    if (schedule == "A"){
-      document.getElementById("End4c").style.fontSize = "7.75vh";
-    } else if (schedule == "B"){
-      document.getElementById("End4c").style.fontSize = "7.75vh";
-    } else if (schedule == "C"){
-      document.getElementById("End4a").style.fontSize = "7.75vh";
-    }
-     
+   
      
      
     if (schedule == "A"){
@@ -625,24 +627,6 @@ function period9() {
   
   
   
-  
-  function adjustFontSize() {
-  
-  if (schedule == 'A'){
-    
-     document.getElementById("End4c").style.fontSize = "7.75vh";
-    
-  } else if (schedule == 'B') {
-    
-    document.getElementById("End4c").style.fontSize = "7.75vh";
-     
-  } else if (schedule == 'C'){
-    
-    document.getElementById("End4c").style.fontSize = "7.75vh";
-  }
-  
-}
-
 
   
   displayPeriods();
