@@ -211,7 +211,8 @@ var Text4c = text4c.fontcolor("white");
 
 var end4c = "Lunch 4c is Over!";
 //var End4c = end4c.fontcolor("white");
-var End4c = end4c.fontsize("95%");
+var End4c = end4c.fontsize("95px");
+
 
 
 
