@@ -200,7 +200,7 @@ var fourA = foura.fontsize("white");
 
 
 //var end4a = "Lunch 4a is Over!";
-var end4a = "<p style=font-size:7.3vh>Lunch 4a is</p>" + "<p style = font-size:8vh>Over!</p>";
+var end4a = "<p style=font-size:7.6vh>Lunch 4a is Over!</p>";
 var End4a = end4a.fontcolor("white");
 
 
@@ -210,41 +210,35 @@ var text4b = "Lunch 4b Ends In:&nbsp";
 var Text4b = text4b.fontcolor("white"); //controls the "Ends In:" text color
  
 //var end4b = "Lunch 4b is Over!";
-var end4b = "<p style=font-size:7.1vh>Lunch 4b is OVER!</p>";
+var end4b = "<p style=font-size:7.1vh>Lunch 4b is Over!</p>";
 var End4b = end4b.fontcolor("white");
 
 var text4c = "Lunch 4c Ends In:&nbsp";
 var Text4c = text4c.fontcolor("white");
 
 //var end4c = "<h1>Lunch 4c is Over!</h1>";
-var end4c = "<p style=font-size:7.1vh>Lunch 4c is OVER!</p>";
+var end4c = "<p style=font-size:7.1vh>Lunch 4c is Over!</p>";
 var End4c = end4c.fontcolor("white");
 //var End4c = end4c.fontsize("95px");
 
 
-
-
-
-
-
-
-
-var text5 = "Period 5 Ends In:&nbsp"
+var text5 = "Period 5 Ends In:&nbsp";
 var Text5 = text5.fontcolor("white");
 
-var end5 = "Period 5 is Over!"
+
+var end5 = "<p style=font-size:8vh>Period 5 is Over!</p>";
 var End5 = end5.fontcolor("white");
 
-var text6 = "Period 6 Ends In:&nbsp"
+var text6 = "Period 6 Ends In:&nbsp";
 var Text6 = text6.fontcolor("white");
 
-var end6 = "Period 6 is Over!"
+var end6 = "<p style=font-size:7.45vh>Period 6 is Over!</p>";
 var End6 = end6.fontcolor("white");
 
-var text7 = "Period 7 Ends In:&nbsp"
+var text7 = "Period 7 Ends In:&nbsp";
 var Text7 = text7.fontcolor("white");
 
-var end7 = "Period 7 is Over!"
+var end7 = "<p style=font-size:7.45vh>Period 7 is Over!</p>";
 var End7 = end7.fontcolor("white");
 
 
