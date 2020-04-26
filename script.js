@@ -200,11 +200,8 @@ var fourA = foura.fontsize("white");
 
 
 //var end4a = "Lunch 4a is Over!";
-var end4a = "<p style=font-size:7.2vh>Lunch&nbsp</p>";
-var end4a1 = "<p style=font-size:5vh>4a&nbsp</p>";
-var end4a2 = "<p style=font-size:7.2vh>is Over!</p>";
-var end4a3 = end4a + end4a1 + end4a2;
-var End4a = end4a3.fontcolor("white");
+var end4a = "<p style=font-size:7.3vh>Lunch 4a is</p>" + "<p style = font-size:8vh>Over!</p>";
+var End4a = end4a.fontcolor("white");
 
 
 
