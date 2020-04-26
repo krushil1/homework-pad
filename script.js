@@ -187,8 +187,7 @@ var Text9 = text9.fontcolor("#00BD56"); //controls the "Ends In:" text color
 var textx = "Period X Ends In:&nbsp";
 var Textx = textx.fontcolor("white"); //controls the text color for Period X
 
-var endx = "No Period X";
-var endx = "<p style=font-size:7.1vh>Lunch 4c is OVER!</p>";
+var endx = "<p style=font-size:7.1vh>No Period X</p>";
 var Endx = endx.fontcolor("white");
 
 var txtx = "<p style=font-size:7.36vh>Period x is Over!</p>";
@@ -218,10 +217,19 @@ var End4b = end4b.fontcolor("white");
 var text4c = "Lunch 4c Ends In:&nbsp";
 var Text4c = text4c.fontcolor("white");
 
+
+
 //var end4c = "<h1>Lunch 4c is Over!</h1>";
-var end4c = "<p style=font-size:7.1vh>Lunch 4c is Over!</p>";
+//var end4c = "<p style=font-size:7.1vh>Lunch 4c is Over!</p>";
+var end4c0 = "<p style = float:left;>Lunch &nbsp</p>";
+var end4c1 = "<p style = float:left;>4c &nbsp</p>";
+var end4c2 = "<p style = float:left;>is Over!</p>";
+var end4c = <p;
 var End4c = end4c.fontcolor("white");
 //var End4c = end4c.fontsize("95px");
+
+
+
 
 
 var text5 = "Period 5 Ends In:&nbsp";
