@@ -162,19 +162,20 @@ function displayPeriods() {
 var text1 = "Period 1 Ends In:&nbsp"; 
 var Text1 = text1.fontcolor("white"); //controls the "Ends In:" text color
  
-var end1 = "Period 1 is Over!";
+var end1 = "<p style=font-size:7.45vh>Period 1 is Over!</p>";
 var End1 = end1.fontcolor("white"); //controls the "is Over!" text color
 
 var text2 = "Period 2 Ends In:&nbsp"; 
 var Text2 = text2.fontcolor("white"); //controls the "Ends In:" text color
  
 var end2 = "Period 2 is Over!";
+var end2 = "<p style=font-size:7.45vh>Period 2 is Over!</p>";
 var End2 = end2.fontcolor("white");
 
 var text3 = "Period 3 Ends In:&nbsp"; 
 var Text3 = text3.fontcolor("white"); //controls the "Ends In:" text color
  
-var end3 = "Period 3 is Over!";
+var end3 = "<p style=font-size:7.45vh>Period 3 is Over!</p>";
 var End3 = end3.fontcolor("white");
 
 var endtext9 = "is Over!";
@@ -187,9 +188,10 @@ var textx = "Period X Ends In:&nbsp";
 var Textx = textx.fontcolor("white"); //controls the text color for Period X
 
 var endx = "No Period X";
+var endx = "<p style=font-size:7.1vh>Lunch 4c is OVER!</p>";
 var Endx = endx.fontcolor("white");
 
-var txtx = "Period X is Over!";
+var txtx = "<p style=font-size:7.36vh>Period x is Over!</p>";
 var Txtx = txtx.fontcolor("white");
 
 
@@ -200,7 +202,7 @@ var fourA = foura.fontsize("white");
 
 
 //var end4a = "Lunch 4a is Over!";
-var end4a = "<p style=font-size:7.6vh>Lunch 4a is Over!</p>";
+var end4a = "<p style=font-size:7.29vh>Lunch 4a is Over!</p>";
 var End4a = end4a.fontcolor("white");
 
 
@@ -226,7 +228,7 @@ var text5 = "Period 5 Ends In:&nbsp";
 var Text5 = text5.fontcolor("white");
 
 
-var end5 = "<p style=font-size:8vh>Period 5 is Over!</p>";
+var end5 = "<p style=font-size:7.45vh>Period 5 is Over!</p>";
 var End5 = end5.fontcolor("white");
 
 var text6 = "Period 6 Ends In:&nbsp";
