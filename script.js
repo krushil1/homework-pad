@@ -196,22 +196,39 @@ var Txtx = txtx.fontcolor("white");
 var foura = "Lunch 4a Ends In: &nbsp";
 var fourA = foura.fontsize("white");
 
-var end4a = "Lunch 4a is Over!";
-var End4a = end4a.fontcolor("white");
+
+
+
+//var end4a = "Lunch 4a is Over!";
+var end4a = "<p style=font-size:7.2vh>Lunch&nbsp</p>";
+var end4a1 = "<p style=font-size:5vh>4a&nbsp</p>";
+var end4a2 = "<p style=font-size:7.2vh>is Over!</p>";
+var end4a3 = end4a + end4a1 + end4a2;
+var End4a = end4a3.fontcolor("white");
+
+
+
 
 var text4b = "Lunch 4b Ends In:&nbsp"; 
 var Text4b = text4b.fontcolor("white"); //controls the "Ends In:" text color
  
-var end4b = "Lunch 4b is Over!";
+//var end4b = "Lunch 4b is Over!";
+var end4b = "<p style=font-size:7.1vh>Lunch 4b is OVER!</p>";
 var End4b = end4b.fontcolor("white");
 
 var text4c = "Lunch 4c Ends In:&nbsp";
 var Text4c = text4c.fontcolor("white");
 
 //var end4c = "<h1>Lunch 4c is Over!</h1>";
-var end4c = "<h1 style=font-size:7.75vh>Lunch 4c is OVER!</h1>"
+var end4c = "<p style=font-size:7.1vh>Lunch 4c is OVER!</p>";
 var End4c = end4c.fontcolor("white");
 //var End4c = end4c.fontsize("95px");
+
+
+
+
+
+
 
 
 
