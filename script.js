@@ -238,7 +238,7 @@ var End5 = end5.fontcolor("white");
 var text6 = "Period 6 Ends In:&nbsp";
 var Text6 = text6.fontcolor("white");
 
-var end6 = "<p style=font-size:7.4vh>Period 6 Is Over!</p>";
+var end6 = "<p style=font-size:7.45vh>Period 6 Is Over!</p>";
 var End6 = end6.fontcolor("white");
 
 var text7 = "Period 7 Ends In:&nbsp";

@@ -65,38 +65,19 @@
     }
   </style> 
   
-  
- 
 
-
-
-  
-  
-  
   
   <div class="row"></div>
   <div class="column" id="column1">
-      <div>
-        <p><b><i><center><font size="6" id="date" class="date"></font></center></i></b></p>
-        <br>
-        <br>
-      <script>
-      n =  new Date();
-      y = n.getFullYear();
-      m = n.getMonth() + 1;
-      d = n.getDate();
-      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-      </script> 
-      </div>      
     
     <div>
       <p><b><font class="selector"><center><big>Schedule Selector</big></center></font></b></p>
       <br>
-      <center><button class="checkButton Abutton pointer" id="Abutton" onclick="Apressed();">A</button></center>
+      <center><button class="Abutton pointer" id="Abutton" onclick="Apressed();">A</button></center>
       <br>
-      <center><button class="checkButton Bbutton pointer" id="Bbutton" onclick="Bpressed();">B</button></center>
+      <center><button class="Bbutton pointer" id="Bbutton" onclick="Bpressed();">B</button></center>
       <br>
-      <center><button class="checkButton Cbutton pointer" id="Cbutton" onclick="Cpressed();">C</button></center>
+      <center><button class="Cbutton pointer" id="Cbutton" onclick="Cpressed();">C</button></center>
     </div>
     <div class="container">
       <center><button class="details pointer" tooltip="Left Tooltip ^_^" tooltip-position="left">More Details</button></center>
