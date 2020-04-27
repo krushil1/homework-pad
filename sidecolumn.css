@@ -16,20 +16,18 @@
 }
 
 /* Clear floats after the columns */
-.row:after {
+
+/*.row:after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
     
 ul {
   list-style-type: none; 
 }
 
-.date{
-  color: #FFF176;
-  bottom: 5vh;
-}
+
 
 .selector{
   color: #00E5FF;

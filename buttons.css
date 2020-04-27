@@ -24,27 +24,22 @@
   display: inline-block;
   font-size: 25px;
   border-radius: 30px;
+  float: left;
   
 
   
 }
 
 .settings {
-  background-color: #4CAF50; /* Green */
+  background-color: #00000;/* Green */
   border: none;
   outline: none;
   color: white;
-  padding: 5px 40px;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
+  font-size: 5vh;
   border-radius: 30px;
   
-  align-items: center;
-  float: right;
-  position: relative;
-  left: -42%;
+  float: left;
   
 }
 
