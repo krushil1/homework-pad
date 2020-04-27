@@ -191,7 +191,7 @@ var endx = "<p style=font-size:7.1vh>No Period X</p>";
 var Endx = endx.fontcolor("white");
 
 var txtx = "<p style=font-size:7.55vh>Period x Is Over!</p>";
-var Txtx = txtx.fontcolor("white");
+var Txtx = txtx
 
 
 var foura = "Lunch 4a Ends In: &nbsp";
@@ -202,7 +202,7 @@ var fourA = foura.fontsize("white");
 
 //var end4a = "Lunch 4a is Over!";
 var end4a = "<p style=font-size:7.18vh>Lunch 4a Is Over!</p>";
-var End4a = end4a.fontcolor("white");
+var End4a = end4a
 
 
 
@@ -655,12 +655,6 @@ function period9() {
   document.addEventListener('DOMContentLoaded', period8);
   document.addEventListener('DOMContentLoaded', period9);
 })();
-
-
-
-
-
-
 
 
 
