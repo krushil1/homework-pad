@@ -14,40 +14,31 @@
 }
 
 .details {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  outline: none;
-  color: white;
-  padding: 5px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  border-radius: 30px;
-  float: left;
+  background-color:limegreen;
+  width: 110px;
+  height: 55px;
+  border-radius: 25px;
+  padding: 10px;
+  border:none;
+  outline:none;
+  color:black;
+  font-size: 2.5vh;
+  font-weight:bold;
   
 
   
 }
 
 .setting {
- /* background-color: #4CAF50; 
-  border: none;
-  outline: none;
-  color: white;
-  text-decoration: none;
-  font-size: 3vh;
-  border-radius: 100px;
-  font-weight: bold;
-  float: right;*/
   background-color:limegreen;
-  width: 6em;
-  height: 2.5em;
-  border-radius: 60%;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  padding: 10px;
   border:none;
   outline:none;
   color:black;
-  font-size: 1.5vw;
+  font-size: 2.5vh;
   font-weight:bold;
   
 }
