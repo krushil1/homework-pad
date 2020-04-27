@@ -42,16 +42,18 @@
   height: 26px;
   left: 4px;
   position: absolute;
-  transition: .4s;
+  transition: .2s;
   width: 26px;
 }
 
 input:checked + .slider {
-  background-color: #0E2431;
+  background-color: #404040;
 }
+
 
 input:checked + .slider:before {
   transform: translateX(26px);
+  background-color: #282828;
 }
 
 .slider.round {
@@ -61,5 +63,4 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
 
