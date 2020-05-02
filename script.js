@@ -99,7 +99,7 @@ var displayPeriod9;
 function defineTiming() {   //sets the variables of each period end time based on the schedule
   
   if (schedule == 'A') {
-    h1 = 8;  m1 = 37;
+    h1 = 19;  m1 = 37;
     h2 = 9;  m2 = 24;
     h3 = 10; m3 = 11;
     hx = 10; mx = 44; //period X
@@ -159,9 +159,11 @@ function displayPeriods() {
 
 
 
-var text1 = "Period 1 Ends In:&nbsp"; 
+var text1 = "Period 1 Ends In: &nbsp"; 
 var Text1 = text1.fontcolor("white"); //controls the "Ends In:" text color
  
+displayPeriod1 = "<p style=font-size:7.45vh></p>";
+
 var end1 = "<p style=font-size:7.45vh>Period 1 Is Over!</p>";
 var End1 = end1.fontcolor("white"); //controls the "is Over!" text color
 
@@ -252,7 +254,6 @@ var End7 = end7.fontcolor("white");
 
 
 
-
 var realSeconds;
 
 (function() {
@@ -291,6 +292,9 @@ var realSeconds;
     displayPeriod1 = Text1 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period1, 100);
+    if (hh > 8){
+      displayPeriod1 = 
+    }
   }
   
   
