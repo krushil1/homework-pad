@@ -159,10 +159,8 @@ function displayPeriods() {
 
 
 
-var text1 = "Period 1 Ends In: &nbsp"; 
-var Text1 = text1.fontcolor("white"); //controls the "Ends In:" text color
+
  
-displayPeriod1 = "<p style=font-size:7.45vh></p>";
 
 var end1 = "<p style=font-size:7.45vh>Period 1 Is Over!</p>";
 var End1 = end1.fontcolor("white"); //controls the "is Over!" text color
@@ -277,6 +275,7 @@ var realSeconds;
   
 
   function period1() {
+    
     var start = new Date;
     start.setHours(h1, m1, 0);
     var now = new Date;
@@ -286,15 +285,16 @@ var realSeconds;
     var remain = ((start - now) / 1000);
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
+    var text1 = "Period 1 Ends In: &nbsp" + hh + ":" + mm + ":" + realSeconds; 
+    var Text12 = text1.fontcolor("white"); //controls the "Ends In:" text color
+    var Text1 = Text12.fontsize(""); 
+    
      if (hh > 8) {
        displayPeriod1 = End1; 
     } else {
-    displayPeriod1 = Text1 + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod1 = Text1;
     }
     setTimeout(period1, 100);
-    if (hh > 8){
-      displayPeriod1 = 
-    }
   }
   
   
