@@ -1,25 +1,25 @@
 #Abutton {
   background-color:#db3d3d;
-  width:40px;
-  height: 40px;
+  width:auto;
+  height: auto;
   border-radius: 100%;
   border:none;
   outline:none;
   color:black;
-  font-size: 1.5vw;
+  font-size:2.5vh;
   font-weight:bold;
   margin-bottom: 0%;
 }
   
 #Bbutton{
   background-color:white;
-  width:40px;
-  height:40px;
+  width:auto;
+  height:auto;
   border-radius: 100%;
   border:none;
   outline:none;
   color:black;
-  font-size: 1.5vw;
+  font-size: 2.5vh;
   font-weight:bold;
   margin-bottom: 0%;
 }
@@ -27,13 +27,13 @@
 
 #Cbutton{
   background-color:white;
-  width:40px;
-  height:40px;
+  width:auto;
+  height:auto;
   border-radius: 100%;
   border:none;
   outline:none;
   color:black;
-  font-size: 1.5vw;
+  font-size: 2.5vh;
   font-weight:bold;
 }
   

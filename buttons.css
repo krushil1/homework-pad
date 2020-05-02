@@ -15,8 +15,8 @@
 
 .details {
   background-color:limegreen;
-  width: 110px;
-  height: 55px;
+  width: auto;
+  height: auto;
   border-radius: 25px;
   padding: 10px;
   border:none;
@@ -31,8 +31,8 @@
 
 .setting {
   background-color:limegreen;
-  width: 100px;
-  height: 40px;
+  width: auto;
+  height: auto;
   border-radius: 25px;
   padding: 10px;
   border:none;
