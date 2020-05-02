@@ -287,7 +287,7 @@ var realSeconds;
     var mm = pad((remain / 60) % 60);
     var text1 = "Period 1 Ends In: &nbsp" + hh + ":" + mm + ":" + realSeconds; 
     var Text12 = text1.fontcolor("white"); //controls the "Ends In:" text color
-    var Text1 = Text12.fontsize(""); 
+    var Text1 = Text12.fontsize("100px"); 
     
      if (hh > 8) {
        displayPeriod1 = End1; 
