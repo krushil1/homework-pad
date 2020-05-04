@@ -100,15 +100,15 @@ function defineTiming() {   //sets the variables of each period end time based o
   
   if (schedule == 'A') {
     h1 = 19;  m1 = 37;
-    h2 = 9;  m2 = 24;
-    h3 = 10; m3 = 11;
-    hx = 10; mx = 44; //period X
-    h4 = 11; m4 = 16; //4a
-    h5 = 11; m5 = 46; //4b
-    h6 = 12; m6 = 12; //4c
-    h7 = 13; m7 = 3;
-    h8 = 13; m8 = 50;
-    h9 = 14;m9 = 37;
+    h2 = 19;  m2 = 24;
+    h3 = 19; m3 = 11;
+    hx = 19; mx = 44; //period X
+    h4 = 19; m4 = 16; //4a
+    h5 = 19; m5 = 46; //4b
+    h6 = 19; m6 = 12; //4c
+    h7 = 19; m7 = 3;
+    h8 = 19; m8 = 50;
+    h9 = 19;m9 = 37;
   } else {
     if (schedule == 'B') {
       h1 = 8;  m1 = 37;
@@ -153,13 +153,21 @@ function displayPeriods() {
     document.getElementById("time9").innerHTML = displayPeriod9;
     
     
+    
     displayPeriods();
   }, 0)
 }
 
 
+function fontSizes(){
+  document.getElement("time")
+}
 
 
+
+
+var text1 = "Period 1 Ends In: &nbsp";
+var Text1 = text1.fontcolor("white");
  
 
 var end1 = "<p style=font-size:7.45vh>Period 1 Is Over!</p>";
@@ -285,14 +293,14 @@ var realSeconds;
     var remain = ((start - now) / 1000);
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
-    var text1 = "Period 1 Ends In: &nbsp" + hh + ":" + mm + ":" + realSeconds; 
-    var Text12 = text1.fontcolor("white"); //controls the "Ends In:" text color
-    var Text1 = Text12.fontsize(9);
+    //var text1 = "Period 1 Ends In: &nbsp" + hh + ":" + mm + ":" + realSeconds; 
+    //var Text12 = text1.fontcolor("white"); //controls the "Ends In:" text color
+   // var Text1 = Text12.fontsize(9);
     
      if (hh > 8) {
        displayPeriod1 = End1; 
     } else {
-    displayPeriod1 = Text1;
+    displayPeriod1 = Text1 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period1, 100);
   }
