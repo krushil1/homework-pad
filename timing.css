@@ -47,6 +47,17 @@
     font-size: 7.45vh;
   }
 
+ 
+ .time1 {
+    color:#f2eaec;
+    font-weight:bold;
+    font-family:Arial;
+    display:inline-block;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 7.45vh;
+  }
+
 
 .time4 {
     color:red;

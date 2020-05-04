@@ -103,7 +103,7 @@ function defineTiming() {   //sets the variables of each period end time based o
     h2 = 19;  m2 = 24;
     h3 = 19; m3 = 11;
     hx = 19; mx = 44; //period X
-    h4 = 19; m4 = 16; //4a
+    h4 = 21; m4 = 16; //4a
     h5 = 19; m5 = 46; //4b
     h6 = 19; m6 = 12; //4c
     h7 = 19; m7 = 3;
@@ -114,7 +114,7 @@ function defineTiming() {   //sets the variables of each period end time based o
       h1 = 8;  m1 = 37;
       h2 = 9;  m2 = 24;
       h3 = 10; m3 = 11;
-      h4 = 10; m4 = 58;
+      h4 = 21; m4 = 58;
       h5 = 11; m5 = 45;
       h6 = 12; m6 = 32;
       h7 = 13; m7 = 19;
@@ -127,7 +127,7 @@ function defineTiming() {   //sets the variables of each period end time based o
         h1 = 8;  m1 = 22;
         h2 = 9;  m2 = 4;
         h3 = 9;  m3 = 46;
-        h4 = 10; m4 = 20; // 5th Period
+        h4 = 21; m4 = 20; // 5th Period
         h5 = 10; m5 = 54; // 6th Period
         h6 = 11; m6 = 28; // lunch 4a
         h7 = 12; m7 = 2; // lunch 4b
@@ -159,14 +159,9 @@ function displayPeriods() {
 }
 
 
-function fontSizes(){
-  document.getElement("time")
-}
 
 
-
-
-var text1 = "Period 1 Ends In: &nbsp";
+var text1 = "Period 1 Ends In:&nbsp";
 var Text1 = text1.fontcolor("white");
  
 
@@ -379,6 +374,7 @@ var realSeconds;
   
   
  function period4() { //4a
+   document.getElementById("myP").style.fontSize = "xx-large";
     var start = new Date;
     start.setHours(h4, m4, 0);
     var now = new Date;
@@ -395,11 +391,11 @@ var realSeconds;
     }
     setTimeout(period4, 100);
     if (schedule == "A"){
-      h4 = 11; m4 = 16;
+      h4 = 21; m4 = 16;
     } else if (schedule == "B"){
-      h4 = 12; m4 = 5;
+      h4 = 21; m4 = 5;
     } else if (schedule == "C"){
-      h4 = 12; m4 = 52; //Period 5 if the schedule equal C
+      h4 = 21; m4 = 52; //Period 5 if the schedule equal C
     }
     if (schedule == "A"){
       if (hh > 8){
@@ -441,12 +437,12 @@ var realSeconds;
     }
     setTimeout(period5, 100);
     if (schedule == "A"){
-      h5 = 11; m5 = 46;
+      h5 = 21; m5 = 46;
     } else if (schedule == "B"){
-      h5 = 11; m5 = 45;
+      h5 = 21; m5 = 45;
     } else if (schedule == "C"){
       End6 = "<p style=font-size:7.6vh>Period 6 Is Over!</p>"
-      h5 = 10; m5 = 54; //Period 6 if the schedule equal C
+      h5 = 21; m5 = 54; //Period 6 if the schedule equal C
     }
     if (schedule == "A"){
       if (hh > 8){
@@ -489,11 +485,11 @@ var realSeconds;
     }
     setTimeout(period6, 100);
     if (schedule == "A"){
-      h6 = 12; m6 = 12;
+      h6 = 21; m6 = 12;
     } else if (schedule == "B"){
-      h6 = 12; m6 = 32;
+      h6 = 21; m6 = 32;
     } else if (schedule == "C"){
-      h6 = 11; m6 = 28; //lunch 4c if the schedule equal C
+      h6 = 21; m6 = 28; //lunch 4c if the schedule equal C
     }
    
      
@@ -539,12 +535,12 @@ var realSeconds;
     }
     setTimeout(period7, 100);
     if (schedule == "A"){
-      h7 = 13; m7 = 3;
+      h7 = 21; m7 = 3;
     } else if (schedule == "B"){
-      h7 = 13; m7 = 19;
+      h7 = 21; m7 = 19;
     } else if (schedule == "C"){
       End4b = "<p style=font-size:7.04vh>Lunch 4b Is Over!<p>"
-      h7 = 12; m7 = 2; //Period 5 if the schedule equal C
+      h7 = 21; m7 = 2; //Period 5 if the schedule equal C
     }
     if (schedule == "A"){
       if (hh > 8){
@@ -586,11 +582,11 @@ var realSeconds;
     }
     setTimeout(period8, 100);
     if (schedule == "A"){
-      h8 = 13; m8 = 3;
+      h8 = 21; m8 = 3;
     } else if (schedule == "B"){
-      h8 = 13; m8 = 19;
+      h8 = 21; m8 = 19;
     } else if (schedule == "C"){
-      h8 = 12; m8 = 2; //Period 5 if the schedule equal C
+      h8 = 21; m8 = 2; //Period 5 if the schedule equal C
       End4c = "<p style=font-size:7.06vh>Lunch 4c Is Over!</p>"
     }
        
@@ -635,10 +631,10 @@ function period9() {
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
     var endtxt1 = hh + ":" + mm + ":" + realSeconds; 
-    var EndTxt = endtxt1.fontcolor("#00BD56"); //controls the "Ends In:" text color
-    if (schedule == "C"){
-      End7 = "<p style=font-size:7.45vh>Period 7 Is Over!</p>";
-    }
+//    var EndTxt = endtxt1.fontcolor("#00BD56"); //controls the "Ends In:" text color
+//    if (schedule == "C"){
+//      End7 = "<p style=font-size:7.45vh>Period 7 Is Over!</p>";
+//    }
      if (hh > 8) {
       displayPeriod9 = End7;
     } else {
