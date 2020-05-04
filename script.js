@@ -51,11 +51,13 @@ function myFunction(){
 
 
   var schedule = 'A';
+
   function Apressed() {
     schedule = 'A';
     document.getElementById("Abutton").style.backgroundColor = "db3d3d";
     document.getElementById("Bbutton").style.backgroundColor = "white";
     document.getElementById("Cbutton").style.backgroundColor = "white";
+    document.getElementById("text4").style.fontSize = "7.75vh";
     defineTiming();
   }
    function Bpressed() {
@@ -64,6 +66,7 @@ function myFunction(){
      document.getElementById("Bbutton").style.backgroundColor = "db3d3d";
      document.getElementById("Cbutton").style.backgroundColor = "white";
     defineTiming();
+
   }
    function Cpressed() {
     schedule = 'C';
@@ -72,7 +75,6 @@ function myFunction(){
      document.getElementById("Cbutton").style.backgroundColor = "db3d3d";
     defineTiming();
   }
-
 
 var h1; var m1;
 var h2; var m2;
@@ -96,8 +98,13 @@ var displayPeriod7;
 var displayPeriod8;
 var displayPeriod9;
 
-function defineTiming() {   //sets the variables of each period end time based on the schedule
-  
+ 
+
+
+
+function defineTiming() {//sets the variables of each period end time based on the schedule
+
+
   if (schedule == 'A') {
     h1 = 19;  m1 = 37;
     h2 = 19;  m2 = 24;
@@ -139,8 +146,9 @@ function defineTiming() {   //sets the variables of each period end time based o
 }
   
 function displayPeriods() {
+
   setTimeout(function () {
-    
+
     document.getElementById("time1").innerHTML = displayPeriod1;
     document.getElementById("time2").innerHTML = displayPeriod2;
     document.getElementById("time3").innerHTML = displayPeriod3;
@@ -154,11 +162,11 @@ function displayPeriods() {
     
     
     
+    
+    
     displayPeriods();
   }, 0)
 }
-
-
 
 
 var text1 = "Period 1 Ends In:&nbsp";
@@ -648,26 +656,7 @@ function period9() {
   }
   
   
-  
-  function adjustFontSize() {
-  
-  if (schedule == 'A'){
-    document.getElementById("displayPeriod4").style.fontSize = "7.75vh";
-    
-    
-  } else if (schedule == 'B') {
-    document.getElementById("displayPeriod4").style.fontSize = "7.75vh";
-    
-    
-    
-  } else if (schedule == 'C'){
-    
-    document.getElementById("displayPeriod4").style.fontSize = "7.75vh";
-  }
-  
-  
-  
-}
+ 
   
   
   
