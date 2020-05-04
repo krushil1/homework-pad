@@ -57,7 +57,6 @@ function myFunction(){
     document.getElementById("Abutton").style.backgroundColor = "db3d3d";
     document.getElementById("Bbutton").style.backgroundColor = "white";
     document.getElementById("Cbutton").style.backgroundColor = "white";
-    document.getElementById("text4").style.fontSize = "7.75vh";
     defineTiming();
   }
    function Bpressed() {
@@ -411,22 +410,30 @@ var realSeconds;
       if (hh > 8){
         displayPeriod4 = End4a;
       }else{
-        displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("displayPeriod4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
+        //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
 
       }
     }else if (schedule == "B"){
       if (hh > 8){
         displayPeriod4 = End4a;
       }else{
-        displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("displayPeriod4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
+        //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
       }
     }else if (schedule == "C"){
       if (hh > 8){
         displayPeriod4 = End5
       }else{
-        displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("displayPeriod4").innerHTML = Text5 + hh + ":" + mm + ":" + realSeconds;
+        //displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
       }
     }
+   if (schedule == "A"){
+     document.getElementById("displayPeriod4").style.fontSize = "xx-large";
+   } else if (schedule == "B"){
+     document.getElementById("displayPeriod4").style.fontSize = "xx-large";
+   } else if (schedule == "C")
   }
    
   
