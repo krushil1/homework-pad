@@ -420,13 +420,22 @@ var realSeconds;
       }
     }else if (schedule == "C"){
       if (hh > 8){
-        document.getElementById()
-        displayPeriod4 = End5
+        document.getElementById("time4").innerHTML = End5;
+        //displayPeriod4 = End5
       }else{
-        displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("time4").innerHTML = Text5 + hh + ":" + mm + ":" + realSeconds
+        //displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
       }
     }
+   
+   if (schedule == "A"){
+     document.getElementById("time4").style.fontSize = "7.19vh";
+   } else if (schedule == "B"){
+     document.getElementById("time4").style.fontSize = "7.75vh";
+   } else if (schedule == "C"){
+     document.getElementById("time4").style.fontSize = "7.75vh";
+   }
   }
    
   
