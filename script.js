@@ -231,8 +231,6 @@ var End4c = end4c.fontcolor("white");
 
 
 
-var text5 = "Period 5 Ends In:&nbsp";
-var Text5 = text5.fontcolor("white");
 
 
 var end5 = "Period 5 Is Over!";
@@ -348,14 +346,16 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8){
-       displayPeriodx = Txtx;
+       document.getElementById(periodx").innerHTML = "Period x Is Over!";
      }else{
-       displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
+       document.getElementById("eriodx").innerHTML = "Period x Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+       //displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
      }
      
      setTimeout(periodx, 100);
      if (schedule == "B" || schedule == "C"){
-       displayPeriodx = Endx; 
+       document.getElementById("Periodx").innerHTML = "No Period X";
+       //displayPeriodx = Endx; 
      }
    }
      
@@ -382,12 +382,17 @@ var realSeconds;
     }
     var remain = ((start - now) / 1000);
     var hh = pad((remain / 60 / 60) % 60);
-    var mm = pad((remain / 60) % 60);
+    var mm = pad((remain / 60) % 60); 
+    
+   var text5 = "Period 5 Ends In:&nbsp";
+   var Text5 = text5.fontcolor("white");
+
+   
      if (hh > 8) {
-       document.getElementById("time4").innerHTML = "Lunch 4a is Over!";
+       document.getElementById("period4").innerHTML = "Lunch 4a is Over!";
       //displayPeriod4 = End4a;
     }else {
-      document.getElementById("time4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
+      document.getElementById("period4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
     //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period4, 100);
@@ -403,40 +408,40 @@ var realSeconds;
       
     if (schedule == "A"){
       if (hh > 8){
-         document.getElementById("time4").innerHTML = "Lunch 4a is Over!";
+         document.getElementById("period4").innerHTML = "Lunch 4a is Over!";
         //displayPeriod4 = End4a;
       }else{
-        document.getElementById("time4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("period4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
 
       }
     }else if (schedule == "B"){
       if (hh > 8){
-        document.getElementById("time4").innerHTML = End4a;
+        document.getElementById("period4").innerHTML = End4a;
         //displayPeriod4 = End4a;
       }else{
-        document.getElementById("time4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("period4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
       }
     }else if (schedule == "C"){
       if (hh > 8){
-        document.getElementById("time4").innerHTML = End5;
+        document.getElementById("period4").innerHTML = End5;
         //displayPeriod4 = End5
       }else{
-        document.getElementById("time4").innerHTML = text5 + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("period4").innerHTML = text5 + hh + ":" + mm + ":" + realSeconds;
         //displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
       }
     }
    
    if (schedule == "A"){
-     document.getElementById("time4").style.fontSize = "7.19vh";
+     document.getElementById("period4").style.fontSize = "7.19vh";
    } else if (schedule == "B"){
-     document.getElementById("time4").style.fontSize = "7.75vh";
+     document.getElementById("period4").style.fontSize = "7.75vh";
    } else if (schedule == "C"){
-     document.getElementById("time4").style.fontSize = "7.75vh";
+     document.getElementById("period4").style.fontSize = "7.75vh";
    }
   }
    
