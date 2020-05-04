@@ -404,7 +404,6 @@ var realSeconds;
         displayPeriod4 = End4a;
       }else{
         displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("displayPeriod4").style.fontSize = "xx-large";
 
       }
     }else if (schedule == "B"){
@@ -412,7 +411,6 @@ var realSeconds;
         displayPeriod4 = End4a;
       }else{
         displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("myP").style.fontSize = "xx-large";
       }
     }else if (schedule == "C"){
       if (hh > 8){
@@ -447,7 +445,7 @@ var realSeconds;
     } else if (schedule == "B"){
       h5 = 21; m5 = 45;
     } else if (schedule == "C"){
-      End6 = "<p style=font-size:7.6vh>Period 6 Is Over!</p>"
+      End6 = "Period 6 Is Over!"
       h5 = 21; m5 = 54; //Period 6 if the schedule equal C
     }
     if (schedule == "A"){
@@ -545,7 +543,7 @@ var realSeconds;
     } else if (schedule == "B"){
       h7 = 21; m7 = 19;
     } else if (schedule == "C"){
-      End4b = "<p style=font-size:7.04vh>Lunch 4b Is Over!<p>"
+      End4b = "Lunch 4b Is Over!"
       h7 = 21; m7 = 2; //Period 5 if the schedule equal C
     }
     if (schedule == "A"){
@@ -593,7 +591,7 @@ var realSeconds;
       h8 = 21; m8 = 19;
     } else if (schedule == "C"){
       h8 = 21; m8 = 2; //Period 5 if the schedule equal C
-      End4c = "<p style=font-size:7.06vh>Lunch 4c Is Over!</p>"
+      End4c = "Lunch 4c Is Over!"
     }
        
        
@@ -651,6 +649,26 @@ function period9() {
   
   
   
+  function adjustFontSize() {
+  
+  if (schedule == 'A'){
+    document.getElementById("displayPeriod4").style.fontSize = "7.75vh";
+    
+    
+  } else if (schedule == 'B') {
+    document.getElementById("displayPeriod4").style.fontSize = "7.75vh";
+    
+    
+    
+  } else if (schedule == 'C'){
+    
+    document.getElementById("displayPeriod4").style.fontSize = "7.75vh";
+  }
+  
+  
+  
+}
+  
   
   
   
@@ -668,7 +686,9 @@ function period9() {
   document.addEventListener('DOMContentLoaded', period7);
   document.addEventListener('DOMContentLoaded', period8);
   document.addEventListener('DOMContentLoaded', period9);
-})();
+})(); 
+
+
 
 
 
