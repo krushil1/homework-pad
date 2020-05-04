@@ -190,10 +190,10 @@ var Text9 = text9.fontcolor("#00BD56"); //controls the "Ends In:" text color
 var textx = "Period X Ends In:&nbsp";
 var Textx = textx.fontcolor("white"); //controls the text color for Period X
 
-var endx = "<p style=font-size:7.1vh>No Period X</p>";
+var endx = "No Period X";
 var Endx = endx.fontcolor("white");
 
-var txtx = "<p style=font-size:7.55vh>Period x Is Over!</p>";
+var txtx = "Period x Is Over!";
 var Txtx = txtx
 
 
@@ -204,7 +204,7 @@ var fourA = foura.fontsize("white");
 
 
 //var end4a = "Lunch 4a is Over!";
-var end4a = "<p style=font-size:7.18vh>Lunch 4a Is Over!</p>";
+var end4a = "Lunch 4a Is Over!";
 var End4a = end4a
 
 
@@ -214,7 +214,7 @@ var text4b = "Lunch 4b Ends In:&nbsp";
 var Text4b = text4b.fontcolor("white"); //controls the "Ends In:" text color
  
 //var end4b = "Lunch 4b is Over!";
-var end4b = "<p style=font-size:7.1vh>Lunch 4b Is Over!</p>";
+var end4b = "Lunch 4b Is Over!";
 var End4b = end4b.fontcolor("white");
 
 var text4c = "Lunch 4c Ends In:&nbsp";
@@ -231,7 +231,8 @@ var End4c = end4c.fontcolor("white");
 
 
 
-
+var text5 = "Period 5 Ends In:&nbsp";
+var Text5 = text5.fontcolor("white");
 
 
 var end5 = "Period 5 Is Over!";
@@ -382,14 +383,12 @@ var realSeconds;
     var remain = ((start - now) / 1000);
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
-   
-   var text5 = "Period 5 Ends In:&nbsp";
-   var Text5 = text5.fontcolor("white");
-   
      if (hh > 8) {
-      displayPeriod4 = End4a;
+       document.getElementById("time4").innerHTML = "Lunch 4a is Over!";
+      //displayPeriod4 = End4a;
     }else {
-    displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
+      document.getElementById("time4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
+    //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period4, 100);
     if (schedule == "A"){
@@ -407,7 +406,7 @@ var realSeconds;
          document.getElementById("time4").innerHTML = "Lunch 4a is Over!";
         //displayPeriod4 = End4a;
       }else{
-        document.getElementById("time4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds
+        document.getElementById("time4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
 
@@ -426,7 +425,7 @@ var realSeconds;
         document.getElementById("time4").innerHTML = End5;
         //displayPeriod4 = End5
       }else{
-        document.getElementById("time4").innerHTML = Text5 + hh + ":" + mm + ":" + realSeconds
+        document.getElementById("time4").innerHTML = text5 + hh + ":" + mm + ":" + realSeconds;
         //displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
       }
