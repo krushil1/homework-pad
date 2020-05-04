@@ -223,7 +223,7 @@ var Text4c = text4c.fontcolor("white");
 
 
 //var end4c = "<h1>Lunch 4c is Over!</h1>";
-var end4c = "<p style=font-size:7.15vh>Lunch 4c Is Over!</p>";
+var end4c = "Lunch 4c Is Over!";
 var End4c = end4c.fontcolor("white");
 //var End4c = end4c.fontsize("95px");
 
@@ -231,11 +231,10 @@ var End4c = end4c.fontcolor("white");
 
 
 
-var text5 = "Period 5 Ends In:&nbsp";
-var Text5 = text5.fontcolor("white");
 
 
-var end5 = "<p style=font-size:7.45vh>Period 5 Is Over!</p>";
+
+var end5 = "Period 5 Is Over!";
 var End5 = end5.fontcolor("white");
 
 var text6 = "Period 6 Ends In:&nbsp";
@@ -383,6 +382,10 @@ var realSeconds;
     var remain = ((start - now) / 1000);
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
+   
+   var text5 = "Period 5 Ends In:&nbsp";
+   var Text5 = text5.fontcolor("white");
+   
      if (hh > 8) {
       displayPeriod4 = End4a;
     }else {
