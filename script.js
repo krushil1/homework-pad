@@ -190,10 +190,10 @@ var Text9 = text9.fontcolor("#00BD56"); //controls the "Ends In:" text color
 var textx = "Period X Ends In:&nbsp";
 var Textx = textx.fontcolor("white"); //controls the text color for Period X
 
-var endx = "No Period X";
+var endx = "<p style=font-size:7.1vh>No Period X</p>";
 var Endx = endx.fontcolor("white");
 
-var txtx = "Period x Is Over!";
+var txtx = "<p style=font-size:7.55vh>Period x Is Over!</p>";
 var Txtx = txtx
 
 
@@ -204,7 +204,7 @@ var fourA = foura.fontsize("white");
 
 
 //var end4a = "Lunch 4a is Over!";
-var end4a = "Lunch 4a Is Over!";
+var end4a = "<p style=font-size:7.18vh>Lunch 4a Is Over!</p>";
 var End4a = end4a
 
 
@@ -214,7 +214,7 @@ var text4b = "Lunch 4b Ends In:&nbsp";
 var Text4b = text4b.fontcolor("white"); //controls the "Ends In:" text color
  
 //var end4b = "Lunch 4b is Over!";
-var end4b = "Lunch 4b Is Over!";
+var end4b = "<p style=font-size:7.1vh>Lunch 4b Is Over!</p>";
 var End4b = end4b.fontcolor("white");
 
 var text4c = "Lunch 4c Ends In:&nbsp";
@@ -223,7 +223,7 @@ var Text4c = text4c.fontcolor("white");
 
 
 //var end4c = "<h1>Lunch 4c is Over!</h1>";
-var end4c = "Lunch 4c Is Over!";
+var end4c = "<p style=font-size:7.15vh>Lunch 4c Is Over!</p>";
 var End4c = end4c.fontcolor("white");
 //var End4c = end4c.fontsize("95px");
 
@@ -231,9 +231,11 @@ var End4c = end4c.fontcolor("white");
 
 
 
+var text5 = "Period 5 Ends In:&nbsp";
+var Text5 = text5.fontcolor("white");
 
 
-var end5 = "Period 5 Is Over!";
+var end5 = "<p style=font-size:7.45vh>Period 5 Is Over!</p>";
 var End5 = end5.fontcolor("white");
 
 var text6 = "Period 6 Ends In:&nbsp";
@@ -346,16 +348,14 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8){
-       document.getElementById(periodx").innerHTML = "Period x Is Over!";
+       displayPeriodx = Txtx;
      }else{
-       document.getElementById("eriodx").innerHTML = "Period x Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-       //displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
+       displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
      }
      
      setTimeout(periodx, 100);
      if (schedule == "B" || schedule == "C"){
-       document.getElementById("Periodx").innerHTML = "No Period X";
-       //displayPeriodx = Endx; 
+       displayPeriodx = Endx; 
      }
    }
      
@@ -382,18 +382,11 @@ var realSeconds;
     }
     var remain = ((start - now) / 1000);
     var hh = pad((remain / 60 / 60) % 60);
-    var mm = pad((remain / 60) % 60); 
-    
-   var text5 = "Period 5 Ends In:&nbsp";
-   var Text5 = text5.fontcolor("white");
-
-   
+    var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-       document.getElementById("period4").innerHTML = "Lunch 4a is Over!";
-      //displayPeriod4 = End4a;
+      displayPeriod4 = End4a;
     }else {
-      document.getElementById("period4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
-    //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period4, 100);
     if (schedule == "A"){
@@ -408,41 +401,34 @@ var realSeconds;
       
     if (schedule == "A"){
       if (hh > 8){
-         document.getElementById("period4").innerHTML = "Lunch 4a is Over!";
+         document.getElementById("time4").innerHTML = "Lunch 4a is Over!";
         //displayPeriod4 = End4a;
       }else{
-        document.getElementById("period4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("time4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
 
       }
     }else if (schedule == "B"){
       if (hh > 8){
-        document.getElementById("period4").innerHTML = End4a;
+        document.getElementById("time4").innerHTML = End4a;
         //displayPeriod4 = End4a;
       }else{
-        document.getElementById("period4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("time4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
       }
     }else if (schedule == "C"){
       if (hh > 8){
-        document.getElementById("period4").innerHTML = End5;
+        document.getElementById("time4").innerHTML = End5;
         //displayPeriod4 = End5
       }else{
-        document.getElementById("period4").innerHTML = text5 + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("time4").innerHTML = Text5 + hh + ":" + mm + ":" + realSeconds
         //displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
       }
     }
    
-   if (schedule == "A"){
-     document.getElementById("period4").style.fontSize = "7.19vh";
-   } else if (schedule == "B"){
-     document.getElementById("period4").style.fontSize = "7.75vh";
-   } else if (schedule == "C"){
-     document.getElementById("period4").style.fontSize = "7.75vh";
-   }
   }
    
   
