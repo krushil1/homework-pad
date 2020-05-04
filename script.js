@@ -144,28 +144,28 @@ function defineTiming() {//sets the variables of each period end time based on t
   }
 }
   
-function displayPeriods() {
+//function displayPeriods() {
 
-  setTimeout(function () {
+//  setTimeout(function () {
 
-    document.getElementById("time1").innerHTML = displayPeriod1;
-    document.getElementById("time2").innerHTML = displayPeriod2;
-    document.getElementById("time3").innerHTML = displayPeriod3;
-    document.getElementById("timex").innerHTML = displayPeriodx;
-    document.getElementById("time4").innerHTML = displayPeriod4;
-    document.getElementById("time5").innerHTML = displayPeriod5;
-    document.getElementById("time6").innerHTML = displayPeriod6;
-    document.getElementById("time7").innerHTML = displayPeriod7;
-    document.getElementById("time8").innerHTML = displayPeriod8;
-    document.getElementById("time9").innerHTML = displayPeriod9;
+//    document.getElementById("time1").innerHTML = displayPeriod1;
+//    document.getElementById("time2").innerHTML = displayPeriod2;
+//    document.getElementById("time3").innerHTML = displayPeriod3;
+//    document.getElementById("timex").innerHTML = displayPeriodx;
+//    document.getElementById("time4").innerHTML = displayPeriod4;
+//    document.getElementById("time5").innerHTML = displayPeriod5;
+//    document.getElementById("time6").innerHTML = displayPeriod6;
+//    document.getElementById("time7").innerHTML = displayPeriod7;
+//    document.getElementById("time8").innerHTML = displayPeriod8;
+//    document.getElementById("time9").innerHTML = displayPeriod9;
     
     
     
     
     
-    displayPeriods();
-  }, 0)
-}
+//    displayPeriods();
+//  }, 0)
+//}
 
 
 var text1 = "Period 1 Ends In:&nbsp";
@@ -320,7 +320,8 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-     displayPeriod2 = End2;
+       document.getElementById("time2").innerHTML = Textx + hh + ":" + mm + ":" + realSeconds;
+     //displayPeriod2 = End2;
     } else {
     displayPeriod2 = Text2 + hh + ":" + mm + ":" + realSeconds;
     }
@@ -337,9 +338,11 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-      displayPeriod3 = End3;
+       document.getElementById("time3").innerHTML = End3;
+      //displayPeriod3 = End3;
     } else {
-    displayPeriod3 = Text3 + hh + ":" + mm + ":" + realSeconds;
+    document.getElementById("time3").innerHTML = Text3 + hh + ":" + mm + ":" + realSeconds;
+    //displayPeriod3 = Text3 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period3, 100);
   }
@@ -355,14 +358,16 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8){
-       displayPeriodx = Txtx;
+       document.getElementById("timex").innerHTML = Txtx;
+       //displayPeriodx = Txtx;
      }else{
-       displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
+       document.getElementById("timex").innerHTML = Textx + hh + ":" + mm + ":" + realSeconds;
+       //displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
      }
      
      setTimeout(periodx, 100);
      if (schedule == "B" || schedule == "C"){
-       displayPeriodx = Endx; 
+       document.getElementById("timex").innerHTML = Endx; 
      }
    }
      
@@ -433,7 +438,9 @@ var realSeconds;
      document.getElementById("displayPeriod4").style.fontSize = "xx-large";
    } else if (schedule == "B"){
      document.getElementById("displayPeriod4").style.fontSize = "xx-large";
-   } else if (schedule == "C")
+   } else if (schedule == "C"){
+     document.getElementById("displayPeriod4").style.fontSize = "xx-large";
+   }
   }
    
   
@@ -670,18 +677,18 @@ function period9() {
   
 
   
-  displayPeriods();
-  document.addEventListener('DOMContentLoaded', getRealSeconds);
-  document.addEventListener('DOMContentLoaded', period1);
-  document.addEventListener('DOMContentLoaded', period2);
-  document.addEventListener('DOMContentLoaded', period3);
-  document.addEventListener('DOMContentLoaded', periodx);  
-  document.addEventListener('DOMContentLoaded', period4);
-  document.addEventListener('DOMContentLoaded', period5);
-  document.addEventListener('DOMContentLoaded', period6);
-  document.addEventListener('DOMContentLoaded', period7);
-  document.addEventListener('DOMContentLoaded', period8);
-  document.addEventListener('DOMContentLoaded', period9);
+//  displayPeriods();
+ // document.addEventListener('DOMContentLoaded', getRealSeconds);
+//  document.addEventListener('DOMContentLoaded', period1);
+//  document.addEventListener('DOMContentLoaded', period2);
+//  document.addEventListener('DOMContentLoaded', period3);
+//  document.addEventListener('DOMContentLoaded', periodx);  
+//  document.addEventListener('DOMContentLoaded', period4);
+//  document.addEventListener('DOMContentLoaded', period5);
+//  document.addEventListener('DOMContentLoaded', period6);
+//  document.addEventListener('DOMContentLoaded', period7);
+//  document.addEventListener('DOMContentLoaded', period8);
+//  document.addEventListener('DOMContentLoaded', period9);
 })(); 
 
 
