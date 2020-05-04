@@ -51,7 +51,6 @@ function myFunction(){
 
 
   var schedule = 'A';
-
   function Apressed() {
     schedule = 'A';
     document.getElementById("Abutton").style.backgroundColor = "db3d3d";
@@ -65,7 +64,6 @@ function myFunction(){
      document.getElementById("Bbutton").style.backgroundColor = "db3d3d";
      document.getElementById("Cbutton").style.backgroundColor = "white";
     defineTiming();
-
   }
    function Cpressed() {
     schedule = 'C';
@@ -74,6 +72,7 @@ function myFunction(){
      document.getElementById("Cbutton").style.backgroundColor = "db3d3d";
     defineTiming();
   }
+
 
 var h1; var m1;
 var h2; var m2;
@@ -97,13 +96,8 @@ var displayPeriod7;
 var displayPeriod8;
 var displayPeriod9;
 
- 
-
-
-
-function defineTiming() {//sets the variables of each period end time based on the schedule
-
-
+function defineTiming() {   //sets the variables of each period end time based on the schedule
+  
   if (schedule == 'A') {
     h1 = 19;  m1 = 37;
     h2 = 19;  m2 = 24;
@@ -144,28 +138,27 @@ function defineTiming() {//sets the variables of each period end time based on t
   }
 }
   
-//function displayPeriods() {
+function displayPeriods() {
+  setTimeout(function () {
+    
+    document.getElementById("time1").innerHTML = displayPeriod1;
+    document.getElementById("time2").innerHTML = displayPeriod2;
+    document.getElementById("time3").innerHTML = displayPeriod3;
+    document.getElementById("timex").innerHTML = displayPeriodx;
+    document.getElementById("time4").innerHTML = displayPeriod4;
+    document.getElementById("time5").innerHTML = displayPeriod5;
+    document.getElementById("time6").innerHTML = displayPeriod6;
+    document.getElementById("time7").innerHTML = displayPeriod7;
+    document.getElementById("time8").innerHTML = displayPeriod8;
+    document.getElementById("time9").innerHTML = displayPeriod9;
+    
+    
+    
+    displayPeriods();
+  }, 0)
+}
 
-//  setTimeout(function () {
 
-//    document.getElementById("time1").innerHTML = displayPeriod1;
-//    document.getElementById("time2").innerHTML = displayPeriod2;
-//    document.getElementById("time3").innerHTML = displayPeriod3;
-//    document.getElementById("timex").innerHTML = displayPeriodx;
-//    document.getElementById("time4").innerHTML = displayPeriod4;
-//    document.getElementById("time5").innerHTML = displayPeriod5;
-//    document.getElementById("time6").innerHTML = displayPeriod6;
-//    document.getElementById("time7").innerHTML = displayPeriod7;
-//    document.getElementById("time8").innerHTML = displayPeriod8;
-//    document.getElementById("time9").innerHTML = displayPeriod9;
-    
-    
-    
-    
-    
-//    displayPeriods();
-//  }, 0)
-//}
 
 
 var text1 = "Period 1 Ends In:&nbsp";
@@ -320,8 +313,7 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-       document.getElementById("time2").innerHTML = Textx + hh + ":" + mm + ":" + realSeconds;
-     //displayPeriod2 = End2;
+     displayPeriod2 = End2;
     } else {
     displayPeriod2 = Text2 + hh + ":" + mm + ":" + realSeconds;
     }
@@ -338,11 +330,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-       document.getElementById("time3").innerHTML = End3;
-      //displayPeriod3 = End3;
+      displayPeriod3 = End3;
     } else {
-    document.getElementById("time3").innerHTML = Text3 + hh + ":" + mm + ":" + realSeconds;
-    //displayPeriod3 = Text3 + hh + ":" + mm + ":" + realSeconds;
+    displayPeriod3 = Text3 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period3, 100);
   }
@@ -358,16 +348,14 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8){
-       document.getElementById("timex").innerHTML = Txtx;
-       //displayPeriodx = Txtx;
+       displayPeriodx = Txtx;
      }else{
-       document.getElementById("timex").innerHTML = Textx + hh + ":" + mm + ":" + realSeconds;
-       //displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
+       displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
      }
      
      setTimeout(periodx, 100);
      if (schedule == "B" || schedule == "C"){
-       document.getElementById("timex").innerHTML = Endx; 
+       displayPeriodx = Endx; 
      }
    }
      
@@ -413,34 +401,32 @@ var realSeconds;
       
     if (schedule == "A"){
       if (hh > 8){
-        displayPeriod4 = End4a;
+         document.getElementById("time4").innerHTML = "Lunch 4a is Over!";
+        //displayPeriod4 = End4a;
       }else{
-        document.getElementById("displayPeriod4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("time4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
+        //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
 
       }
     }else if (schedule == "B"){
       if (hh > 8){
-        displayPeriod4 = End4a;
+        document.getElementById("time4").innerHTML = End4a;
+        //displayPeriod4 = End4a;
       }else{
-        document.getElementById("displayPeriod4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("time4").innerHTML = fourA + hh + ":" + mm + ":" + realSeconds;
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
+        //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
       }
     }else if (schedule == "C"){
       if (hh > 8){
+        document.getElementById()
         displayPeriod4 = End5
       }else{
-        document.getElementById("displayPeriod4").innerHTML = Text5 + hh + ":" + mm + ":" + realSeconds;
-        //displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
+        displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
+        //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
       }
     }
-   if (schedule == "A"){
-     document.getElementById("displayPeriod4").style.fontSize = "xx-large";
-   } else if (schedule == "B"){
-     document.getElementById("displayPeriod4").style.fontSize = "xx-large";
-   } else if (schedule == "C"){
-     document.getElementById("displayPeriod4").style.fontSize = "xx-large";
-   }
   }
    
   
@@ -467,7 +453,7 @@ var realSeconds;
     } else if (schedule == "B"){
       h5 = 21; m5 = 45;
     } else if (schedule == "C"){
-      End6 = "Period 6 Is Over!"
+      End6 = "<p style=font-size:7.6vh>Period 6 Is Over!</p>"
       h5 = 21; m5 = 54; //Period 6 if the schedule equal C
     }
     if (schedule == "A"){
@@ -565,7 +551,7 @@ var realSeconds;
     } else if (schedule == "B"){
       h7 = 21; m7 = 19;
     } else if (schedule == "C"){
-      End4b = "Lunch 4b Is Over!"
+      End4b = "<p style=font-size:7.04vh>Lunch 4b Is Over!<p>"
       h7 = 21; m7 = 2; //Period 5 if the schedule equal C
     }
     if (schedule == "A"){
@@ -613,7 +599,7 @@ var realSeconds;
       h8 = 21; m8 = 19;
     } else if (schedule == "C"){
       h8 = 21; m8 = 2; //Period 5 if the schedule equal C
-      End4c = "Lunch 4c Is Over!"
+      End4c = "<p style=font-size:7.06vh>Lunch 4c Is Over!</p>"
     }
        
        
@@ -670,28 +656,25 @@ function period9() {
   }
   
   
- 
   
   
   
   
 
   
-//  displayPeriods();
- // document.addEventListener('DOMContentLoaded', getRealSeconds);
-//  document.addEventListener('DOMContentLoaded', period1);
-//  document.addEventListener('DOMContentLoaded', period2);
-//  document.addEventListener('DOMContentLoaded', period3);
-//  document.addEventListener('DOMContentLoaded', periodx);  
-//  document.addEventListener('DOMContentLoaded', period4);
-//  document.addEventListener('DOMContentLoaded', period5);
-//  document.addEventListener('DOMContentLoaded', period6);
-//  document.addEventListener('DOMContentLoaded', period7);
-//  document.addEventListener('DOMContentLoaded', period8);
-//  document.addEventListener('DOMContentLoaded', period9);
-})(); 
-
-
+  displayPeriods();
+  document.addEventListener('DOMContentLoaded', getRealSeconds);
+  document.addEventListener('DOMContentLoaded', period1);
+  document.addEventListener('DOMContentLoaded', period2);
+  document.addEventListener('DOMContentLoaded', period3);
+  document.addEventListener('DOMContentLoaded', periodx);  
+  document.addEventListener('DOMContentLoaded', period4);
+  document.addEventListener('DOMContentLoaded', period5);
+  document.addEventListener('DOMContentLoaded', period6);
+  document.addEventListener('DOMContentLoaded', period7);
+  document.addEventListener('DOMContentLoaded', period8);
+  document.addEventListener('DOMContentLoaded', period9);
+})();
 
 
 
