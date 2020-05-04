@@ -197,7 +197,7 @@ var txtx = "<p style=font-size:7.55vh>Period x Is Over!</p>";
 var Txtx = txtx
 
 
-var foura = "Lunch 4a Ends In: &nbsp";
+var foura = "Lunch 4a Ends In:&nbsp";
 var fourA = foura.fontsize("white");
 
 
@@ -374,7 +374,6 @@ var realSeconds;
   
   
  function period4() { //4a
-   document.getElementById("myP").style.fontSize = "xx-large";
     var start = new Date;
     start.setHours(h4, m4, 0);
     var now = new Date;
@@ -397,17 +396,23 @@ var realSeconds;
     } else if (schedule == "C"){
       h4 = 21; m4 = 52; //Period 5 if the schedule equal C
     }
+    
+      
+      
     if (schedule == "A"){
       if (hh > 8){
         displayPeriod4 = End4a;
       }else{
         displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("displayPeriod4").style.fontSize = "xx-large";
+
       }
     }else if (schedule == "B"){
       if (hh > 8){
         displayPeriod4 = End4a;
       }else{
         displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("myP").style.fontSize = "xx-large";
       }
     }else if (schedule == "C"){
       if (hh > 8){
@@ -416,8 +421,9 @@ var realSeconds;
         displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
       }
     }
-     
   }
+   
+  
   
   
    function period5() { //4b
