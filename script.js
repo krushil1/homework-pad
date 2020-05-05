@@ -578,7 +578,7 @@ var realSeconds;
     }else if (schedule == "B"){
       if (hh > 8){
         document.getElementById("period6").innerHTML = "Lunch 4c Is Over!";
-        document.getElementById("period6").style.fontSize = "6.6vh";
+        document.getElementById("period6").style.fontSize = "6.59vh";
         //displayPeriod6 = End4c;
       }else{
         document.getElementById("period6").innerHTML = "Lunch 4c Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
