@@ -37,7 +37,7 @@
   font-weight:bold;
 }
   
- .time {
+ #period{
     color:#f2eaec;
     font-weight:bold;
     font-family:Arial;
@@ -45,6 +45,8 @@
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
   }
+
+
 
  
  .time1 {

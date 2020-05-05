@@ -300,6 +300,12 @@ var realSeconds;
     //displayPeriod1 = Text1 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period1, 100);
+    if (hh > 8){
+      document.getElementById("period1").style.fontSize = "7vh";
+    } else{
+      document.getElementById("period1").style.fontSize = "7vh";
+
+    }
   }
   
   
@@ -686,10 +692,10 @@ function period9() {
 //      End7 = "<p style=font-size:7.45vh>Period 7 Is Over!</p>";
 //    }
      if (hh > 8) {
-       document.getElementById("period8").innerHTML = "Period 7 Is Over!";
+       document.getElementById("period9").innerHTML = "Period 7 Is Over!";
       //displayPeriod9 = End7;
     } else {
-      document.getElementById("period8").innerHTML = "Period 7 Ends In:&nsbsp" + hh + ":" + mm + ":" + realSeconds;
+      document.getElementById("period9").innerHTML = "Period 7 Ends In:&nsbsp" + hh + ":" + mm + ":" + realSeconds;
     //displayPeriod9 = Text7 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period9, 100);
