@@ -377,7 +377,7 @@ var realSeconds;
        //displayPeriodx = Txtx;
      }else{
        document.getElementById("periodx").innerHTML = "Period X Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-       document.getElementById("periodx").style.fontSize = "7vh";
+       document.getElementById("periodx").style.fontSize = "6.9vh";
        //displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
      }
      
@@ -441,7 +441,7 @@ var realSeconds;
         //displayPeriod4 = End4a;
       }else{
         document.getElementById("period4").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("period4").style.fontSize = "7vh";
+        document.getElementById("period4").style.fontSize = "6.7vh";
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
 
@@ -453,7 +453,7 @@ var realSeconds;
         //displayPeriod4 = End4a;
       }else{
         document.getElementById("period4").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("period4").style.fontSize = "7vh";
+        document.getElementById("period4").style.fontSize = "6.74vh";
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
       }
@@ -508,7 +508,7 @@ var realSeconds;
         document.getElementById("period5").style.fontSize = "7.16vh";
       }else{
         document.getElementById("period5").innerHTML = "Lunch 4b Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("period5").style.fontSize = "7vh";
+        document.getElementById("period5").style.fontSize = "6.68vh";
         //displayPeriod5 = Text4b + hh + ":" + mm + ":" + realSeconds;
       }
     }else if (schedule == "B"){
@@ -517,7 +517,7 @@ var realSeconds;
         document.getElementById("period5").style.fontSize = "7.16vh";
       }else{
         document.getElementById("period5").innerHTML = "Lunch 4b Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("period5").style.fontSize = "7vh";
+        document.getElementById("period5").style.fontSize = "6.75vh";
         //displayPeriod5 = Text4b + hh + ":" + mm + ":" + realSeconds;
       }
     }else if (schedule == "C"){
@@ -572,7 +572,7 @@ var realSeconds;
         //displayPeriod6 = End4c;
       }else{
         document.getElementById("period6").innerHTML = "Lunch 4c Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("period6").style.fontSize = "7vh";
+        document.getElementById("period6").style.fontSize = "6.69vh";
         //displayPeriod6 = Text4c + hh + ":" + mm + ":" + realSeconds;
       }
     }else if (schedule == "B"){
@@ -582,7 +582,7 @@ var realSeconds;
         //displayPeriod6 = End4c;
       }else{
         document.getElementById("period6").innerHTML = "Lunch 4c Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("period6").style.fontSize = "7vh";
+        document.getElementById("period6").style.fontSize = "6.74vh";
         //displayPeriod6 = Text4c + hh + ":" + mm + ":" + realSeconds;
       }
     }else if (schedule == "C"){
@@ -720,7 +720,7 @@ var realSeconds;
         //displayPeriod8 = End4c;
       }else{
         document.getElementById("period8").innerHTML = "Lunch 4c Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("period8").style.fontSize = "7vh";
+        document.getElementById("period8").style.fontSize = "6.7vh";
         //displayPeriod8 = Text4c + hh + ":" + mm + ":" + realSeconds;
       }
     }
@@ -752,7 +752,7 @@ function period9() {
        document.getElementById("period9").style.fontSize = "7.48vh";
       //displayPeriod9 = End7;
     } else {
-      document.getElementById("period9").innerHTML = "Period 7 Ends In:&nsbsp" + hh + ":" + mm + ":" + realSeconds;
+      document.getElementById("period9").innerHTML = "Period 7 Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
       document.getElementById("period9").style.fontSize = "7vh";
     //displayPeriod9 = Text7 + hh + ":" + mm + ":" + realSeconds;
     }
