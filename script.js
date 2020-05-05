@@ -505,7 +505,7 @@ var realSeconds;
     if (schedule == "A"){
       if (hh > 8){
         document.getElementById("period5").innerHTML = "Lunch 4b Is Over!";
-        document.getElementById("period5").style.fontSize = "7vh";
+        document.getElementById("period5").style.fontSize = "6.58vh";
       }else{
         document.getElementById("period5").innerHTML = "Lunch 4b Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
         document.getElementById("period5").style.fontSize = "7vh";
@@ -514,7 +514,7 @@ var realSeconds;
     }else if (schedule == "B"){
       if (hh > 8){
         document.getElementById("period5").innerHTML = "Lunch 4b Is Over!";
-        document.getElementById("period5").style.fontSize = "7vh";
+        document.getElementById("period5").style.fontSize = "6.65vh";
       }else{
         document.getElementById("period5").innerHTML = "Lunch 4b Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
         document.getElementById("period5").style.fontSize = "7vh";
@@ -568,7 +568,7 @@ var realSeconds;
     if (schedule == "A"){
       if (hh > 8){
         document.getElementById("period6").innerHTML = "Lunch 4c Is Over!";
-        document.getElementById("period6").style.fontSize = "7vh";
+        document.getElementById("period6").style.fontSize = "6.62vh";
         //displayPeriod6 = End4c;
       }else{
         document.getElementById("period6").innerHTML = "Lunch 4c Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
@@ -578,7 +578,7 @@ var realSeconds;
     }else if (schedule == "B"){
       if (hh > 8){
         document.getElementById("period6").innerHTML = "Lunch 4c Is Over!";
-        document.getElementById("period6").style.fontSize = "7vh";
+        document.getElementById("period6").style.fontSize = "6.66vh";
         //displayPeriod6 = End4c;
       }else{
         document.getElementById("period6").innerHTML = "Lunch 4c Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
@@ -588,7 +588,7 @@ var realSeconds;
     }else if (schedule == "C"){
       if (hh > 8){
         document.getElementById("period6").innerHTML = "Lunch 4a Is Over!";
-        document.getElementById("period6").style.fontSize = "7vh";
+        document.getElementById("period6").style.fontSize = "6.62vh";
         //displayPeriod6 = End4a;
       }else{
         document.getElementById("period6").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
@@ -612,7 +612,7 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-       document.getElementById("period7").innerHTML = "Period 5 Is Over";
+       document.getElementById("period7").innerHTML = "Period 5 Is Over!";
        document.getElementById("period7").style.fontSize = "7vh";
       //displayPeriod7 = End5;
     }else {
@@ -630,7 +630,7 @@ var realSeconds;
     }
     if (schedule == "A"){
       if (hh > 8){
-        document.getElementById("period7").innerHTML = "Period 5 Is Over";
+        document.getElementById("period7").innerHTML = "Period 5 Is Over!";
         document.getElementById("period7").style.fontSize = "7vh";
         //displayPeriod7 = End5;
       }else{
@@ -651,7 +651,7 @@ var realSeconds;
     }else if (schedule == "C"){
       if (hh > 8){
         document.getElementById("period7").innerHTML = "Lunch 4b Is Over!";
-        document.getElementById("period7").style.fontSize = "7vh";
+        document.getElementById("period7").style.fontSize = "6.62vh";
       }else{
         document.getElementById("period7").innerHTML = "Lunch 4b Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
         document.getElementById("period7").style.fontSize = "7vh";
@@ -716,7 +716,7 @@ var realSeconds;
     }else if (schedule == "C"){
       if (hh > 8){
         document.getElementById("period8").innerHTML = "Lunch 4c Is Over!";
-        document.getElementById("period8").style.fontSize = "7vh";
+        document.getElementById("period8").style.fontSize = "6.66vh";
         //displayPeriod8 = End4c;
       }else{
         document.getElementById("period8").innerHTML = "Lunch 4c Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
