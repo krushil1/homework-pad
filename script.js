@@ -328,7 +328,16 @@ var realSeconds;
     //displayPeriod2 = Text2 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period2, 100);
+    if (hh > 8){
+      document.getElementById("period2").style.fontSize = "7vh";
+    } else{
+      document.getElementById("period2").style.fontSize = "7vh";
+    }
   }
+  
+  
+  
+  
  function period3() {
     var start = new Date;
     start.setHours(h3, m3, 0);
@@ -341,9 +350,12 @@ var realSeconds;
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
        document.getElementById("period3").innerHTML = "Period 3 Is Over!";
+      document.getElementById("period3").style.fontSize = "7vh";
+
       //displayPeriod3 = End3;
     } else {
       document.getElementById("period3").innerHTML = "Period 3 Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+      document.getElementById("period3").style.fontSize = "7vh";
     //displayPeriod3 = Text3 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period3, 100);
@@ -361,15 +373,18 @@ var realSeconds;
     var mm = pad((remain / 60) % 60);
      if (hh > 8){
        document.getElementById("periodx").innerHTML = "Period X is Over!";
+       document.getElementById("periodx").style.fontSize = "7vh";
        //displayPeriodx = Txtx;
      }else{
        document.getElementById("periodx").innerHTML = "Period x Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+       document.getElementById("periodx").style.fontSize = "7vh";
        //displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
      }
      
      setTimeout(periodx, 100);
      if (schedule == "B" || schedule == "C"){
        document.getElementById("periodx").innerHTML = "No Period X";
+       document.getElementById("periodx").style.fontSize = "7vh";
        //displayPeriodx = Endx; 
      }
    }
@@ -400,9 +415,11 @@ var realSeconds;
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
        document.getElementById("period4").innerHTML = "Lunch 4a Is Over!";
+       document.getElementById("period4").style.fontSize = "7vh";
       //displayPeriod4 = End4a;
     }else {
       document.getElementById("period4").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+      document.getElementById("period4").style.fontSize = "7vh";
     //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period4, 100);
@@ -418,10 +435,12 @@ var realSeconds;
       
     if (schedule == "A"){
       if (hh > 8){
-         document.getElementById("period4").innerHTML = "Lunch 4a is Over!";
+        document.getElementById("period4").innerHTML = "Lunch 4a is Over!";
+        document.getElementById("period4").style.fontSize = "7vh";
         //displayPeriod4 = End4a;
       }else{
         document.getElementById("period4").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("period4").style.fontSize = "7vh";
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
 
@@ -429,18 +448,22 @@ var realSeconds;
     }else if (schedule == "B"){
       if (hh > 8){
         document.getElementById("period4").innerHTML = "Lunch 4a Is Over!";
+        document.getElementById("period4").style.fontSize = "7vh";
         //displayPeriod4 = End4a;
       }else{
         document.getElementById("period4").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("period4").style.fontSize = "7vh";
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
       }
     }else if (schedule == "C"){
       if (hh > 8){
         document.getElementById("period4").innerHTML = "Period 5 Is Over!";
+        document.getElementById("period4").style.fontSize = "7vh";
         //displayPeriod4 = End5
       }else{
         document.getElementById("period4").innerHTML = "Period 5 Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("period4").style.fontSize = "7vh";
         //displayPeriod4 = Text5 + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
       }
@@ -463,9 +486,11 @@ var realSeconds;
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
        document.getElementById("period5").innerHTML = "Lunch 4b Is Over!";
+       document.getElementById("period5").style.fontSize = "7vh";
       //displayPeriod5 = End4b;
     }else {
       document.getElementById("period5").innerHTML = "Lunch 4b Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+      document.getElementById("period5").style.fontSize = "7vh";
     //displayPeriod5 = Text4b + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period5, 100);
@@ -479,22 +504,28 @@ var realSeconds;
     if (schedule == "A"){
       if (hh > 8){
         document.getElementById("period5").innerHTML = "Lunch 4b Is Over!";
+        document.getElementById("period5").style.fontSize = "7vh";
       }else{
         document.getElementById("period5").innerHTML = "Lunch 4b Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("period5").style.fontSize = "7vh";
         //displayPeriod5 = Text4b + hh + ":" + mm + ":" + realSeconds;
       }
     }else if (schedule == "B"){
       if (hh > 8){
         document.getElementById("period5").innerHTML = "Lunch 4b Is Over!";
+        document.getElementById("period5").style.fontSize = "7vh";
       }else{
         document.getElementById("period5").innerHTML = "Lunch 4b Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("period5").style.fontSize = "7vh";
         //displayPeriod5 = Text4b + hh + ":" + mm + ":" + realSeconds;
       }
     }else if (schedule == "C"){
       if (hh > 8){
         document.getElementById("period5").innerHTML = "Period 6 Is Over!";
+        document.getElementById("period5").style.fontSize = "7vh";
       }else{
         document.getElementById("period5").innerHTML = "Period 6 Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("period5").style.fontSize = "7vh";
         //displayPeriod5 = Text6 + hh + ":" + mm + ":" + realSeconds;
       }
     }
@@ -515,9 +546,11 @@ var realSeconds;
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
        document.getElementById("period6").innerHTML = "Lunch 4c Is Over!";
+       document.getElementById("period6").style.fontSize = "7vh";
       //displayPeriod6 = End4c;
     }else {
       document.getElementById("period6").innerHTML = "Lunch 4c Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+      document.getElementById("period6").style.fontSize = "7vh";
     //displayPeriod6 = Text4c + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period6, 100);
@@ -534,14 +567,17 @@ var realSeconds;
     if (schedule == "A"){
       if (hh > 8){
         document.getElementById("period6").innerHTML = "Lunch 4c Is Over!";
+        document.getElementById("period6").style.fontSize = "7vh";
         //displayPeriod6 = End4c;
       }else{
         document.getElementById("period6").innerHTML = "Lunch 4c Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("period6").style.fontSize = "7vh";
         //displayPeriod6 = Text4c + hh + ":" + mm + ":" + realSeconds;
       }
     }else if (schedule == "B"){
       if (hh > 8){
         document.getElementById("period6").innerHTML = "Lunch 4c Is Over!";
+        document.getElementById("period1").style.fontSize = "7vh";
         //displayPeriod6 = End4c;
       }else{
         document.getElementById("period6").innerHTML = "Lunch 4c Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;

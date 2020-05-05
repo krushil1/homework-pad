@@ -37,7 +37,16 @@
   font-weight:bold;
 }
   
- #period{
+ #period1,
+#period2,
+#period3,
+#periodx,
+#period4,
+#period5,
+#period6,
+#period7,
+#period8,
+#period9{
     color:#f2eaec;
     font-weight:bold;
     font-family:Arial;
