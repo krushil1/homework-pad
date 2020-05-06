@@ -101,7 +101,7 @@ function defineTiming() {   //sets the variables of each period end time based o
     h1 = 19;  m1 = 37;
     h2 = 19;  m2 = 24;
     h3 = 18; m3 = 0;
-    hx = 18; mx = 0; //period X
+    hx = 21; mx = 0; //period X
     h4 = 21; m4 = 16; //4a
     h5 = 19; m5 = 46; //4b
     h6 = 19; m6 = 12; //4c
@@ -208,7 +208,7 @@ var realSeconds;
     if (hh > 8){
       document.getElementById("period1").style.fontSize = "7.69vmin";
     } else{
-      document.getElementById("period1").style.fontSize = "7vmin";
+      document.getElementById("period1").style.fontSize = "7vh";
 
     }
   }
@@ -242,7 +242,7 @@ var realSeconds;
   
   function period3() {
     var start = new Date;
-    start.setHours(h2, m2, 0);
+    start.setHours(h3, m3, 0);
     var now = new Date;
     if (now > start) {
       start.setDate(start.getDate() + 1);
@@ -279,8 +279,8 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8){
-       docum-nt.getElementById("periodx").innerHTML = "Period X Is Over!";
-       document.getElementById("periodx").style.fontSize = "3.9-em";
+       document.getElementById("periodx").innerHTML = "Period X Is Over!";
+       document.getElementById("periodx").style.fontSize = "3.9em";
        //displayPeriodx = Txtx;
      }else{
        document.getElementById("periodx").innerHTML = "Period X Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
@@ -291,7 +291,7 @@ var realSeconds;
      setTimeout(periodx, 100);
      if (schedule == "B" || schedule == "C"){
        document.getElementById("periodx").innerHTML = "No Period X Today!";
-       document.getElementById("periodx").style.fontSize = "2.75em";
+       document.getElementById("periodx").style.fontSize = "6.66vh";
        //displayPeriodx = Endx; 
      }
    }
