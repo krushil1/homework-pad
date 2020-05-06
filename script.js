@@ -100,7 +100,7 @@ function defineTiming() {   //sets the variables of each period end time based o
   if (schedule == 'A') {
     h1 = 19;  m1 = 37;
     h2 = 19;  m2 = 24;
-    h3 = 18; m3 = 0;
+    h3 = 21; m3 = 0;
     hx = 21; mx = 0; //period X
     h4 = 21; m4 = 16; //4a
     h5 = 19; m5 = 46; //4b
@@ -284,7 +284,7 @@ var realSeconds;
        //displayPeriodx = Txtx;
      }else{
        document.getElementById("periodx").innerHTML = "Period X Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-       document.getElementById("periodx").style.fontSize = "2.9em";
+       document.getElementById("periodx").style.fontSize = "6.9vh";
        //displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
      }
      
@@ -344,11 +344,11 @@ var realSeconds;
     if (schedule == "A"){
       if (hh > 8){
         document.getElementById("period4").innerHTML = "Lunch 4a Is Over!";
-        document.getElementById("period4").style.fontSize = "7.293vh";
+        document.getElementById("period4").style.fontSize = "7vh";
         //displayPeriod4 = End4a;
       }else{
         document.getElementById("period4").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("period4").style.fontSize = "6.74vh";
+        document.getElementById("period4").style.fontSize = "6.69vh";
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
 
