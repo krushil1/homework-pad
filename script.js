@@ -1,4 +1,3 @@
-      document.getElementById("period3").style.fontSize = "2.879
 var preloader = document.getElementById('loading');
 function myFunction(){
   setTimeout(function(){preloader.style.display = "none"}, 2900);
@@ -239,14 +238,11 @@ var realSeconds;
     } else{
       document.getElementById("period2").style.fontSize = "7vmin";
     }
-  }
+  } 
   
-  
-  
-  
- function period3() {
+  function period3() {
     var start = new Date;
-    start.setHours(h3, m3, 0);
+    start.setHours(h2, m2, 0);
     var now = new Date;
     if (now > start) {
       start.setDate(start.getDate() + 1);
@@ -255,18 +251,22 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-       do;
-       document.getElementById("period3").style.fontSize = "2.87em";gtElementById("period3").innerHTML = "Period 3 Is Over!";
-      document.getElementById("period3").style.fontSize = "2.87em";
-
-      //displayPeriod3 = End3;
+       document.getElementById("period3").innerHTML = "Period 3 Is Over!";
+     //displayPeriod2 = End2;
     } else {
       document.getElementById("period3").innerHTML = "Period 3 Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-      document.getElementById("period3").style.fontSize = "7vmin";
-    //displayPeriod3 = Text3 + hh + ":" + mm + ":" + realSeconds;
+    //displayPeriod2 = Text2 + hh + ":" + mm + ":" + realSeconds;
     }
     setTimeout(period3, 100);
+    if (hh > 8){
+      document.getElementById("period3").style.fontSize = "7.68vmin";
+    } else{
+      document.getElementById("period3").style.fontSize = "7vmin";
+    }
   }
+  
+  
+  
   
    function periodx() { //Period X
     var start = new Date;
@@ -279,7 +279,7 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8){
-       documnt.getElementById("periodx").innerHTML = "Period X Is Over!";
+       docum-nt.getElementById("periodx").innerHTML = "Period X Is Over!";
        document.getElementById("periodx").style.fontSize = "3.9-em";
        //displayPeriodx = Txtx;
      }else{
@@ -683,7 +683,7 @@ function period9() {
   document.addEventListener('DOMContentLoaded', period5);
   document.addEventListener('DOMContentLoaded', period6);
   document.addEventListener('DOMContentLoaded', period7);
-  document.adddEventListener('DOMContentLoaded', period9);
+  document.addEventListener('DOMContentLoaded', period9);
 //})(); 
 })();
 
