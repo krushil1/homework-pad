@@ -1,4 +1,4 @@
-
+      document.getElementById("period3").style.fontSize = "2.879
 var preloader = document.getElementById('loading');
 function myFunction(){
   setTimeout(function(){preloader.style.display = "none"}, 2900);
@@ -101,8 +101,8 @@ function defineTiming() {   //sets the variables of each period end time based o
   if (schedule == 'A') {
     h1 = 19;  m1 = 37;
     h2 = 19;  m2 = 24;
-    h3 = 19; m3 = 11;
-    hx = 19; mx = 44; //period X
+    h3 = 18; m3 = 0;
+    hx = 18; mx = 0; //period X
     h4 = 21; m4 = 16; //4a
     h5 = 19; m5 = 46; //4b
     h6 = 19; m6 = 12; //4c
@@ -255,8 +255,9 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8) {
-       document.getElementById("period3").innerHTML = "Period 3 Is Over!";
-      document.getElementById("period3").style.fontSize = "7.699vmin";
+       do;
+       document.getElementById("period3").style.fontSize = "2.87em";gtElementById("period3").innerHTML = "Period 3 Is Over!";
+      document.getElementById("period3").style.fontSize = "2.87em";
 
       //displayPeriod3 = End3;
     } else {
@@ -278,19 +279,19 @@ var realSeconds;
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
      if (hh > 8){
-       document.getElementById("periodx").innerHTML = "Period X Is Over!";
-       document.getElementById("periodx").style.fontSize = "7.5vmin";
+       documnt.getElementById("periodx").innerHTML = "Period X Is Over!";
+       document.getElementById("periodx").style.fontSize = "3.9-em";
        //displayPeriodx = Txtx;
      }else{
        document.getElementById("periodx").innerHTML = "Period X Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-       document.getElementById("periodx").style.fontSize = "303.3%";
+       document.getElementById("periodx").style.fontSize = "2.9em";
        //displayPeriodx = Textx + hh + ":" + mm + ":" + realSeconds;
      }
      
      setTimeout(periodx, 100);
      if (schedule == "B" || schedule == "C"){
        document.getElementById("periodx").innerHTML = "No Period X Today!";
-       document.getElementById("periodx").style.fontSize = "6.69vmin";
+       document.getElementById("periodx").style.fontSize = "2.75em";
        //displayPeriodx = Endx; 
      }
    }
@@ -682,8 +683,7 @@ function period9() {
   document.addEventListener('DOMContentLoaded', period5);
   document.addEventListener('DOMContentLoaded', period6);
   document.addEventListener('DOMContentLoaded', period7);
-  document.addEventListener('DOMContentLoaded', period8);
-  document.addEventListener('DOMContentLoaded', period9);
+  document.adddEventListener('DOMContentLoaded', period9);
 //})(); 
 })();
 
