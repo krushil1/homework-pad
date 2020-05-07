@@ -98,40 +98,40 @@ var displayPeriod9;
 function defineTiming() {   //sets the variables of each period end time based on the schedule
   
   if (schedule == 'A') {
-    h1 = 19;  m1 = 37;
-    h2 = 19;  m2 = 24;
-    h3 = 21; m3 = 0;
-    hx = 21; mx = 0; //period X
+    h1 = 23;  m1 = 37;
+    h2 = 23;  m2 = 24;
+    h3 = 23; m3 = 0;
+    hx = 23; mx = 0; //period X
     h4 = 21; m4 = 16; //4a
     h5 = 19; m5 = 46; //4b
     h6 = 19; m6 = 12; //4c
     h7 = 19; m7 = 3;
     h8 = 19; m8 = 50;
-    h9 = 19;m9 = 37;
+    h9 = 23;m9 = 37;
   } else {
     if (schedule == 'B') {
-      h1 = 8;  m1 = 37;
-      h2 = 9;  m2 = 24;
-      h3 = 10; m3 = 11;
-      h4 = 21; m4 = 58;
-      h5 = 11; m5 = 45;
-      h6 = 12; m6 = 32;
-      h7 = 13; m7 = 19;
-      h8 = 14; m8 = 6;
-      h9 = 14; m9 = 53;
+      h1 = 23;  m1 = 37;
+      h2 = 23;  m2 = 24;
+      h3 = 23; m3 = 11;
+      h4 = 23; m4 = 58;
+      h5 = 23; m5 = 45;
+      h6 = 23; m6 = 32;
+      h7 = 23; m7 = 19;
+      h8 = 23; m8 = 6;
+      h9 = 23; m9 = 53;
       
         
     } else {
       if (schedule == 'C') {
-        h1 = 8;  m1 = 22;
-        h2 = 9;  m2 = 4;
-        h3 = 9;  m3 = 46;
-        h4 = 21; m4 = 20; // 5th Period
-        h5 = 10; m5 = 54; // 6th Period
-        h6 = 11; m6 = 28; // lunch 4a
-        h7 = 12; m7 = 2; // lunch 4b
-        h8 = 12; m8 = 31; // lunch 4c
-        h9 = 13; m9 = 0; // Period 7
+        h1 = 23;  m1 = 22;
+        h2 = 23;  m2 = 4;
+        h3 = 23;  m3 = 46;
+        h4 = 23; m4 = 20; // 5th Period
+        h5 = 23; m5 = 54; // 6th Period
+        h6 = 23; m6 = 28; // lunch 4a
+        h7 = 23; m7 = 2; // lunch 4b
+        h8 = 23; m8 = 31; // lunch 4c
+        h9 = 23; m9 = 0; // Period 7
       } 
     }
   }
@@ -348,7 +348,7 @@ var realSeconds;
         //displayPeriod4 = End4a;
       }else{
         document.getElementById("period4").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("period4").style.fontSize = "6.69vh";
+        document.getElementById("period4").style.fontSize = "6.75vh";
         //displayPeriod4 = fourA + hh + ":" + mm + ":" + realSeconds;
         //document.getElementById("displayPeriod4").style.fontSize = "xx-large";
 
@@ -683,6 +683,7 @@ function period9() {
   document.addEventListener('DOMContentLoaded', period5);
   document.addEventListener('DOMContentLoaded', period6);
   document.addEventListener('DOMContentLoaded', period7);
+  document.addEventListener('DOMContentLoaded', period8);
   document.addEventListener('DOMContentLoaded', period9);
 //})(); 
 })();
