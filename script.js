@@ -499,7 +499,7 @@ var realSeconds;
         //displayPeriod6 = End4a;
       }else{
         document.getElementById("period6").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("period6").style.fontSize = "7vh";
+        document.getElementById("period6").style.fontSize = "6.843vh";
         //displayPeriod6 = fourA + hh + ":" + mm + ":" + realSeconds;
       }
     }
@@ -561,7 +561,7 @@ var realSeconds;
         document.getElementById("period7").style.fontSize = "7.16vh";
       }else{
         document.getElementById("period7").innerHTML = "Lunch 4b Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
-        document.getElementById("period7").style.fontSize = "7vh";
+        document.getElementById("period7").style.fontSize = "6.8vh";
         //displayPeriod7 = Text4b + hh + ":" + mm + ":" + realSeconds;
       }
     }
@@ -626,10 +626,8 @@ var realSeconds;
         document.getElementById("period8").style.fontSize = "7.17vh";
         //displayPeriod8 = End4c;
       }else{
-        var time = hh + ":" + mm + ":" + realSeconds;
-        var Time1 = time.fontsize(8);
-        document.getElementById("period8").innerHTML = "Lunch 4c Ends In:&nbsp" + Time1;
-        document.getElementById("period8").style.fontSize = "6.8vh";
+        document.getElementById("period8").innerHTML = "Lunch 4c Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
+        document.getElementById("period8").style.fontSize = "6.77vh";
         //displayPeriod8 = Text4c + hh + ":" + mm + ":" + realSeconds;
       }
     }
