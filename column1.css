@@ -9,6 +9,8 @@
 /* Create two equal columns that sits next to each other */
 .column2 {
   background-color: white;
+  display: none;
+  display: block;
   float: left;
   width: 18%;
   padding: 10px;

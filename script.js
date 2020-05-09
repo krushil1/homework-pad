@@ -1,9 +1,13 @@
-var preloader = document.getElementById("WarpSpeed");
-function myFunction() {
-  setTimeout(function() {
-    preloader.style.display = "none";
-  }, 2000);
-}
+//var preloader = document.getElementById("WarpSpeed");
+//function myFunction() {
+ // setTimeout(function() {
+//    preloader.style.display = "none";
+//  }, 2000);
+//}
+
+
+
+
 //function myFunction(){
 //  setTimeout(function(){preloader.style.display = "none"}, 1980);
 //}
