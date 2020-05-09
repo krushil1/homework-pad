@@ -40,11 +40,27 @@ function details()
 { 
 
   if (hide == 0) {
-  document.getElementById("mydiv").style.top = "0%";
+  document.getElementById("details").style.top = "0%";
   hide = 1;
   }
   else {
-  document.getElementById("mydiv").style.top = "-1000px";
+  document.getElementById("details").style.top = "-1000px";
+    hide = 0;
+  }
+}
+
+
+
+var hide = 0;
+function Homework()
+{ 
+
+  if (hide == 0) {
+  document.getElementById("homework").style.top = "0%";
+  hide = 1;
+  }
+  else {
+  document.getElementById("homework").style.top = "-1000px";
     hide = 0;
   }
 }
