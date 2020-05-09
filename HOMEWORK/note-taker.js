@@ -164,7 +164,7 @@ var NOTETAKER = new Vue({
             var deletingNoteID = Number(noteID);
 
             // confirm that the user really wants to delete the note
-            if (confirm("Are you sure you want to delete this note: " + noteTitle + "?") === true) {
+            if (confirm("Are you sure you want to delete this Assignment: " + noteTitle + "?") === true) {
                 // open a database transaction and delete the note, finding it by the name we retrieved above
                 var objectStore = NOTETAKER.db.transaction(["notes"], "readwrite").objectStore("notes");
                 var request = objectStore.delete(deletingNoteID);
@@ -222,7 +222,7 @@ var NOTETAKER = new Vue({
             };
         },
         deleteDB: function() {
-            if (confirm("Are you sure you want to delete ALL of the notes?") === true) {
+            if (confirm("Are you sure you want to delete ALL of the Assignments?") === true) {
                 window.indexedDB.deleteDatabase("notes");
                 // refresh the page
                 document.location.reload(true);
