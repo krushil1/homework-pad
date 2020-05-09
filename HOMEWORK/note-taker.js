@@ -69,7 +69,7 @@ var NOTETAKER = new Vue({
     },
     methods: {
         _getShortTitle: function(fullTitle) {
-            var MAXTITLELENGTH = 16;
+            var MAXTITLELENGTH = 150;
 
             if (fullTitle.length > MAXTITLELENGTH) {
                 return fullTitle.substring(0, MAXTITLELENGTH) + "...";
@@ -78,7 +78,7 @@ var NOTETAKER = new Vue({
             }
         },
         _getShortBody: function(fullBody) {
-            var MAXBODYLENGTH = 25;
+            var MAXBODYLENGTH = 150;
 
             if (fullBody.length > MAXBODYLENGTH) {
                 return fullBody.substring(0, MAXBODYLENGTH) + "...";
@@ -123,7 +123,7 @@ var NOTETAKER = new Vue({
             var _this = this;
 
             if(_this.noteTitle === '') {
-                $.jGrowl("Please enter a name for the note", {group: 'warning-growl'});
+                $.jGrowl("Please enter a name for the Assignment", {group: 'warning-growl'});
                 return;
             } else {
                 // grab the values entered into the form fields and store them in an object ready for being inserted into the IDB
