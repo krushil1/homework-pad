@@ -13,7 +13,6 @@
 //     _animation_delay += 0.03;
 //   }
 
-
 //   _blocks += "<div id='loader'><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span></div></div>";
 //   document.getElementsByTagName("body")[0].insertAdjacentHTML('beforeend', _blocks);
 //document.getElementsByTagName("body")[0].style.overflow = "hidden";
@@ -27,11 +26,11 @@
 //     document.getElementById("unfold-block").classList.add("clear");
 //   }, 2000);
 
- //  setTimeout(function() {
- //    document.getElementById('loader').classList.add('clear');
- //  }, 4000);
+//  setTimeout(function() {
+//    document.getElementById('loader').classList.add('clear');
+//  }, 4000);
 
 //   setTimeout(function() {
 //     document.getElementById("unfold-block").remove();
- //    document.getElementsByTagName("body")[0].style.overflow = "hidden";
- //  }, 7000);
+//    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+//  }, 7000);

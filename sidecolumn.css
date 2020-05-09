@@ -12,7 +12,7 @@
   margin: 0px;
   position: absolute;
   top: 0px;
-  right: 0px; 
+  right: 0px;
 }
 
 /* Clear floats after the columns */
@@ -22,14 +22,12 @@
   display: table;
   clear: both;
 }*/
-    
+
 ul {
-  list-style-type: none; 
+  list-style-type: none;
 }
 
-
-
-.selector{
+.selector {
   color: #00E5FF;
   font-size: 3.8vh;
 }
