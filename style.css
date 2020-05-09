@@ -11,25 +11,16 @@ body {
 
 
 
-/*#loading{
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: black
-  url('https://cdn.glitch.com/d81d26fa-c668-478e-8946-16a17248aeb3%2FPulse-1s-114px.gif?v=1576037541231')
-   no-repeat center ;
-  z-index: 99999;
-} */
-
 #loading{
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: black
-  url('https://cdn.glitch.com/d81d26fa-c668-478e-8946-16a17248aeb3%2FPulse-1s-114px.gif?v=1576037541231')
+  background: black;
+  url('https://backdrop.glitch.me/')
    no-repeat center ;
   z-index: 99999;
 } 
+
 
 
 
