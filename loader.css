@@ -111,3 +111,28 @@ div#loader > span:nth-child(9) {
   text-align: center;
   width: 100%;
 }
+
+
+
+
+#color-picker-container {
+  display:inline-block;
+}
+#color-picker-container2 {
+   display:inline-block;
+
+}
+#color-picker-container3 {
+  display:inline-block;
+  
+}
+#color-picker-container4 {
+  display:inline-block;
+}
+
+#color-picker-container5 {
+  display:inline-block;
+}
+#color-picker-container6 {
+  display:inline-block;
+}

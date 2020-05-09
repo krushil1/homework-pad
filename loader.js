@@ -35,28 +35,21 @@
 //    document.getElementsByTagName("body")[0].style.overflow = "hidden";
 //  }, 7000);
 
+var colorCount = 0;
+var onoff = 0;
+function moveColor()
+{ 
 
- function toggleClock() {
-    // get the clock
-    var myClock = document.getElementById('column1');
-
-    // get the current value of the clock's display property
-    var displaySetting = myClock.style.display;
-
-    // also get the clock button, so we can change what it says
-    var clockButton = document.getElementById('clockButton');
-
-    // now toggle the clock and the button text, depending on current state
-    if (displaySetting == 'block') {
-      // clock is visible. hide it
-      myClock.style.display = 'none';
-      // change button text
-      clockButton.innerHTML = 'Show clock';
-    }
-    else {
-      // clock is hidden. show it
-      myClock.style.display = 'block';
-      // change button text
-      clockButton.innerHTML = 'Hide clock';
+  if (onoff == 0) {
+  document.getElementById("mydiv").style.top = "10%";
+  onoff = 1;
+    if (colorCount == 25){
+      alert("In what scenario would you need to click this button 25 times? \n \n Tell me if you got this message. I'm genuinely curious");
     }
   }
+  else {
+  document.getElementById("mydiv").style.top = "-550px";
+    onoff = 0;
+    colorCount = colorCount + 1;
+  }
+}
