@@ -1,0 +1,16 @@
+/* Adding styling for growl messages. */
+.success-growl {
+    background-color: #58b957;
+    font-size: 1.5em;
+}
+
+.warning-growl {
+    background-color: #f2ae43;
+    font-size: 1.5em;
+    color: black;
+}
+
+.failure-growl {
+    background-color: #db524b;
+    font-size: 1.5em;
+}
