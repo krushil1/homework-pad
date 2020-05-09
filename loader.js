@@ -36,20 +36,16 @@
 //  }, 7000);
 
 var colorCount = 0;
-var onoff = 0;
-function moveColor()
+var hide = 0;
+function details()
 { 
 
-  if (onoff == 0) {
-  document.getElementById("mydiv").style.top = "10%";
-  onoff = 1;
-    if (colorCount == 25){
-      alert("In what scenario would you need to click this button 25 times? \n \n Tell me if you got this message. I'm genuinely curious");
-    }
+  if (hide == 0) {
+  document.getElementById("toggleDetail").style.top = "0%";
+  hide = 1;
   }
   else {
-  document.getElementById("mydiv").style.top = "-550px";
-    onoff = 0;
-    colorCount = colorCount + 1;
+  document.getElementById("toggleDetail").style.top = "-1000px";
+    hide = 0;
   }
 }

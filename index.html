@@ -145,15 +145,11 @@
         </center>
       </div>
       <br />
-      <center>
-        <button
-          class="details pointer"
-          tooltip="Details on upcomming events"
-          tooltip-position="left"
-        >
-          More Details
-        </button>
-      </center>
+      
+      <div id="toggleDetails">
+        <center><button class="details pointer" tooltip="Details on upcomming events" tooltip-position="left" onclick="details()">More Details</button></center>
+      </div>
+     
       <center>
         <button
           class="setting pointer"
@@ -165,8 +161,7 @@
       </center>
 
     <div>
-        <button id="closeButton" class="closeButton pointer" onclick="moveColor()">&times</button>
-        <div id="mydivheader">
+        <button id="closeButton" class="closeButton pointer" onclick="details()"></button>
           <h2>Color Picker</h2>
         </div>
         <br>
