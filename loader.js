@@ -41,11 +41,11 @@ function details()
 { 
 
   if (hide == 0) {
-  document.getElementById("mydiv").style.top = "0%";
+  document.getElementById("detail").style.top = "0%";
   hide = 1;
   }
   else {
-  document.getElementById("mydiv").style.top = "-1000px";
+  document.getElementById("detail").style.top = "-1000px";
     hide = 0;
   }
 }
