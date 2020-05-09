@@ -15,42 +15,59 @@
       gtag("config", "UA-151655176-1");
     </script>  -->
     <!-- google fonts links -->
-    
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- title for the tab -->
     <title>Project</title>
     <!-- link for the clock icon for the tab -->
-    <link rel="icon" type="image/ico" href="https://cdn.glitch.com/d81d26fa-c668-478e-8946-16a17248aeb3%2Fclock-image-transparent-background-24.png?v=1572824151441"/>
+    <link
+      rel="icon"
+      type="image/ico"
+      href="https://cdn.glitch.com/d81d26fa-c668-478e-8946-16a17248aeb3%2Fclock-image-transparent-background-24.png?v=1572824151441"
+    />
     <!-- css links -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!--<link rel="stylesheet" href="timenumber.css">-->
-    <link rel="stylesheet" href="buttons.css">
-    <link rel="stylesheet" href="sidecolumn.css">
-    <link rel="stylesheet" href="timing.css">
-    <link rel="stylesheet" href="modeslider.css">
-    <link rel="stylesheet" href="tooltip.css">
-    <link rel="stylesheet" href="column1.css">
-    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="sidecolumn.css" />
+    <link rel="stylesheet" href="timing.css" />
+    <link rel="stylesheet" href="modeslider.css" />
+    <link rel="stylesheet" href="tooltip.css" />
+    <link rel="stylesheet" href="column1.css" />
+    <link rel="stylesheet" href="loader.css" />
     <script type="text/javascript" src="warpspeed.js"></script>
   </head>
+  <body onload="myFunction(); defineTiming(); Apressed();"></body>
+  <div id="WarpSpeed">
+    <div
+      style="position:fixed; z-index:1; top:0; left:0; width:100%; height:100%;"
+    >
+      <canvas id="canvas3" style="width:100%; height:100%;"></canvas>
+      <script>
+        new WarpSpeed(
+          "canvas3",
+          '{"speed":25,"speedAdjFactor":0.03,"density":0.7,"shape":"square","warpEffect":true,"warpEffectLength":5,"depthFade":false,"starSize":3,"backgroundColor":"#000000","starColor":"#FFFFFF"}'
+        );
+      </script>
+    </div>
+    <div style="position:absolute; width:100%; height:100%;"></div>
+  </div>
 
-<body onload="defineTiming(); Apressed();"></body>
+  <!--<body onload="defineTiming(); Apressed();"></body>-->
 
-<!--<body style="background: #080808"></body>-->
+  <!--<body style="background: #080808"></body>-->
 
-<!--Page loader-->
-<!--<div class="something"></div>-->
-<body onload="myFunction();"></body>
-<div id="WarpSpeed"></div>
+  <!--Page loader-->
+  <!--<div class="something"></div>-->
 
+  <body style="background: linear-gradient(45deg, #191654, #43C6AC);"></body>
+  <!--<body style="background:repeating-linear-gradient(45deg, rgb(110, 60, 132) 0px, rgb(110, 60, 132) 17px,rgb(167, 70, 127) 17px, rgb(167, 70, 127) 34px,rgb(52, 50, 136) 34px, rgb(52, 50, 136) 51px);"></body>-->
+  <!--<body style="background:repeating-linear-gradient(135deg, rgb(201, 122, 81) 0px, rgb(201, 122, 81) 19px,rgb(179, 61, 37) 19px, rgb(179, 61, 37) 122px,rgb(223, 183, 125) 122px, rgb(223, 183, 125) 206px);"></body>-->
 
-  
-<body style="background: linear-gradient(45deg, #191654, #43C6AC);"></body>
-<!--<body style="background:repeating-linear-gradient(45deg, rgb(110, 60, 132) 0px, rgb(110, 60, 132) 17px,rgb(167, 70, 127) 17px, rgb(167, 70, 127) 34px,rgb(52, 50, 136) 34px, rgb(52, 50, 136) 51px);"></body>-->
-<!--<body style="background:repeating-linear-gradient(135deg, rgb(201, 122, 81) 0px, rgb(201, 122, 81) 19px,rgb(179, 61, 37) 19px, rgb(179, 61, 37) 122px,rgb(223, 183, 125) 122px, rgb(223, 183, 125) 206px);"></body>-->
-  
- 
   <style>
     h2 {
       margin: 0;
@@ -73,33 +90,86 @@
     li {
       color: #ADFF2F;
     }
-  </style> 
-  
+  </style>
 
-  
-  <div class="row"></div>
-  <div class="column" id="column1">
-    
-    <div>
-      <p><b><font class="selector"><center><big>Schedule Selector</big></center></font></b></p>
-      <center><button class="Abutton pointer" tooltip="Regular Schedule" tooltip-position="left" id="Abutton" onclick="Apressed();">A</button></center>
-      <center><button class="Bbutton pointer" id="Bbutton" tooltip="2 Hour Delay Schedule" tooltip-position="left" onclick="Bpressed();">B</button></center>
-      <center><button class="Cbutton pointer" id="Cbutton" tooltip="Early Dismissal Schedule" tooltip-position="left" onclick="Cpressed();">C</button></center>
+  <div>
+    <div class="row"></div>
+    <div class="column" id="column1">
+      <div>
+        <p>
+          <b
+            ><font class="selector"
+              ><center><big>Schedule Selector</big></center></font
+            ></b
+          >
+        </p>
+        <center>
+          <button
+            class="Abutton pointer"
+            tooltip="Regular Schedule"
+            tooltip-position="left"
+            id="Abutton"
+            onclick="Apressed();"
+          >
+            A
+          </button>
+        </center>
+        <center>
+          <button
+            class="Bbutton pointer"
+            id="Bbutton"
+            tooltip="2 Hour Delay Schedule"
+            tooltip-position="left"
+            onclick="Bpressed();"
+          >
+            B
+          </button>
+        </center>
+        <center>
+          <button
+            class="Cbutton pointer"
+            id="Cbutton"
+            tooltip="Early Dismissal Schedule"
+            tooltip-position="left"
+            onclick="Cpressed();"
+          >
+            C
+          </button>
+        </center>
+      </div>
+      <br />
+      <center>
+        <button
+          class="details pointer"
+          tooltip="Details on upcomming events"
+          tooltip-position="left"
+        >
+          More Details
+        </button>
+      </center>
+      <center>
+        <button
+          class="setting pointer"
+          tooltip="customize more settings"
+          tooltip-position="left"
+        >
+          Settings
+        </button>
+      </center>
+
+      <br />
+      <center>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox"
+            ><input type="checkbox" id="checkbox"/>
+            <div class="slider round"></div
+          ></label>
+        </div>
+      </center>
     </div>
-    <br>
-    <center><button class="details pointer" tooltip="Details on upcomming events" tooltip-position="left">More Details</button></center>
-    <center><button class="setting pointer" tooltip="customize more settings" tooltip-position="left">Settings</button></center>
+  </div>
 
-
-    <br>
-    <center><div class="theme-switch-wrapper"><label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox"/><div class="slider round"></div></label></div></center>
-    
-    </div>
-    
-    
-    
-    
-<!--    <h2><font color="#FFFAFA" and size="5" id="upcoming">Upcoming events: </font></h2>
+  <!--    <h2><font color="#FFFAFA" and size="5" id="upcoming">Upcoming events: </font></h2>
     <ul>
       <li id="events2"><h4><p id="winter"></p></h4></li>
       <br>
@@ -111,7 +181,7 @@
       <br>
       <li id="events3"><h4><p id="EndSchool"></p></h4></li>
     </ul> -->
-    
+
   <!--  <div class="row2">
   <div class="column2" style="background-color:#aaa;">
     <h2>Column 1</h2>
@@ -119,50 +189,54 @@
   </div>
   
 </div> -->
-    
-    
 
-  
-    <p class="period" id="period1"><!--Period 1 Text--></p>    
-    <br>
-    <p class="period" id="period2"></p>
-    <br>
-    <!--<p class="period" id="period2">-->   <!--Period 2 Text--> <!--</p> -->   <!--<p class="time" id="time2"></p> <br> -->
-    <p class="period" id="period3"><!--Period 3 Text--></p><!-- <p class="time" id="time3"></p> <br> -->
-    <br>
-    <p class="periods" id="periodx"></p>           <!--<p class="timex" id="timex"></p> <br>--> <!-- period x -->
-    <br>
-    <p class="periods4" id="period4">            </p>           <!--<p class="time4" id="time4"></p> <br>--><!-- lunch 4a -->
-    <br>
-    <p class="periods4" id="period5">            </p>           <!--<p class="time4" id="time5"></p> <br>--><!-- lunch 4b -->
-    <br>
-    <p class="periods4" id="period6">            </p>           <!--<p class="time4" id="time6"></p> <br>--><!-- lunch 4c -->
-    <br>
-    <p class="periods" id="period7">             </p>           <!--<p class="time" id="time7"></p> <br>-->
-    <br>
-    <p class="periods" id="period8">             </p>           <!--<p class="time" id="time8"></p> <br>-->
-    <br>
-    <p class="periods" id="period9">             </p>           <!--<p class="time" id="time9"></p> <br>-->
+  <p class="period" id="period1"><!--Period 1 Text--></p>
+  <br />
+  <p class="period" id="period2"></p>
+  <br />
+  <!--<p class="period" id="period2">-->
+  <!--Period 2 Text-->
+  <!--</p> -->
+  <!--<p class="time" id="time2"></p> <br> -->
+  <p class="period" id="period3"><!--Period 3 Text--></p>
+  <!-- <p class="time" id="time3"></p> <br> -->
+  <br />
+  <p class="periods" id="periodx"></p>
+  <!--<p class="timex" id="timex"></p> <br>-->
+  <!-- period x -->
+  <br />
+  <p class="periods4" id="period4"></p>
+  <!--<p class="time4" id="time4"></p> <br>--><!-- lunch 4a -->
+  <br />
+  <p class="periods4" id="period5"></p>
+  <!--<p class="time4" id="time5"></p> <br>--><!-- lunch 4b -->
+  <br />
+  <p class="periods4" id="period6"></p>
+  <!--<p class="time4" id="time6"></p> <br>--><!-- lunch 4c -->
+  <br />
+  <p class="periods" id="period7"></p>
+  <!--<p class="time" id="time7"></p> <br>-->
+  <br />
+  <p class="periods" id="period8"></p>
+  <!--<p class="time" id="time8"></p> <br>-->
+  <br />
+  <p class="periods" id="period9"></p>
+  <!--<p class="time" id="time9"></p> <br>-->
 
- 
+  <br />
+  <br />
+  <button
+    onclick="window.location.href = 'https://cdn.glitch.com/d81d26fa-c668-478e-8946-16a17248aeb3%2FIMG_0299%20(1).PNG?v=1573530015781';"
+    class="pointer button16"
+  >
+    full schedule
+  </button>
 
-  
-  <br>
-  <br>
-    <button onclick="window.location.href = 'https://cdn.glitch.com/d81d26fa-c668-478e-8946-16a17248aeb3%2FIMG_0299%20(1).PNG?v=1573530015781';" class="pointer button16">full schedule</button>
-    
-    
-    <p>
+  <p>
     <span id="output1"></span>
-    </p>
+  </p>
 
-  
-  
-  
-<script src="script.js"></script>
-<script src="warpspeed.js"></script>
-<script src="loader.js"></script>
+  <script src="script.js"></script>
+  <script src="warpspeed.js"></script>
+  <script src="loader.js"></script>
 </html>
-
-
-

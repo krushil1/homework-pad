@@ -1,43 +1,42 @@
 #Abutton {
-  background-color:#db3d3d;
-  width:auto;
+  background-color: #db3d3d;
+  width: auto;
   height: auto;
   border-radius: 100%;
-  border:none;
-  outline:none;
-  color:black;
-  font-size:2.5vh;
-  font-weight:bold;
-  margin-bottom: 0%;
-}
-  
-#Bbutton{
-  background-color:white;
-  width:auto;
-  height:auto;
-  border-radius: 100%;
-  border:none;
-  outline:none;
-  color:black;
+  border: none;
+  outline: none;
+  color: black;
   font-size: 2.5vh;
-  font-weight:bold;
+  font-weight: bold;
   margin-bottom: 0%;
 }
-  
 
-#Cbutton{
-  background-color:white;
-  width:auto;
-  height:auto;
+#Bbutton {
+  background-color: white;
+  width: auto;
+  height: auto;
   border-radius: 100%;
-  border:none;
-  outline:none;
-  color:black;
+  border: none;
+  outline: none;
+  color: black;
   font-size: 2.5vh;
-  font-weight:bold;
+  font-weight: bold;
+  margin-bottom: 0%;
 }
-  
- #period1,
+
+#Cbutton {
+  background-color: white;
+  width: auto;
+  height: auto;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+#period1,
 #period2,
 #period3,
 #periodx,
@@ -46,20 +45,16 @@
 #period6,
 #period7,
 #period8,
-#period9{
-    color:#f2eaec;
-    font-weight:bold;
-    font-family:Arial;
-    display:inline-block;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-  }
+#period9 {
+  color: #f2eaec;
+  font-weight: bold;
+  font-family: Arial;
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
 
-
-
- 
-
-  #period9 {
+#period9 {
   /*  color:db3d3d; */
-    color: #00BD56;
-  }
+  color: #00BD56;
+}
