@@ -323,7 +323,7 @@ var realSeconds;
      if (hh > 8) {
 
        document.getElementById("period4").innerHTML = "Lunch 4a Is Over!";
-       document.getElementById("period4").style.fontSize = "7.36vh";
+       document.getElementById("period4").style.fontSize = "7.26vh";
       //displayPeriod4 = End4a;
     }else {
       document.getElementById("period4").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
@@ -344,7 +344,7 @@ var realSeconds;
     if (schedule == "A"){
       if (hh > 8){
         document.getElementById("period4").innerHTML = "Lunch 4a Is Over!";
-        document.getElementById("period4").style.fontSize = "7vh";
+        document.getElementById("period4").style.fontSize = "7.26vh";
         //displayPeriod4 = End4a;
       }else{
         document.getElementById("period4").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
