@@ -280,7 +280,7 @@ var realSeconds;
     var mm = pad((remain / 60) % 60);
      if (hh > 8){
        document.getElementById("periodx").innerHTML = "Period X Is Over!";
-       document.getElementById("periodx").style.fontSize = "3.9em";
+       document.getElementById("periodx").style.fontSize = "7.5vh";
        //displayPeriodx = Txtx;
      }else{
        document.getElementById("periodx").innerHTML = "Period X Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
@@ -323,7 +323,7 @@ var realSeconds;
      if (hh > 8) {
 
        document.getElementById("period4").innerHTML = "Lunch 4a Is Over!";
-       document.getElementById("period4").style.fontSize = "7.293vh";
+       document.getElementById("period4").style.fontSize = "7.36vh";
       //displayPeriod4 = End4a;
     }else {
       document.getElementById("period4").innerHTML = "Lunch 4a Ends In:&nbsp" + hh + ":" + mm + ":" + realSeconds;
