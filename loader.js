@@ -35,17 +35,16 @@
 //    document.getElementsByTagName("body")[0].style.overflow = "hidden";
 //  }, 7000);
 
-var colorCount = 0;
 var hide = 0;
 function details()
 { 
 
   if (hide == 0) {
-  document.getElementById("toggleDetail").style.top = "0%";
+  document.getElementById("mydiv").style.top = "0%";
   hide = 1;
   }
   else {
-  document.getElementById("toggleDetail").style.top = "-1000px";
+  document.getElementById("mydiv").style.top = "-1000px";
     hide = 0;
   }
 }
