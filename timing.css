@@ -1,37 +1,37 @@
 #Abutton {
-  background-color: #31C3E7;
+  background-color: #118ab2;
   width: auto;
   height: auto;
   border-radius: 100%;
   border: none;
   outline: none;
-  color: black;
+  color: #073b4c;
   font-size: 2.5vh;
   font-weight: bold;
   margin-bottom: 0%;
 }
 
 #Bbutton {
-  background-color: white;
+  background-color: #90e0ef;
   width: auto;
   height: auto;
   border-radius: 100%;
   border: none;
   outline: none;
-  color: black;
+  color: #073b4c;
   font-size: 2.5vh;
   font-weight: bold;
   margin-bottom: 0%;
 }
 
 #Cbutton {
-  background-color: white;
+  background-color: #90e0ef;
   width: auto;
   height: auto;
   border-radius: 100%;
   border: none;
   outline: none;
-  color: black;
+  color: #073b4c;
   font-size: 2.5vh;
   font-weight: bold;
 }

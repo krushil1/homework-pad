@@ -41,7 +41,7 @@ function details()
 { 
 
   if (hide == 0) {
-  document.getElementById("detail").style.top = "0%";
+  document.getElementById("detail").style.top = "2%";
   hide = 1;
   }
   else {

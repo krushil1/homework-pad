@@ -46,23 +46,23 @@ var x = setInterval(function() {
 var schedule = "A";
 function Apressed() {
   schedule = "A";
-  document.getElementById("Abutton").style.backgroundColor = "31C3E7";
-  document.getElementById("Bbutton").style.backgroundColor = "white";
-  document.getElementById("Cbutton").style.backgroundColor = "white";
+  document.getElementById("Abutton").style.backgroundColor = "118ab2";////
+  document.getElementById("Bbutton").style.backgroundColor = "90e0ef";
+  document.getElementById("Cbutton").style.backgroundColor = "90e0ef";
   defineTiming();
 }
 function Bpressed() {
   schedule = "B";
-  document.getElementById("Abutton").style.backgroundColor = "white";
-  document.getElementById("Bbutton").style.backgroundColor = "31C3E7";
-  document.getElementById("Cbutton").style.backgroundColor = "white";
+  document.getElementById("Abutton").style.backgroundColor = "90e0ef";
+  document.getElementById("Bbutton").style.backgroundColor = "118ab2";////
+  document.getElementById("Cbutton").style.backgroundColor = "90e0ef";
   defineTiming();
 }
 function Cpressed() {
   schedule = "C";
-  document.getElementById("Abutton").style.backgroundColor = "white";
-  document.getElementById("Bbutton").style.backgroundColor = "white";
-  document.getElementById("Cbutton").style.backgroundColor = "31C3E7";
+  document.getElementById("Abutton").style.backgroundColor = "90e0ef";
+  document.getElementById("Bbutton").style.backgroundColor = "90e0ef";
+  document.getElementById("Cbutton").style.backgroundColor = "118ab2";////
   defineTiming();
 }
 

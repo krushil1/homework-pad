@@ -15,27 +15,27 @@
 }
 
 .details {
-  background-color: limegreen;
+  background-color: #1a535c;
   width: auto;
   height: auto;
   border-radius: 25px;
   padding: 10px;
   border: none;
   outline: none;
-  color: white;
+  color: #06d6a0;
   font-size: 2.5vh;
   font-weight: bold;
 }
 
 .setting {
-  background-color: limegreen;
+  background-color: #1a535c;
   width: auto;
   height: auto;
   border-radius: 25px;
   padding: 10px;
   border: none;
   outline: none;
-  color: white;
+  color: #06d6a0;
   font-size: 2.5vh;
   font-weight: bold;
 }
