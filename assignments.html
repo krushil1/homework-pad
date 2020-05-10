@@ -27,15 +27,15 @@
                 <li v-for="note in notes"><a href="#" v-on:click="openNote(note.id, note.title, note.body)">{{ note.title }}</a> &nbsp;<button v-on:click="deleteNote(note.id, note.title)" tabindex="-1">x</button></li>
               </ul>
             </div>
-
-            <div class="col-sm-14 col-md-6">
+  
+            <div class="col-sm-14 col-md-6" style="left:10%;">
               <div class="input-group input-group-lg col-sm-6 col-md-9">
                 <input type="text" class="form-control" id="note-title" placeholder="What's your homework?" aria-describedby="Enter a note title." v-model="noteTitle">
               </div>
 
               <br/>
 
-              <button type="button" class="btn btn-default btn-md btn-primary" id="save" v-on:click="addNote">
+              <button type="button" style="float:left" class="btn btn-default btn-md btn-primary" id="save" v-on:click="addNote">
                   <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> &nbsp SAVE NEW
               </button>
 
