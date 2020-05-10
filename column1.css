@@ -1,14 +1,14 @@
-.div {
+.box {
   background-color: lightgrey;
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
+  width: 90%;
+  border: 5px solid green;
+  height: 15%;
+  margin: 10px;
 }
 
-* {
+/** {
   box-sizing: border-box;
-}
+}*/
 
 .row4 {
   display: flex;
@@ -19,7 +19,6 @@
   background-color: white;
   float: left;
   width: 18%;
-  padding: 10px;
   height: 100%; /* Should be removed. Only for demonstration */
   margin: 0px;
   position: absolute;
