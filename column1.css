@@ -5,8 +5,8 @@
   color: #fca311;
   font-family: Arial;
   font-weight: 900;
-  height: 13.2vh;
-  margin: 10px;
+  height: 12.5vh;
+  margin: 5%;
 }
 
 /** {
@@ -22,7 +22,7 @@
   background-color: #05668d;
   float: left;
   width: 16%;
-  height: 90%; /* Should be removed. Only for demonstration */
+  height: 87%; /* Should be removed. Only for demonstration */
   margin: 0px;
   position: absolute;
   top: 200%;
