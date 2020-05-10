@@ -12,7 +12,7 @@ window.onload = function() {
     window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
 
     if (!window.indexedDB) {
-        window.alert("Your browser doesn't support a stable version of IndexedDB. You will not be able to save and edit notes.");
+        window.alert("Your browser doesn't support a stable version of IndexedDB. You will not be able to save and edit assignments.");
     }
 
     var DBOpenRequest = window.indexedDB.open("notes", 4);
@@ -140,7 +140,7 @@ var NOTETAKER = new Vue({
                 };
 
                 request.onsuccess = function(event) {
-                    $.jGrowl('Note saved', {group: 'success-growl'});
+                    $.jGrowl('Assignment saved', {group: 'success-growl'});
 
                     // clear the form, ready for adding the next entry
                     _this.noteTitle = "";
@@ -178,7 +178,7 @@ var NOTETAKER = new Vue({
 
                 // report that the data item has been deleted
                 request.onsuccess = function() {
-                    $.jGrowl('Note deleted', {group: 'success-growl'});
+                    $.jGrowl('Assignment deleted', {group: 'success-growl'});
                 };
 
                 NOTETAKER.displayExistingNotes();
