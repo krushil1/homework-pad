@@ -1,3 +1,7 @@
+.example::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,12 +13,12 @@
 /* Create two equal columns that sits next to each other */
 .column5 {
   background-color: white;
- 
+
   float: left;
-  width:45%;
-  padding: 10px;
-  height: 100%;
-  margin: 0px;
+  width:40%;
+  padding: 2px;
+  height: 90%;
+  margin: -15px;
   position: absolute;
   top: 100%;
   right: 20%;
