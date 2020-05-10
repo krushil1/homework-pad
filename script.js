@@ -1,6 +1,3 @@
-
-
-
 var preloader = document.getElementById("WarpSpeed");
 function myFunction() {
   setTimeout(function() {
