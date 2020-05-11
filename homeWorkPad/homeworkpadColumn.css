@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.row5 {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column5 {
+  float: left;
+  width:37%;
+  padding: 2px;
+  height: 90%;
+  margin: -15px;
+  position: absolute;
+  top: 200%;
+  right: 20%;
+}
