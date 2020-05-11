@@ -1,7 +1,6 @@
 
 
 
-
 //function myFunction(){
 //  setTimeout(function(){preloader.style.display = "none"}, 1980);
 //}
