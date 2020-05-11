@@ -45,6 +45,12 @@ body {
   margin-top: 40px;
 }
 
+
+
+h3{
+  line-height: 25px;
+  text-align: center;
+}
 /*h1 {  font-family: Helvetica, Arial, sans-serif;  text-align: center; font-size:70px; margin-top:240px; color:#fff;
 	  text-shadow: 2px 2px 0px rgba(255,255,255,.7), 5px 7px 0px rgba(0, 0, 0, 0.1); 
 }
