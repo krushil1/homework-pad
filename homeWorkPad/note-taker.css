@@ -19,7 +19,7 @@
 body {
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
-  width:90% /* or you can also set 900px*/
+  width:100% /* or you can also set 900px*/
 }
 }
 

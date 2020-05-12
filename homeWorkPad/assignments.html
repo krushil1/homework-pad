@@ -25,13 +25,13 @@
           <div class="row">
             <div class="col-xs-3 col-sm-3 col-md-2 sidebar" id="note-list">
               <ul>
-                <li v-for="note in notes"><a href="#" v-on:click="openNote(note.id, note.title, note.body)">{{ note.title }}</a> &nbsp;<button v-on:click="deleteNote(note.id, note.title)" tabindex="-1">x</button></li>
+                <li v-for="note in notes"><a href="#" v-on:click="openNote(note.id, note.title, note.body)">{{ note.title }}</a> &nbsp;<button v-on:click="deleteNote(note.id, note.title)" tabindex="-1">x</button></li>            
               </ul>
             </div>
   
-            <div class="col-sm-14 col-md-6" style="float:right;">
+            <div class="col-sm-14 col-md-9" style="float:right; left:-13%">
               <div class="input-group input-group-lg col-sm-6 col-md-9">
-                <input type="text" class="form-control" id="note-title" placeholder="What's your homework?" aria-describedby="Enter a note title." v-model="noteTitle">
+                <input type="text" class="form-control" style="width:140%" id="note-title" placeholder="What's your homework?" aria-describedby="Enter a note title." v-model="noteTitle">
               </div>
 
               <br/>
