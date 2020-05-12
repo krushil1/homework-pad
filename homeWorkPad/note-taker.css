@@ -20,3 +20,9 @@ body {
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+
+
+ul{
+  list-style: none;
+  font0
+}
