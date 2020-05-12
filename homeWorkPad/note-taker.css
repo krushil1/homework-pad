@@ -24,5 +24,6 @@ body {
 
 ul{
   list-style: none;
-  font0
+  font-weight: bold;
+  color: red;
 }
