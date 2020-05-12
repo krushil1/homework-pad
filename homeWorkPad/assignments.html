@@ -29,14 +29,14 @@
               </ul>
             </div>
   
-            <div class="col-sm-14 col-md-6" style="left:16%;">
+            <div class="col-sm-14 col-md-6" style="float:right;">
               <div class="input-group input-group-lg col-sm-6 col-md-9">
                 <input type="text" class="form-control" id="note-title" placeholder="What's your homework?" aria-describedby="Enter a note title." v-model="noteTitle">
               </div>
 
               <br/>
 
-              <button type="button" style="right:-90%;" class="btn btn-default btn-md btn-primary" id="save" v-on:click="addNote">
+              <button type="button" style="float:right;" class="btn btn-default btn-md btn-primary" id="save" v-on:click="addNote">
                   <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> &nbsp SAVE NEW
               </button>
 
@@ -48,7 +48,7 @@
 
               <br/><br/><br/>
 
-              <button type="button" class="btn btn-default btn-md btn-danger" id="delete" v-on:click="deleteDB" v-if="notes.length > 0" tabindex="-1">
+              <button type="button" style="float:right;" class="btn btn-default btn-md btn-danger" id="delete" v-on:click="deleteDB" v-if="notes.length > 0" tabindex="-1">
                   <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete ALL Assignments
               </button>
             </div>
