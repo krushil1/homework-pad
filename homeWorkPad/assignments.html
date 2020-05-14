@@ -25,7 +25,7 @@
           <div class="row">
             <div class="col-xs-3 col-sm-3 col-md-2 sidebar" id="note-list">
               <ul>
-                <li v-for="note in notes"><a href="#" v-on:click="openNote(note.id, note.title, note.body)">{{ note.title }}</a> &nbsp;<button v-on:click="deleteNote(note.id, note.title)" tabindex="-1">x</button></li>            
+                <li v-for="note in notes"><a href="#" v-on:click="openNote(note.id, note.title, note.body)">{{ note.title }}</a> &nbsp;<button v-on:click="deleteNote(note.id, note.title)" tabindex="-1" style="right:10%;">x</button></li>            
               </ul>
             </div>
   

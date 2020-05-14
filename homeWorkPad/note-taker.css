@@ -29,3 +29,15 @@ ul{
   font-weight: bold;
   color: red;
 }
+
+a{
+  background-color: #00a896;
+  width: auto;
+  border: 2px solid #264653;
+  color: #fca311;
+  font-family: Arial;
+  font-weight: 900;
+  padding: auto;
+  height: auto;
+  line-height: 20px;
+}
