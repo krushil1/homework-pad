@@ -4,7 +4,6 @@
 
 .row5 {
   display: flex;
-  background-color: #6E64E7;
 
 }
 
@@ -17,5 +16,5 @@
   position: absolute;
   top: 200%;
   right: 20%;
-  background-color: #6E64E7;
+  border-color: #6E64E7;
 }
