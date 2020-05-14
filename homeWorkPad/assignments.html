@@ -15,18 +15,21 @@
         <link rel="stylesheet" href="note-taker.css">
 
     </head>
+  linear-gradient(45.34deg, #EA52F8 5.66%, #0066FF 94.35%)
   
     <body>
+   
         <!-- Place your content here -->
         <div id="noteTaker" class="container-fluid">
-          <div class="page-header">
+          <div class="page-header">   
+            <h3>Homework Pad</h3>
           </div>
 
           <div class="row">
             <div class="col-xs-3 col-sm-3 col-md-2 sidebar" id="note-list">
-              <ul>
+              <ol>
                 <li v-for="note in notes"><a href="#" v-on:click="openNote(note.id, note.title, note.body)">{{ note.title }}</a> &nbsp;<button v-on:click="deleteNote(note.id, note.title)" tabindex="-1">x</button></li>            
-              </ul>
+              </ol>
             </div>
   
             <div class="col-sm-14 col-md-9" style="float:right; left:-13%">

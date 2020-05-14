@@ -15,16 +15,16 @@
     font-size: 1.5em;
 }
 
+h3{
+  color: red;
+}
 
 body {
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
   width:100% /* or you can also set 900px*/
 }
-}
-
-ul{
-  list-style: none;
+ol{
   font-weight: bold;
 }
 
@@ -32,4 +32,7 @@ a{
   color: #fca311;
   font-family: Arial;
 }
+
+}
+
 
