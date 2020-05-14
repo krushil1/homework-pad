@@ -4,16 +4,18 @@
 
 .row5 {
   display: flex;
+  background-color: #6E64E7;
+
 }
 
 /* Create two equal columns that sits next to each other */
 .column5 {
   float: left;
   width:39%;
-  padding: 2px;
   height: 90%;
   margin: -15px;
   position: absolute;
   top: 200%;
   right: 20%;
+  background-color: #6E64E7;
 }
