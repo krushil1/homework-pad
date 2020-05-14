@@ -18,11 +18,11 @@ var x = setInterval(function() {
 
   // Output the result in an element with id="demo"
   document.getElementById("EndSchool").innerHTML =
-    "<h4><b>School year ends in " + days + " days!</b></ul></h4>";
+    "<h4><b>School year ends in " + days + " days!</b></h4>";
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("EndSchool").innerHTML =
-      "<h4><ul><b>2019-2020 school year is over!</b></h4>";
+      "<h4><b>2019-2020 school year is over!</b></h4>";
   }
 }, 1000);
